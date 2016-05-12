@@ -1,0 +1,82 @@
+@import "base.scss";
+.activity{
+	width: 720px;
+	margin: 0 auto;
+	.bannerBox{
+		padding: 20px;
+		margin: 20px auto 10px;
+		background-color: #FFFFFF;
+		img{
+			width: 100%;
+		}
+	}
+	.list{
+		li:first-child{
+			border-right: 1px solid #e3e3e3;
+		}
+		li{
+			width: 50%;
+			height: 80px;
+			line-height: 80px;
+			font-size: 28px;
+			color: #555555;
+			text-align: center;
+			background-color: #FFFFFF;
+			a{
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	.tips{
+		height: 60px;
+		line-height: 60px;
+		padding-left: 20px;
+		font-size: 24px;
+		color: #999;
+	}
+	.coupon{
+		padding: 20px 20px 20px 160px;
+		background-color: #FFFFFF;
+		position: relative;
+	}
+	.couponImg{
+		width: 120px;
+		height: 120px;
+		background-color: #d1d1d1;
+		margin-left: -140px;
+	}
+	.couponFont{
+		width: 100%;
+		p{
+			line-height: 64px;
+		}
+		p:first-child{
+			font-size: 28px;
+			color: #555;
+		}
+		p:last-child{
+			font-size: 24px;
+			color: #999;
+		}
+	}
+	.pirce{
+		font-size: 24px;
+		color: #999999;
+		line-height: 44px;
+	}
+	.now{
+		width: 110px;
+		height: 40px;
+		line-height: 40px;
+		color: #FFFFFF;
+		background-color: #ff8400;
+		border-radius: 5px;
+		text-align: center;
+		position: absolute;
+		right: 20px;
+		bottom: 24px;
+		font-size: 20px;
+	}
+}

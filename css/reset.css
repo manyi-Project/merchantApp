@@ -71,6 +71,7 @@ hr {
 /* Global:常用样式 */
 .fl{ float:left;}
 .fr{ float:right;}
+a{color: inherit;}
 /*.clearfix{display: block; display: table; *display: inline-block; _height: 1%;}/!*清浮动*!/*/
 /*.clearfix:after {content:'\20'; display:block; clear:both;}/!*清浮动*!/*/
 .clearself{ overflow:hidden; _overflow:visible; _height:1%;}
@@ -113,6 +114,7 @@ hr {
 	transform: translate(-50%,-50%);}
 
 /* end Global */
+
 input::-webkit-input-placeholder{
 	font-size:0.305555556rem;
 	color:#C9C9C9;
@@ -128,4 +130,10 @@ input::-moz-placeholder{
 input:-ms-input-placeholder{
 	font-size:0.305555556rem;
 	color:#666;
+}
+body{
+	background-color: #f8f6f3;
+}
+p,a,span{
+	line-height: 100%;
 }

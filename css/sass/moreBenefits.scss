@@ -1,0 +1,52 @@
+@import "base.scss";
+p,a,span{
+	line-height: 100%;
+}
+.moreBenefits{
+	width: 720px;
+	margin: 20px auto 0;
+	background-color: #FFFFFF;
+	padding-left: 20px;
+	.benefitsBox{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		position: relative;
+		@include baceBorderB();
+		.now{
+			width: 114px;
+			height: 40px;
+			font-size: 20px;
+			color: #fff;
+			text-align: center;
+			right: 20px;
+			line-height: 40px;
+			background-color: #ff8400;
+			@include bdr-radius(5px);
+		}
+		.clickActive{
+			background-color: #e3e3e3;
+		}
+	}
+	.benefitsBox:last-child{
+		border-bottom: none;
+	}
+	.benefitsImg{
+		width: 134px;
+		height: 100px;
+		margin-right: 20px;
+	}
+	.benefitsFont{
+		font-size: 24px;
+		color: #999;
+		.mt{
+			margin-top: -8px;
+		}
+		.numb{
+			font-size: 36px;
+			color: #ff8400;
+		}
+		.p{
+			margin: 12px auto;
+		}
+	}
+}

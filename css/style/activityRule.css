@@ -1,0 +1,19 @@
+.activityRule {
+  width: 720px;
+  margin: 0 auto; }
+  .activityRule h3 {
+    margin: 58px auto 42px;
+    font-size: 28px;
+    color: #555555;
+    text-align: center; }
+  .activityRule .activity {
+    padding: 0 20px 30px; }
+    .activityRule .activity h4 {
+      font-size: 28px;
+      color: #555;
+      margin-bottom: 16px; }
+  .activityRule .activityCont {
+    font-size: 26px;
+    color: #999;
+    padding-left: 22px;
+    line-height: 44px; }
