@@ -121,6 +121,389 @@
   line-height: 0.611111rem;
 }
 
+.coupon {
+  width: 10rem;
+  margin: 0.277778rem auto 0;
+}
+
+.coupon .tapOut {
+  width: 100%;
+  height: 1.111111rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  background-color: #FFFFFF;
+}
+
+.coupon .tapOut li {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  font-size: 0.388889rem;
+  color: #555555;
+  height: 1.111111rem;
+  line-height: 1.111111rem;
+  text-align: center;
+}
+
+.coupon .tapOut li a {
+  display: inline-block;
+  width: 100%;
+  border-right: 0.013889rem solid #e3e3e3;
+}
+
+.coupon .tapOut .active {
+  color: #ffa867;
+  border-bottom: 0.013889rem solid #ffa867;
+}
+
+.coupon .tapOut li:last-child a {
+  border-right: none;
+}
+
+.coupon .couponCont {
+  width: 9.444444rem;
+  height: 2.777778rem;
+  margin: 0.277778rem auto 0;
+  border-radius: 0.069444rem;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  padding: 0.277778rem;
+  position: relative;
+  -webkit-box-shadow: 0 0.069444rem 0.138889rem #d2d1ce;
+  -moz-box-shadow: 0 0.069444rem 0.138889rem #d2d1ce;
+  box-shadow: 0 0.069444rem 0.138889rem #d2d1ce;
+}
+
+.coupon .couponCode {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0.638889rem;
+  line-height: 0.638889rem;
+  padding-right: 0.277778rem;
+  text-align: right;
+  color: #999;
+  border-top: 0.013889rem dashed #999999;
+}
+
+.coupon .left {
+  height: 100%;
+  margin-right: 0.361111rem;
+}
+
+.coupon .left .checkbox {
+  width: 0.277778rem;
+  height: 0.277778rem;
+  display: inline-block;
+  border: 0.013889rem solid #DBDBDB;
+  background-color: #e0e0e0;
+  margin-right: 0.138889rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.coupon .left .chk_1:checked + label:after {
+  content: '\2714';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #758794;
+  width: 100%;
+  text-align: center;
+  font-size: 0.222222rem;
+}
+
+.coupon .left span {
+  font-size: 0.555556rem;
+  color: #ff8400;
+}
+
+.coupon .font {
+  color: #999999;
+  font-size: 0.277778rem;
+}
+
+.coupon .font p {
+  line-height: 100%;
+  margin-bottom: 0.194444rem;
+}
+
+.coupon .ecode {
+  width: 0.777778rem;
+  height: 0.777778rem;
+  margin-top: 0.416667rem;
+  margin-right: 0.555556rem;
+}
+
+.coupon .ecode img {
+  width: 100%;
+}
+
+.coupon .clickReceive {
+  width: 9.444444rem;
+  height: 1.111111rem;
+  text-align: center;
+  line-height: 1.111111rem;
+  font-size: 0.388889rem;
+  color: #555555;
+  margin: 1.083333rem auto 0;
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: 0.069444rem;
+  -webkit-box-shadow: 0 0.069444rem 0.138889rem #d2d1ce;
+  -moz-box-shadow: 0 0.069444rem 0.138889rem #d2d1ce;
+  box-shadow: 0 0.069444rem 0.138889rem #d2d1ce;
+}
+
+.hotelDetails {
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.hotelDetails .banner {
+  height: 3.75rem;
+  position: relative;
+}
+
+.hotelDetails .banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.hotelDetails .banner .photo {
+  width: 0.944444rem;
+  height: 0.944444rem;
+  position: absolute;
+  right: 0.416667rem;
+  bottom: 0.222222rem;
+  background: url("../images/photoNumb.png") 0 0 no-repeat;
+  background-size: contain;
+  text-align: center;
+  padding-top: 0.527778rem;
+  color: #FFFFFF;
+}
+
+.hotelDetails .banner .photo .span {
+  font-size: 0.25rem;
+}
+
+.hotelDetails .payBil {
+  padding: 0.305556rem;
+  background-color: #FFFFFF;
+  border-bottom: 0.013889rem solid #e3e3e3;
+  position: relative;
+}
+
+.hotelDetails .payBil h3 {
+  font-size: 0.388889rem;
+  color: #333;
+}
+
+.hotelDetails .start {
+  margin-top: 0.138889rem;
+  font-size: 0.277778rem;
+}
+
+.hotelDetails .start .starslist {
+  margin-right: 0.125rem;
+}
+
+.hotelDetails .start .span {
+  margin-left: 0.083333rem;
+  color: #333;
+  margin-right: 0.347222rem;
+}
+
+.hotelDetails .start .span2 {
+  color: #999;
+}
+
+.hotelDetails .payBilButton {
+  width: 1.819444rem;
+  height: 0.722222rem;
+  line-height: 0.722222rem;
+  text-align: center;
+  font-size: 0.361111rem;
+  right: 0.555556rem;
+  background-color: #ff8400;
+  -webkit-border-radius: 0.138889rem;
+  -moz-border-radius: 0.138889rem;
+  border-radius: 0.138889rem;
+  color: #FFFFFF;
+}
+
+.hotelDetails .dress {
+  height: 1.736111rem;
+  padding: 0.277778rem 0.277778rem;
+  border-bottom: 0.013889rem solid #e3e3e3;
+  background-color: #FFFFFF;
+  font-size: 0.305556rem;
+  color: #686868;
+}
+
+.hotelDetails .dress p {
+  height: 0.444444rem;
+  line-height: 0.444444rem;
+  margin: 0.138889rem 0;
+}
+
+.hotelDetails .dressIcon {
+  background: url("../images/didian.png") 0 0 no-repeat;
+}
+
+.hotelDetails .photoIcon {
+  background: url("../images/phone.png") 0 0 no-repeat;
+}
+
+.hotelDetails .dressIcon,
+.hotelDetails .photoIcon {
+  width: 0.444444rem;
+  height: 0.444444rem;
+  background-size: contain;
+  margin-right: 0.138889rem;
+}
+
+.hotelDetails .comment {
+  padding: 0 0.277778rem;
+  height: 1.111111rem;
+  line-height: 1.111111rem;
+  border-bottom: 0.013889rem solid #e3e3e3;
+  background-color: #FFFFFF;
+}
+
+.hotelDetails .commetLeft {
+  font-size: 0.388889rem;
+  color: #333333;
+}
+
+.hotelDetails .commetRight {
+  font-size: 0.305556rem;
+  color: #999;
+  padding-right: 0.361111rem;
+  background: url("../images/left-arrow.png") right center no-repeat;
+}
+
+.hotelDetails .commentBox {
+  padding: 0.277778rem;
+  background-color: #FFFFFF;
+  border-bottom: 0.013889rem solid #e3e3e3;
+}
+
+.hotelDetails .commentImg {
+  width: 1.041667rem;
+  height: 1.041667rem;
+  margin-right: 0.416667rem;
+}
+
+.hotelDetails .commentImg img {
+  width: 100%;
+}
+
+.hotelDetails .userStart {
+  margin-top: 0.138889rem;
+}
+
+.hotelDetails .usename {
+  font-size: 0.305556rem;
+  color: #ff8400;
+  margin-top: 0.111111rem;
+}
+
+.hotelDetails .userStart .userStartlist {
+  margin-right: 0.138889rem;
+}
+
+.hotelDetails .userStart .font {
+  font-size: 0.305556rem;
+  color: #686868;
+  margin-left: 0.166667rem;
+}
+
+.hotelDetails .commentFont {
+  font-size: 0.305556rem;
+  color: #686868;
+  margin: 0.305556rem 0 0.361111rem 0;
+}
+
+.hotelDetails .commentImg2 {
+  margin-bottom: 0.361111rem;
+}
+
+.hotelDetails .commentImg2 li {
+  width: 1.597222rem;
+  height: 1.597222rem;
+  margin-right: 0.138889rem;
+}
+
+.hotelDetails .commentImg2 li img {
+  width: 100%;
+}
+
+.hotelDetails .kuangOut {
+  text-align: right;
+  font-size: 0;
+  word-spacing: -0.013889rem;
+}
+
+.hotelDetails .kuang {
+  width: 1.361111rem;
+  height: 0.666667rem;
+  border-radius: 0.666667rem;
+  position: relative;
+}
+
+.hotelDetails .zan {
+  background: url("../images/weizan.png") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.hotelDetails .zanActive {
+  background: url("../images/zan.png") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.hotelDetails .pinglun {
+  margin-left: 0.277778rem;
+  background: url("../images/comment.png") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.hotelDetails .zanAlert {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  background: url("../images/opacity_alert.png") 0 0 repeat;
+}
+
+.hotelDetails .zanInner {
+  width: 7.152778rem;
+  height: 3rem;
+  background-color: #FFFFFF;
+  -webkit-border-radius: 0.138889rem;
+  -moz-border-radius: 0.138889rem;
+  border-radius: 0.138889rem;
+}
+
+.hotelDetails .zanInner p {
+  font-size: 0.472222rem;
+  color: #333333;
+  text-align: center;
+  line-height: 0.666667rem;
+}
+
+.hotelDetails .success {
+  width: 1.013889rem;
+  height: 1.013889rem;
+  margin: 0.486111rem auto 0;
+  background: url("../images/iconfont-success.png") 0 0 no-repeat;
+  background-size: contain;
+}
+
 .pageHome {
   width: 10rem;
   margin: 0 auto;
