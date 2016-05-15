@@ -161,3 +161,6 @@
     margin: 35px auto 0;
     background: url("../images/iconfont-success.png") 0 0 no-repeat;
     background-size: contain; }
+  .hotelDetails .fail {
+    background: url("../images/iconfont-fail.png") 0 0 no-repeat;
+    background-size: contain; }
