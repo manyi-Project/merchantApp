@@ -15,7 +15,7 @@ p,a,span{
 		.now{
 			width: 114px;
 			height: 40px;
-			font-size: 20px;
+			@include font-dpr(10px);
 			color: #fff;
 			text-align: center;
 			right: 20px;
@@ -36,13 +36,13 @@ p,a,span{
 		margin-right: 20px;
 	}
 	.benefitsFont{
-		font-size: 24px;
+		@include font-dpr(12px);
 		color: #999;
 		.mt{
 			margin-top: -8px;
 		}
 		.numb{
-			font-size: 36px;
+			@include font-dpr(18px);
 			color: #ff8400;
 		}
 		.p{

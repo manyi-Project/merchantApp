@@ -8,7 +8,7 @@
 		background-color: #5e6b85;
 		overflow: hidden;
 		p{
-			font-size: 28px;
+			@include font-dpr(14px);
 			color: #FFFFFF;
 		}
 	}
@@ -23,7 +23,7 @@
 		height: 205px;
 		text-align: center;
 		color: #999999;
-		font-size: 24px;
+		@include font-dpr(12px);
 		background-color: #fff;
 		padding-top: 26px;
 		p{
@@ -35,7 +35,7 @@
 		height: 80px;
 		text-align: center;
 		line-height: 80px;
-		font-size: 24px;
+		@include font-dpr(12px);
 		color: #fff;
 		margin: 30px auto 0;
 		display: block;

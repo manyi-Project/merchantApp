@@ -1,6 +1,7 @@
 .hotelDetails {
   width: 720px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 88px; }
   .hotelDetails .banner {
     height: 270px;
     position: relative; }
@@ -71,20 +72,49 @@
     height: 32px;
     background-size: contain;
     margin-right: 10px; }
+  .hotelDetails .singleSelf {
+    padding: 26px 20px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #e3e3e3;
+    position: relative; }
+  .hotelDetails .singleImg {
+    width: 147px;
+    height: 100px;
+    margin-right: 35px; }
+    .hotelDetails .singleImg img {
+      width: 100%; }
+  .hotelDetails .singleFont {
+    font-size: 28px;
+    padding-top: 6px; }
+    .hotelDetails .singleFont p:first-child {
+      color: #333;
+      margin-bottom: 24px; }
+    .hotelDetails .singleFont .presentPrice {
+      color: #fc1212; }
+    .hotelDetails .singleFont .originalPrice {
+      color: #999;
+      margin-left: 48px;
+      text-decoration: line-through; }
+  .hotelDetails .rightArrow {
+    width: 13px;
+    height: 22px;
+    background: url("../images/left-arrow.png") 0 0 no-repeat;
+    background-size: contain;
+    right: 20px; }
   .hotelDetails .comment {
     padding: 0 20px;
     height: 80px;
     line-height: 80px;
     border-bottom: 1px solid #e3e3e3;
-    background-color: #FFFFFF; }
+    background-color: #FFFFFF;
+    position: relative; }
   .hotelDetails .commetLeft {
     font-size: 28px;
     color: #333333; }
   .hotelDetails .commetRight {
     font-size: 22px;
     color: #999;
-    padding-right: 26px;
-    background: url("../images/left-arrow.png") right center no-repeat; }
+    padding-right: 26px; }
   .hotelDetails .commentBox {
     padding: 20px;
     background-color: #FFFFFF;
@@ -98,19 +128,40 @@
   .hotelDetails .userStart {
     margin-top: 10px; }
   .hotelDetails .usename {
-    font-size: 22px;
+    font-size: 11px;
+    /*no*/
     color: #ff8400;
     margin-top: 8px; }
+    [data-dpr="2"] .hotelDetails .usename {
+      font-size: 22px;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails .usename {
+      font-size: 33px;
+      /*no*/ }
   .hotelDetails .userStart .userStartlist {
     margin-right: 10px; }
   .hotelDetails .userStart .font {
-    font-size: 22px;
+    font-size: 11px;
+    /*no*/
     color: #686868;
     margin-left: 12px; }
+    [data-dpr="2"] .hotelDetails .userStart .font {
+      font-size: 22px;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails .userStart .font {
+      font-size: 33px;
+      /*no*/ }
   .hotelDetails .commentFont {
-    font-size: 22px;
+    font-size: 11px;
+    /*no*/
     color: #686868;
     margin: 22px 0 26px 0; }
+    [data-dpr="2"] .hotelDetails .commentFont {
+      font-size: 22px;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails .commentFont {
+      font-size: 33px;
+      /*no*/ }
   .hotelDetails .commentImg2 {
     margin-bottom: 26px; }
     .hotelDetails .commentImg2 li {
@@ -151,10 +202,17 @@
     -moz-border-radius: 10px;
     border-radius: 10px; }
     .hotelDetails .zanInner p {
-      font-size: 34px;
+      font-size: 17px;
+      /*no*/
       color: #333333;
       text-align: center;
       line-height: 48px; }
+      [data-dpr="2"] .hotelDetails .zanInner p {
+        font-size: 34px;
+        /*no*/ }
+      [data-dpr="3"] .hotelDetails .zanInner p {
+        font-size: 51px;
+        /*no*/ }
   .hotelDetails .success {
     width: 73px;
     height: 73px;
@@ -164,3 +222,29 @@
   .hotelDetails .fail {
     background: url("../images/iconfont-fail.png") 0 0 no-repeat;
     background-size: contain; }
+  .hotelDetails .comments {
+    width: 720px;
+    height: 88px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 88px;
+    background-color: #ff8400;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    /*no*/
+    color: #FFFFFF; }
+    [data-dpr="2"] .hotelDetails .comments {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails .comments {
+      font-size: 42px;
+      /*no*/ }
+    .hotelDetails .comments .pencil {
+      width: 42px;
+      height: 42px;
+      margin-right: 12px;
+      background: url("../images/pencil.png") 0 0 no-repeat;
+      background-size: contain; }

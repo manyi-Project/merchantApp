@@ -7,7 +7,7 @@ $(function(){
         paginationClickable:true
     });
     function GetRTime(){
-        var EndTime= new Date('2016/05/9 16:00:00');
+        var EndTime= new Date('2016/05/16 11:00:00');
         var NowTime = new Date();
         var t =EndTime.getTime() - NowTime.getTime();
         var h= 0, m= 0,s=0;

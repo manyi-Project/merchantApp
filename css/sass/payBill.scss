@@ -2,6 +2,7 @@
 .payBill{
 	width: 720px;
 	margin: 0 auto;
+	@include font-dpr(14px);
 	.total{
 		margin-top: 10px;
 		padding: 26px 20px;
@@ -14,7 +15,6 @@
 		background-color: #efefef;
 		@include bdr-radius();
 		label{
-			font-size: 28px;
 			color: #333333;
 			padding-left: 27px;
 		}
@@ -22,7 +22,6 @@
 			width: 75%;
 			height: 28px;
 			background-color: #efefef;
-			font-size: 28px;
 		}
 
 	}
@@ -34,7 +33,6 @@
 		position: relative;
 	}
 	.couponLeft{
-		font-size: 28px;
 		height: 77px;
 		line-height: 77px;
 		color: #555;
@@ -53,7 +51,6 @@
 		margin: 45px auto 0;
 		line-height: 82px;
 		text-align: center;
-		font-size: 28px;
 		color: #FFFFFF;
 		@include bdr-radius();
 		background-color: #f8b063;

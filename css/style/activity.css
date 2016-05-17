@@ -13,10 +13,17 @@
     width: 50%;
     height: 80px;
     line-height: 80px;
-    font-size: 28px;
+    font-size: 14px;
+    /*no*/
     color: #555555;
     text-align: center;
     background-color: #FFFFFF; }
+    [data-dpr="2"] .activity .list li {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .activity .list li {
+      font-size: 42px;
+      /*no*/ }
     .activity .list li a {
       display: inline-block;
       width: 100%;
@@ -25,8 +32,15 @@
     height: 60px;
     line-height: 60px;
     padding-left: 20px;
-    font-size: 24px;
+    font-size: 12px;
+    /*no*/
     color: #999; }
+    [data-dpr="2"] .activity .tips {
+      font-size: 24px;
+      /*no*/ }
+    [data-dpr="3"] .activity .tips {
+      font-size: 36px;
+      /*no*/ }
   .activity .coupon {
     padding: 20px 20px 20px 160px;
     background-color: #FFFFFF;
@@ -41,15 +55,36 @@
     .activity .couponFont p {
       line-height: 64px; }
     .activity .couponFont p:first-child {
-      font-size: 28px;
+      font-size: 14px;
+      /*no*/
       color: #555; }
+      [data-dpr="2"] .activity .couponFont p:first-child {
+        font-size: 28px;
+        /*no*/ }
+      [data-dpr="3"] .activity .couponFont p:first-child {
+        font-size: 42px;
+        /*no*/ }
     .activity .couponFont p:last-child {
-      font-size: 24px;
+      font-size: 12px;
+      /*no*/
       color: #999; }
+      [data-dpr="2"] .activity .couponFont p:last-child {
+        font-size: 24px;
+        /*no*/ }
+      [data-dpr="3"] .activity .couponFont p:last-child {
+        font-size: 36px;
+        /*no*/ }
   .activity .pirce {
-    font-size: 24px;
+    font-size: 12px;
+    /*no*/
     color: #999999;
     line-height: 44px; }
+    [data-dpr="2"] .activity .pirce {
+      font-size: 24px;
+      /*no*/ }
+    [data-dpr="3"] .activity .pirce {
+      font-size: 36px;
+      /*no*/ }
   .activity .now {
     width: 110px;
     height: 40px;
@@ -61,4 +96,11 @@
     position: absolute;
     right: 20px;
     bottom: 24px;
-    font-size: 20px; }
+    font-size: 10px;
+    /*no*/ }
+    [data-dpr="2"] .activity .now {
+      font-size: 20px;
+      /*no*/ }
+    [data-dpr="3"] .activity .now {
+      font-size: 30px;
+      /*no*/ }

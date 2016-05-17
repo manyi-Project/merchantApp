@@ -15,11 +15,18 @@
       -webkit-box-flex: 1;
       -moz-box-flex: 1;
       box-flex: 1;
-      font-size: 28px;
+      font-size: 14px;
+      /*no*/
       color: #555555;
       height: 80px;
       line-height: 80px;
       text-align: center; }
+      [data-dpr="2"] .coupon .tapOut li {
+        font-size: 28px;
+        /*no*/ }
+      [data-dpr="3"] .coupon .tapOut li {
+        font-size: 42px;
+        /*no*/ }
       .coupon .tapOut li a {
         display: inline-block;
         width: 100%;
@@ -74,11 +81,25 @@
       text-align: center;
       font-size: 16px; }
     .coupon .left span {
-      font-size: 40px;
+      font-size: 20px;
+      /*no*/
       color: #ff8400; }
+      [data-dpr="2"] .coupon .left span {
+        font-size: 40px;
+        /*no*/ }
+      [data-dpr="3"] .coupon .left span {
+        font-size: 60px;
+        /*no*/ }
   .coupon .font {
     color: #999999;
-    font-size: 20px; }
+    font-size: 10px;
+    /*no*/ }
+    [data-dpr="2"] .coupon .font {
+      font-size: 20px;
+      /*no*/ }
+    [data-dpr="3"] .coupon .font {
+      font-size: 30px;
+      /*no*/ }
     .coupon .font p {
       line-height: 100%;
       margin-bottom: 14px; }
@@ -94,7 +115,8 @@
     height: 80px;
     text-align: center;
     line-height: 80px;
-    font-size: 28px;
+    font-size: 14px;
+    /*no*/
     color: #555555;
     margin: 78px auto 0;
     display: block;
@@ -103,3 +125,9 @@
     -webkit-box-shadow: 0 5px 10px #d2d1ce;
     -moz-box-shadow: 0 5px 10px #d2d1ce;
     box-shadow: 0 5px 10px #d2d1ce; }
+    [data-dpr="2"] .coupon .clickReceive {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .coupon .clickReceive {
+      font-size: 42px;
+      /*no*/ }

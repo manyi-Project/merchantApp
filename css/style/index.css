@@ -13,10 +13,17 @@
     .pageHome .search input {
       width: 100%;
       height: 100%;
-      font-size: 22px;
+      font-size: 11px;
+      /*no*/
       color: #999;
       background-color: #ebebeb;
       text-align: center; }
+      [data-dpr="2"] .pageHome .search input {
+        font-size: 22px;
+        /*no*/ }
+      [data-dpr="3"] .pageHome .search input {
+        font-size: 33px;
+        /*no*/ }
     .pageHome .search .searchImg {
       width: 20px;
       height: 20px;
@@ -28,7 +35,8 @@
     height: 300px; }
   .pageHome .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 19px;
+    /*no*/
     background: #fff;
     /* Center slide text vertically */
     display: -webkit-box;
@@ -43,6 +51,12 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center; }
+    [data-dpr="2"] .pageHome .swiper-slide {
+      font-size: 38px;
+      /*no*/ }
+    [data-dpr="3"] .pageHome .swiper-slide {
+      font-size: 57px;
+      /*no*/ }
   .pageHome .swiper-slide img {
     width: 100%;
     height: 100%; }
@@ -82,23 +96,44 @@
           width: 100%; }
       .pageHome .localClass .classList .font {
         margin-top: 15px;
-        font-size: 22px;
+        font-size: 11px;
+        /*no*/
         color: #555; }
+        [data-dpr="2"] .pageHome .localClass .classList .font {
+          font-size: 22px;
+          /*no*/ }
+        [data-dpr="3"] .pageHome .localClass .classList .font {
+          font-size: 33px;
+          /*no*/ }
   .pageHome .title {
     height: 79px;
     padding: 0 22px;
     border-bottom: 1px solid #e3e3e3; }
     .pageHome .title .name {
-      font-size: 28px;
+      font-size: 14px;
+      /*no*/
       color: #555;
       position: relative; }
+      [data-dpr="2"] .pageHome .title .name {
+        font-size: 28px;
+        /*no*/ }
+      [data-dpr="3"] .pageHome .title .name {
+        font-size: 42px;
+        /*no*/ }
     .pageHome .title .more {
-      font-size: 22px;
+      font-size: 11px;
+      /*no*/
       color: #999;
       position: relative;
       background: url("../images/left-arrow.png") right 0 no-repeat;
       background-size: contain;
       padding-right: 20px; }
+      [data-dpr="2"] .pageHome .title .more {
+        font-size: 22px;
+        /*no*/ }
+      [data-dpr="3"] .pageHome .title .more {
+        font-size: 33px;
+        /*no*/ }
   .pageHome .discount {
     margin-top: 20px;
     background-color: #FFFFFF; }
@@ -133,8 +168,15 @@
       color: #ff8400;
       background: #1d1d1d;
       text-align: center;
-      font-size: 24px;
+      font-size: 12px;
+      /*no*/
       border-radius: 5px; }
+      [data-dpr="2"] .pageHome .conuntdown span {
+        font-size: 24px;
+        /*no*/ }
+      [data-dpr="3"] .pageHome .conuntdown span {
+        font-size: 36px;
+        /*no*/ }
     .pageHome .conuntdown .dot {
       width: 25px;
       color: #333;
@@ -159,17 +201,45 @@
     margin-top: 15px;
     margin-bottom: 15px; }
   .pageHome .goodsname {
-    font-size: 28px;
+    font-size: 14px;
+    /*no*/
     color: #555555;
     line-height: 100%; }
+    [data-dpr="2"] .pageHome .goodsname {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .pageHome .goodsname {
+      font-size: 42px;
+      /*no*/ }
   .pageHome .position {
-    font-size: 24px;
+    font-size: 12px;
+    /*no*/
     color: #999;
     line-height: 100%; }
+    [data-dpr="2"] .pageHome .position {
+      font-size: 24px;
+      /*no*/ }
+    [data-dpr="3"] .pageHome .position {
+      font-size: 36px;
+      /*no*/ }
   .pageHome .goodspirce {
     color: #ff8400;
-    font-size: 28px;
+    font-size: 14px;
+    /*no*/
     line-height: 100%; }
+    [data-dpr="2"] .pageHome .goodspirce {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .pageHome .goodspirce {
+      font-size: 42px;
+      /*no*/ }
   .pageHome .saleNumb {
     color: #555555;
-    font-size: 24px; }
+    font-size: 12px;
+    /*no*/ }
+    [data-dpr="2"] .pageHome .saleNumb {
+      font-size: 24px;
+      /*no*/ }
+    [data-dpr="3"] .pageHome .saleNumb {
+      font-size: 36px;
+      /*no*/ }

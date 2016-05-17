@@ -20,22 +20,22 @@
 		overflow: hidden;
 		position: relative;
 		h3{
-			font-size: 24px;
+			@include font-dpr(12px);
 			margin: 38px auto 48px;
 			line-height: 100%;
 		}
 	}
 	.extras{
-		font-size: 29px;
+		@include font-dpr(15px);
 		line-height: 100%;
 		span{
-			font-size: 46px;
+			@include font-dpr(23px);
 		}
 	}
 	.validity{
 		height: 70px;
 		line-height: 70px;
-		font-size: 24px;
+		@include font-dpr(12px);
 		position: absolute;
 		background: url("../images/opacity.png") 0 0 repeat;
 		left: 0;
@@ -46,14 +46,14 @@
 		margin-top: 53px;
 		padding-left: 40px;
 		h3{
-			font-size: 28px;
+			@include font-dpr(14px);
 			color: #555555;
 			line-height: 100%;
 		}
 		.tips{
 			margin-top: 44px;
 			padding-left: 42px;
-			font-size: 22px;
+			@include font-dpr(11px);
 			color: #999;
 			p{
 				line-height: 28px;
@@ -65,7 +65,7 @@
 		height: 80px;
 		text-align: center;
 		line-height: 80px;
-		font-size: 28px;
+		@include font-dpr(14px);
 		color: #555555;
 		margin: 78px auto 0;
 		@include boxshadow;

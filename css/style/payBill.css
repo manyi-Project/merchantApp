@@ -1,6 +1,14 @@
 .payBill {
   width: 720px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 14px;
+  /*no*/ }
+  [data-dpr="2"] .payBill {
+    font-size: 28px;
+    /*no*/ }
+  [data-dpr="3"] .payBill {
+    font-size: 42px;
+    /*no*/ }
   .payBill .total {
     margin-top: 10px;
     padding: 26px 20px;
@@ -14,14 +22,12 @@
     -moz-border-radius: 10px;
     border-radius: 10px; }
     .payBill .totalInner label {
-      font-size: 28px;
       color: #333333;
       padding-left: 27px; }
     .payBill .totalInner input {
       width: 75%;
       height: 28px;
-      background-color: #efefef;
-      font-size: 28px; }
+      background-color: #efefef; }
   .payBill .coupons {
     display: block;
     padding: 0 46px;
@@ -29,7 +35,6 @@
     border-bottom: 1px solid #e3e3e3;
     position: relative; }
   .payBill .couponLeft {
-    font-size: 28px;
     height: 77px;
     line-height: 77px;
     color: #555; }
@@ -46,7 +51,6 @@
     margin: 45px auto 0;
     line-height: 82px;
     text-align: center;
-    font-size: 28px;
     color: #FFFFFF;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
