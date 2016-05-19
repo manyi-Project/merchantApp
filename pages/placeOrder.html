@@ -15,7 +15,7 @@
 			<div class="boxOut">
 				<div class="herBox clearself">
 					<span class="fl">单人自助餐</span>
-					<span id="unitPrice" class="fr" data-value="200"></span>
+					<span class="fr"><span id="unitPrice">110</span>元</span>
 				</div>
 			</div>
 			<div class="boxOut">
@@ -23,9 +23,9 @@
 					<span class="fl">数量</span>
 				<span class="fr">
 					<span class="addAndSub">
-						<input class="sub" type="button" value="-"/>
-						<input class="val" type="text" disabled value="1"/>
-						<input class="add" type="button" value="+"/>
+						<input class="sub fl" type="button" value="-"/>
+						<input class="val fl" type="text" disabled value="1"/>
+						<input class="add fl" type="button" value="+"/>
 					</span>
 				</span>
 				</div>
@@ -33,20 +33,20 @@
 			<div class="boxOut">
 				<div class="herBox clearself">
 					<span class="fl">小计</span>
-					<span id="subtotal" data-value="100" class="fr"></span>
+					<span class="fr"><span id="subtotal"></span>元</span>
 				</div>
 			</div>
 		</div>
 		<div class="boxOne">
 			<div class="boxOut">
 				<div class="herBox clearself">
-					<span id="coupon" class="fl" data-value="20">20元优惠券</span>
+					<span class="fl"><span  id="coupon">20</span>元优惠券</span>
 				</div>
 			</div>
 			<div class="boxOut">
 				<div class="herBox clearself">
 					<span class="fl">订单合计</span>
-					<span id="total" data-value="" class="fr"></span>
+					<span class="fr"><span  id="total"></span>元</span>
 				</div>
 			</div>
 		</div>
@@ -67,7 +67,7 @@
 			var $_val = $(".val");
 			$(".sub").on("click",function(){
 				$(this).addClass("active").siblings(".add").removeClass("active");
-				if ($_val.val()<1){return false}
+				if ($_val.val()<=1){return false}
 				var $val = $_val.val()-1;
 				$_val.val($val);
 				calculator();
@@ -80,21 +80,17 @@
 			});
 		})();
 
-		var calculator = function(){
-			arguments.callee();
-			var $unitPrice = $("#unitPrice").attr("data-value");
-			var $coupon = $("#coupon").attr("data-value");
+		 function calculator(){
+			var $unitPrice = $("#unitPrice").html();
+			var $coupon = $("#coupon").html();
 			var $val=$(".val").val();
-			$("#unitPrice").html($("#unitPrice").attr("data-value")+"元");
-			$("#subtotal").attr("data-value",$val*$unitPrice);
-			var $subtotal =$("#subtotal").attr("data-value");
-			$("#subtotal").html($subtotal+"元");
-			$("#total").attr("data-value",$subtotal-$coupon);
-			var $total = $("#total").attr("data-value");
-			$("#total").html($total+"元");
-
+			$("#subtotal").html($val*$unitPrice);
+			var $subtotal =$("#subtotal").html();
+			$("#total").html($subtotal-$coupon);
+			var $total = $("#total").html()
+			$("#total").html($total);
 		}
-
+		calculator();
 
 	})
 </script>

@@ -51,6 +51,9 @@
 		color: #868686;
 		@include font-dpr(14px);
 	}
+	.addAndSub > input[type="button"]{
+		@include font-dpr(20px);
+	}
 	.submitOrder{
 		width: 680px;
 		height: 82px;
