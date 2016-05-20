@@ -96,3 +96,8 @@
       [data-dpr="3"] .useCoupon .couponBox .p2 {
         font-size: 33px;
         /*no*/ }
+  .useCoupon .couponBoxPost {
+    background: url("../images/coupon2.png") 0 0 no-repeat;
+    background-size: contain; }
+    .useCoupon .couponBoxPost .nowUse {
+      color: #666; }

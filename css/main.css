@@ -774,7 +774,7 @@
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    background-color: #ff921d;
+    background-color: #ff8400;
     color: #FFFFFF;
     font-size: 11px;
     /*no*/
@@ -1206,7 +1206,7 @@ p, a, span {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    background-color: #f8b063; }
+    background-color: #ff8400; }
 
 .placeOrder {
   width: 720px;
@@ -1571,6 +1571,11 @@ p, a, span {
       [data-dpr="3"] .useCoupon .couponBox .p2 {
         font-size: 33px;
         /*no*/ }
+  .useCoupon .couponBoxPost {
+    background: url("../images/coupon2.png") 0 0 no-repeat;
+    background-size: contain; }
+    .useCoupon .couponBoxPost .nowUse {
+      color: #666; }
 
 .voucherDetails {
   width: 720px;

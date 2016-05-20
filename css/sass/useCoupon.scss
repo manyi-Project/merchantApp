@@ -62,4 +62,11 @@
 			@include font-dpr(11px);
 		}
 	}
+	.couponBoxPost{
+		background: url("../images/coupon2.png") 0 0 no-repeat;
+		background-size: contain;
+		.nowUse{
+			color: #666;
+		}
+	}
 }
