@@ -1,3 +1,29 @@
+@charset "UTF-8";
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .activity {
   width: 720px;
   margin: 0 auto; }
@@ -105,6 +131,31 @@
       font-size: 30px;
       /*no*/ }
 
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .activityRule {
   width: 720px;
   margin: 0 auto; }
@@ -146,7 +197,195 @@
       font-size: 39px;
       /*no*/ }
 
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
+input::-webkit-input-placeholder {
+  font-size: 14px;
+  /*no*/
+  color: #999; }
+  [data-dpr="2"] input::-webkit-input-placeholder {
+    font-size: 28px;
+    /*no*/ }
+  [data-dpr="3"] input::-webkit-input-placeholder {
+    font-size: 42px;
+    /*no*/ }
 
+input:-moz-placeholder {
+  font-size: 14px;
+  /*no*/
+  color: #999; }
+  [data-dpr="2"] input:-moz-placeholder {
+    font-size: 28px;
+    /*no*/ }
+  [data-dpr="3"] input:-moz-placeholder {
+    font-size: 42px;
+    /*no*/ }
+
+input::-moz-placeholder {
+  font-size: 14px;
+  /*no*/
+  color: #999; }
+  [data-dpr="2"] input::-moz-placeholder {
+    font-size: 28px;
+    /*no*/ }
+  [data-dpr="3"] input::-moz-placeholder {
+    font-size: 42px;
+    /*no*/ }
+
+input:-ms-input-placeholder {
+  font-size: 14px;
+  /*no*/
+  color: #999; }
+  [data-dpr="2"] input:-ms-input-placeholder {
+    font-size: 28px;
+    /*no*/ }
+  [data-dpr="3"] input:-ms-input-placeholder {
+    font-size: 42px;
+    /*no*/ }
+
+/*è®¢å•åˆ—è¡¨å…¬å…±å¤´*/
+.statusBar {
+  width: 720px;
+  margin: 0 auto;
+  height: 100px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%); }
+  .statusBar li {
+    width: 20%;
+    float: left;
+    height: 100px;
+    line-height: 100px; }
+  .statusBar a {
+    width: 100%;
+    line-height: normal;
+    color: #666;
+    display: inline-block;
+    border-right: 1px solid #e3e3e3;
+    /*no*/
+    font-size: 14px;
+    /*no*/
+    text-align: center; }
+    [data-dpr="2"] .statusBar a {
+      border-right: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .statusBar a {
+      border-right: 3px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="2"] .statusBar a {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .statusBar a {
+      font-size: 42px;
+      /*no*/ }
+  .statusBar li:last-child a {
+    border-right: none;
+    /*no*/ }
+
+.selected {
+  border-bottom: 2px solid #ff8400;
+  /*no*/ }
+  [data-dpr="2"] .selected {
+    border-bottom: 4px solid #ff8400;
+    /*no*/ }
+  [data-dpr="3"] .selected {
+    border-bottom: 6px solid #ff8400;
+    /*no*/ }
+
+.selected a {
+  color: #ff8400; }
+
+.common_noOrder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.common_noOrder .bigfont {
+  font-size: 15px;
+  /*no*/
+  color: #333;
+  line-height: 100%; }
+  [data-dpr="2"] .common_noOrder .bigfont {
+    font-size: 30px;
+    /*no*/ }
+  [data-dpr="3"] .common_noOrder .bigfont {
+    font-size: 45px;
+    /*no*/ }
+
+.common_noOrder .smallfont {
+  font-size: 10px;
+  /*no*/
+  color: #999;
+  line-height: 100%;
+  margin-top: 16px; }
+  [data-dpr="2"] .common_noOrder .smallfont {
+    font-size: 20px;
+    /*no*/ }
+  [data-dpr="3"] .common_noOrder .smallfont {
+    font-size: 30px;
+    /*no*/ }
+
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .coupon {
   width: 720px;
   margin: 20px auto 0; }
@@ -182,13 +421,22 @@
         border-right: 1px solid #e3e3e3; }
     .coupon .tapOut .active {
       color: #ffa867;
-      border-bottom: 1px solid #ffa867; }
+      border-bottom: 1px solid #ffa867;
+      /*no*/ }
+      [data-dpr="2"] .coupon .tapOut .active {
+        border-bottom: 2px solid #ffa867;
+        /*no*/ }
+      [data-dpr="3"] .coupon .tapOut .active {
+        border-bottom: 3px solid #ffa867;
+        /*no*/ }
     .coupon .tapOut li:last-child a {
       border-right: none; }
   .coupon .couponCont {
     width: 680px;
     height: 200px;
     margin: 20px auto 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     background-color: #FFFFFF;
     overflow: hidden;
@@ -207,7 +455,14 @@
     padding-right: 20px;
     text-align: right;
     color: #999;
-    border-top: 1px dashed #999999; }
+    border-top: 1px dashed #999;
+    /*no*/ }
+    [data-dpr="2"] .coupon .couponCode {
+      border-top: 2px dashed #999;
+      /*no*/ }
+    [data-dpr="3"] .coupon .couponCode {
+      border-top: 3px dashed #999;
+      /*no*/ }
   .coupon .left {
     height: 100%;
     margin-right: 26px; }
@@ -215,11 +470,18 @@
       width: 20px;
       height: 20px;
       display: inline-block;
-      border: 1px solid #DBDBDB;
+      border: 1px solid #dbdbdb;
+      /*no*/
       background-color: #e0e0e0;
       margin-right: 10px;
       cursor: pointer;
       position: relative; }
+      [data-dpr="2"] .coupon .left .checkbox {
+        border: 2px solid #dbdbdb;
+        /*no*/ }
+      [data-dpr="3"] .coupon .left .checkbox {
+        border: 3px solid #dbdbdb;
+        /*no*/ }
     .coupon .left .chk_1:checked + label:after {
       content: '\2714';
       position: absolute;
@@ -228,7 +490,14 @@
       color: #758794;
       width: 100%;
       text-align: center;
-      font-size: 16px; }
+      font-size: 8px;
+      /*no*/ }
+      [data-dpr="2"] .coupon .left .chk_1:checked + label:after {
+        font-size: 16px;
+        /*no*/ }
+      [data-dpr="3"] .coupon .left .chk_1:checked + label:after {
+        font-size: 24px;
+        /*no*/ }
     .coupon .left span {
       font-size: 20px;
       /*no*/
@@ -262,14 +531,16 @@
   .coupon .clickReceive {
     width: 680px;
     height: 80px;
-    text-align: center;
     line-height: 80px;
+    text-align: center;
     font-size: 14px;
     /*no*/
     color: #555555;
     margin: 78px auto 0;
     display: block;
     background-color: #FFFFFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     -webkit-box-shadow: 0 5px 10px #d2d1ce;
     -moz-box-shadow: 0 5px 10px #d2d1ce;
@@ -281,6 +552,31 @@
       font-size: 42px;
       /*no*/ }
 
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .deliciousFoodList {
   width: 720px;
   margin: 0 auto; }
@@ -300,11 +596,16 @@
     .deliciousFoodList .foodImg img {
       width: 100%; }
   .deliciousFoodList .footFont {
-    padding-top: 8px; }
+    padding-top: 8px;
+    width: 530px; }
     .deliciousFoodList .footFont h3 {
       font-size: 14px;
       /*no*/
-      color: #333333; }
+      color: #333333;
+      width: 500px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
       [data-dpr="2"] .deliciousFoodList .footFont h3 {
         font-size: 28px;
         /*no*/ }
@@ -315,7 +616,11 @@
     margin-top: 10px;
     font-size: 20px; }
     .deliciousFoodList .start .starslist {
+      width: 22px;
+      height: 22px;
       margin-right: 9px; }
+      .deliciousFoodList .start .starslist img {
+        width: 100%; }
     .deliciousFoodList .start .span {
       margin-left: 6px;
       color: #333;
@@ -327,7 +632,7 @@
     font-size: 0; }
   .deliciousFoodList .group > span {
     height: 30px;
-    line-height: 50px;
+    line-height: 30px;
     color: #686868;
     font-size: 10px;
     /*no*/ }
@@ -362,6 +667,31 @@
     background-color: #ff5a00;
     margin-right: 14px; }
 
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .hotelDetails {
   width: 720px;
   margin: 0 auto;
@@ -384,18 +714,39 @@
       padding-top: 38px;
       color: #FFFFFF; }
       .hotelDetails .banner .photo .span {
-        font-size: 18px; }
+        font-size: 9px;
+        /*no*/ }
+        [data-dpr="2"] .hotelDetails .banner .photo .span {
+          font-size: 18px;
+          /*no*/ }
+        [data-dpr="3"] .hotelDetails .banner .photo .span {
+          font-size: 27px;
+          /*no*/ }
   .hotelDetails .payBil {
     padding: 22px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #e3e3e3;
     position: relative; }
     .hotelDetails .payBil h3 {
-      font-size: 28px;
+      font-size: 14px;
+      /*no*/
       color: #333; }
+      [data-dpr="2"] .hotelDetails .payBil h3 {
+        font-size: 28px;
+        /*no*/ }
+      [data-dpr="3"] .hotelDetails .payBil h3 {
+        font-size: 42px;
+        /*no*/ }
   .hotelDetails .start {
     margin-top: 10px;
-    font-size: 20px; }
+    font-size: 10px;
+    /*no*/ }
+    [data-dpr="2"] .hotelDetails .start {
+      font-size: 20px;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails .start {
+      font-size: 30px;
+      /*no*/ }
     .hotelDetails .start .starslist {
       margin-right: 9px; }
     .hotelDetails .start .span {
@@ -409,20 +760,34 @@
     height: 52px;
     line-height: 52px;
     text-align: center;
-    font-size: 26px;
+    font-size: 13px;
+    /*no*/
     right: 40px;
     background-color: #ff8400;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     color: #FFFFFF; }
+    [data-dpr="2"] .hotelDetails .payBilButton {
+      font-size: 26px;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails .payBilButton {
+      font-size: 39px;
+      /*no*/ }
   .hotelDetails .dress {
     height: 125px;
     padding: 20px 20px;
     border-bottom: 1px solid #e3e3e3;
     background-color: #FFFFFF;
-    font-size: 22px;
+    font-size: 11px;
+    /*no*/
     color: #686868; }
+    [data-dpr="2"] .hotelDetails .dress {
+      font-size: 22px;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails .dress {
+      font-size: 33px;
+      /*no*/ }
     .hotelDetails .dress p {
       height: 32px;
       line-height: 32px;
@@ -448,8 +813,15 @@
     .hotelDetails .singleImg img {
       width: 100%; }
   .hotelDetails .singleFont {
-    font-size: 28px;
+    font-size: 14px;
+    /*no*/
     padding-top: 6px; }
+    [data-dpr="2"] .hotelDetails .singleFont {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails .singleFont {
+      font-size: 42px;
+      /*no*/ }
     .hotelDetails .singleFont p:first-child {
       color: #333;
       margin-bottom: 24px; }
@@ -470,19 +842,47 @@
     height: 80px;
     line-height: 80px;
     border-bottom: 1px solid #e3e3e3;
+    /*no*/
     background-color: #FFFFFF;
     position: relative; }
+    [data-dpr="2"] .hotelDetails .comment {
+      border-bottom: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails .comment {
+      border-bottom: 3px solid #e3e3e3;
+      /*no*/ }
   .hotelDetails .commetLeft {
-    font-size: 28px;
+    font-size: 14px;
+    /*no*/
     color: #333333; }
+    [data-dpr="2"] .hotelDetails .commetLeft {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails .commetLeft {
+      font-size: 42px;
+      /*no*/ }
   .hotelDetails .commetRight {
-    font-size: 22px;
+    font-size: 11px;
+    /*no*/
     color: #999;
     padding-right: 26px; }
+    [data-dpr="2"] .hotelDetails .commetRight {
+      font-size: 22px;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails .commetRight {
+      font-size: 33px;
+      /*no*/ }
   .hotelDetails .commentBox {
     padding: 20px;
     background-color: #FFFFFF;
-    border-bottom: 1px solid #e3e3e3; }
+    border-bottom: 1px solid #e3e3e3;
+    /*no*/ }
+    [data-dpr="2"] .hotelDetails .commentBox {
+      border-bottom: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails .commentBox {
+      border-bottom: 3px solid #e3e3e3;
+      /*no*/ }
   .hotelDetails .commentImg {
     width: 75px;
     height: 75px;
@@ -589,9 +989,9 @@
   .hotelDetails .comments {
     width: 720px;
     height: 88px;
+    line-height: 88px;
     margin: 0 auto;
     text-align: center;
-    line-height: 88px;
     background-color: #ff8400;
     position: fixed;
     left: 0;
@@ -613,6 +1013,31 @@
       background: url("../images/pencil.png") 0 0 no-repeat;
       background-size: contain; }
 
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .hotelDetails2 {
   padding-bottom: 142px; }
   .hotelDetails2 .groupBuy {
@@ -734,7 +1159,14 @@
     right: 0;
     bottom: 0;
     border-top: 1px solid #e3e3e3;
+    /*no*/
     background-color: #FFFFFF; }
+    [data-dpr="2"] .hotelDetails2 .panicBuy {
+      border-top: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails2 .panicBuy {
+      border-top: 3px solid #e3e3e3;
+      /*no*/ }
     .hotelDetails2 .panicBuy .pirce, .hotelDetails2 .panicBuy .unit {
       color: #fc1212;
       font-size: 14px;
@@ -786,6 +1218,31 @@
       font-size: 33px;
       /*no*/ }
 
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .pageHome {
   width: 720px;
   margin: 0 auto; }
@@ -1032,6 +1489,31 @@
       font-size: 36px;
       /*no*/ }
 
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .message {
   width: 720px;
   margin: 20px auto 0;
@@ -1084,9 +1566,31 @@
       font-size: 30px;
       /*no*/ }
 
-p, a, span {
-  line-height: 100%; }
-
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .moreBenefits {
   width: 720px;
   margin: 20px auto 0;
@@ -1100,12 +1604,12 @@ p, a, span {
     .moreBenefits .benefitsBox .now {
       width: 114px;
       height: 40px;
+      line-height: 40px;
       font-size: 10px;
       /*no*/
       color: #fff;
       text-align: center;
       right: 20px;
-      line-height: 40px;
       background-color: #ff8400;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
@@ -1124,6 +1628,8 @@ p, a, span {
     width: 134px;
     height: 100px;
     margin-right: 20px; }
+    .moreBenefits .benefitsImg img {
+      width: 100%; }
   .moreBenefits .benefitsFont {
     font-size: 12px;
     /*no*/
@@ -1146,9 +1652,419 @@ p, a, span {
       [data-dpr="3"] .moreBenefits .benefitsFont .numb {
         font-size: 54px;
         /*no*/ }
-    .moreBenefits .benefitsFont .p {
+    .moreBenefits .benefitsFont p {
       margin: 12px auto; }
 
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
+.orderDetailPay {
+  width: 720px;
+  margin: 0 auto;
+  /*ÎÒµÄ*/ }
+  .orderDetailPay .o_header {
+    position: relative; }
+  .orderDetailPay .a_back {
+    font-size: 14px;
+    /*no*/
+    color: #fff;
+    background: url(../images/left_arrow.png) no-repeat;
+    background-size: 18px 30px;
+    position: absolute;
+    display: block;
+    top: 33px;
+    left: 20px;
+    padding-left: 20px;
+    line-height: 30px; }
+    [data-dpr="2"] .orderDetailPay .a_back {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .a_back {
+      font-size: 42px;
+      /*no*/ }
+  .orderDetailPay .o_order {
+    margin: 10px 0;
+    padding: 8px 20px;
+    background: #fff; }
+  .orderDetailPay .o_orderLeft {
+    float: left;
+    width: 163px;
+    height: 163px;
+    margin-right: 24px; }
+  .orderDetailPay .o_orderRight {
+    float: left;
+    width: 436px;
+    position: relative; }
+  .orderDetailPay .o_title {
+    font-size: 14px;
+    /*no*/
+    color: #333; }
+    [data-dpr="2"] .orderDetailPay .o_title {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .o_title {
+      font-size: 42px;
+      /*no*/ }
+  .orderDetailPay .o_intro {
+    font-size: 11px;
+    /*no*/
+    color: #999;
+    margin: 12px 0 24px 0; }
+    [data-dpr="2"] .orderDetailPay .o_intro {
+      font-size: 22px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .o_intro {
+      font-size: 33px;
+      /*no*/ }
+  .orderDetailPay .o_price {
+    font-size: 14px;
+    /*no*/
+    color: #FF8400; }
+    [data-dpr="2"] .orderDetailPay .o_price {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .o_price {
+      font-size: 42px;
+      /*no*/ }
+  .orderDetailPay .o_num {
+    font-size: 14px;
+    /*no*/
+    color: #FF8400;
+    position: absolute;
+    bottom: 0;
+    right: 40px; }
+    [data-dpr="2"] .orderDetailPay .o_num {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .o_num {
+      font-size: 42px;
+      /*no*/ }
+  .orderDetailPay .o_orderState {
+    background-color: #fff;
+    margin-bottom: 28px; }
+  .orderDetailPay .o_orderCode {
+    width: 100%;
+    height: 82px;
+    border-bottom: 2px solid #e3e3e3;
+    /*no*/
+    padding-left: 20px;
+    line-height: 80px;
+    color: #999;
+    font-size: 12px;
+    /*no*/ }
+    [data-dpr="2"] .orderDetailPay .o_orderCode {
+      border-bottom: 4px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .o_orderCode {
+      border-bottom: 6px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="2"] .orderDetailPay .o_orderCode {
+      font-size: 24px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .o_orderCode {
+      font-size: 36px;
+      /*no*/ }
+  .orderDetailPay .o_subState {
+    margin-top: 24px;
+    color: #999;
+    font-size: 12px;
+    /*no*/ }
+    [data-dpr="2"] .orderDetailPay .o_subState {
+      font-size: 24px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .o_subState {
+      font-size: 36px;
+      /*no*/ }
+  .orderDetailPay .o_subStateLeft {
+    float: left;
+    width: 146px; }
+  .orderDetailPay .o_subStateLeft span {
+    float: right; }
+  .orderDetailPay .o_subStateRight {
+    float: left;
+    width: 550px;
+    word-break: break-all; }
+  .orderDetailPay .o_color {
+    color: #FF8400; }
+  .orderDetailPay .o_addressInfo {
+    padding: 0 20px; }
+  .orderDetailPay .o_subAddressInfo {
+    padding: 52px 0 22px 0;
+    border-bottom: 2px solid #e3e3e3;
+    /*no*/
+    color: #868686;
+    font-size: 14px;
+    /*no*/ }
+    [data-dpr="2"] .orderDetailPay .o_subAddressInfo {
+      border-bottom: 4px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .o_subAddressInfo {
+      border-bottom: 6px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="2"] .orderDetailPay .o_subAddressInfo {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .o_subAddressInfo {
+      font-size: 42px;
+      /*no*/ }
+  .orderDetailPay .o_invoice {
+    padding-bottom: 24px;
+    border-bottom: 2px solid #e3e3e3;
+    /*no*/ }
+    [data-dpr="2"] .orderDetailPay .o_invoice {
+      border-bottom: 4px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .o_invoice {
+      border-bottom: 6px solid #e3e3e3;
+      /*no*/ }
+  .orderDetailPay .o_remark {
+    width: 100%;
+    height: 60px;
+    line-height: 60px; }
+  .orderDetailPay .o_subState2 {
+    margin: 0; }
+  .orderDetailPay .o_again {
+    float: right;
+    width: 180px;
+    height: 48px;
+    line-height: 48px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-bottom: 1px solid #999;
+    /*no*/
+    color: #666;
+    text-align: center;
+    margin: 24px 38px 0 0;
+    background-color: #fff; }
+    [data-dpr="2"] .orderDetailPay .o_again {
+      border-bottom: 2px solid #999;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .o_again {
+      border-bottom: 3px solid #999;
+      /*no*/ }
+  .orderDetailPay .o_evaluate {
+    float: right;
+    width: 180px;
+    height: 48px;
+    line-height: 48px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #f4471f;
+    text-align: center;
+    margin-top: 24px; }
+  .orderDetailPay .od_shadow {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 20; }
+  .orderDetailPay .od_pop {
+    width: 470px;
+    height: 244px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .orderDetailPay .od_confirm {
+    width: 100%;
+    height: 148px;
+    line-height: 148px;
+    text-align: center;
+    font-size: 14px;
+    /*no*/
+    color: #666;
+    border-bottom: 1px solid #e3e3e3;
+    /*no*/ }
+    [data-dpr="2"] .orderDetailPay .od_confirm {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .od_confirm {
+      font-size: 42px;
+      /*no*/ }
+    [data-dpr="2"] .orderDetailPay .od_confirm {
+      border-bottom: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .od_confirm {
+      border-bottom: 3px solid #e3e3e3;
+      /*no*/ }
+  .orderDetailPay .od_confirmOpt span {
+    float: left;
+    width: 90px;
+    height: 42px;
+    line-height: 42px;
+    background-color: #FF8400;
+    color: #fff;
+    font-size: 12px;
+    /*no*/
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 26px 0 0 90px; }
+    [data-dpr="2"] .orderDetailPay .od_confirmOpt span {
+      font-size: 24px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .od_confirmOpt span {
+      font-size: 36px;
+      /*no*/ }
+  .orderDetailPay .od_tel {
+    text-align: center;
+    font-size: 14px;
+    /*no*/
+    color: #666; }
+    [data-dpr="2"] .orderDetailPay .od_tel {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .od_tel {
+      font-size: 42px;
+      /*no*/ }
+  .orderDetailPay .od_tel p {
+    margin: 40px 0 15px 0; }
+  .orderDetailPay .od_subtel {
+    display: inline-block;
+    width: 312px;
+    height: 46px;
+    border: none;
+    border: 1px solid #cbcbcb;
+    /*no*/ }
+    [data-dpr="2"] .orderDetailPay .od_subtel {
+      border: 2px solid #cbcbcb;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .od_subtel {
+      border: 3px solid #cbcbcb;
+      /*no*/ }
+  .orderDetailPay .my_confirm {
+    line-height: 28px;
+    font-size: 14px;
+    /*no*/ }
+    [data-dpr="2"] .orderDetailPay .my_confirm {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .my_confirm {
+      font-size: 42px;
+      /*no*/ }
+  .orderDetailPay .my_jifen {
+    color: #999;
+    font-size: 9px;
+    /*no*/ }
+    [data-dpr="2"] .orderDetailPay .my_jifen {
+      font-size: 18px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .my_jifen {
+      font-size: 27px;
+      /*no*/ }
+  .orderDetailPay .my_gongxi {
+    padding: 40px 0 25px 0; }
+  .orderDetailPay .od_confirmOpt .my_insure {
+    margin-left: 190px; }
+  .orderDetailPay .op_bottom {
+    padding: 0 20px;
+    margin: 60px 0 20px 0; }
+  .orderDetailPay .op_pay {
+    display: block;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    /*no*/
+    background-color: #F4471F;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+    [data-dpr="2"] .orderDetailPay .op_pay {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .op_pay {
+      font-size: 42px;
+      /*no*/ }
+  .orderDetailPay .op_subStateRight em {
+    display: block;
+    float: right;
+    width: 13px;
+    height: 22px;
+    background: url(../images/left-arrow.png) no-repeat;
+    background-size: 13px 22px;
+    margin: 6px 0 0 20px; }
+  .orderDetailPay .op_substate {
+    border-bottom: 1px solid #e3e3e3;
+    /*no*/
+    padding-bottom: 24px; }
+    [data-dpr="2"] .orderDetailPay .op_substate {
+      border-bottom: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .op_substate {
+      border-bottom: 3px solid #e3e3e3;
+      /*no*/ }
+  .orderDetailPay .op_addAddress em {
+    float: right;
+    width: 34px;
+    height: 34px;
+    background: url(../images/iconfont-jia.png) no-repeat;
+    background-size: 34px 34px; }
+
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .payBill {
   width: 720px;
   margin: 0 auto;
@@ -1199,8 +2115,8 @@ p, a, span {
     display: block;
     width: 680px;
     height: 82px;
-    margin: 45px auto 0;
     line-height: 82px;
+    margin: 45px auto 0;
     text-align: center;
     color: #FFFFFF;
     -webkit-border-radius: 10px;
@@ -1208,6 +2124,31 @@ p, a, span {
     border-radius: 10px;
     background-color: #ff8400; }
 
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .placeOrder {
   width: 720px;
   margin: 0 auto; }
@@ -1246,6 +2187,12 @@ p, a, span {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px; }
+    [data-dpr="2"] .placeOrder .addAndSub {
+      border: 2px solid #acacac;
+      /*no*/ }
+    [data-dpr="3"] .placeOrder .addAndSub {
+      border: 3px solid #acacac;
+      /*no*/ }
     .placeOrder .addAndSub .add, .placeOrder .addAndSub .sub {
       width: 52px; }
     .placeOrder .addAndSub .val {
@@ -1254,12 +2201,24 @@ p, a, span {
       /*no*/
       border-left: 1px solid #acacac;
       /*no*/ }
+      [data-dpr="2"] .placeOrder .addAndSub .val {
+        border-right: 2px solid #acacac;
+        /*no*/ }
+      [data-dpr="3"] .placeOrder .addAndSub .val {
+        border-right: 3px solid #acacac;
+        /*no*/ }
+      [data-dpr="2"] .placeOrder .addAndSub .val {
+        border-left: 2px solid #acacac;
+        /*no*/ }
+      [data-dpr="3"] .placeOrder .addAndSub .val {
+        border-left: 3px solid #acacac;
+        /*no*/ }
     .placeOrder .addAndSub .active {
       color: #ff8400; }
   .placeOrder .addAndSub > input {
     background-color: inherit;
-    height: 52px;
     text-align: center;
+    height: 52px;
     line-height: 52px;
     color: #868686;
     font-size: 14px;
@@ -1282,8 +2241,8 @@ p, a, span {
   .placeOrder .submitOrder {
     width: 680px;
     height: 82px;
-    display: block;
     line-height: 82px;
+    display: block;
     text-align: center;
     color: #FFFFFF;
     font-size: 14px;
@@ -1300,6 +2259,31 @@ p, a, span {
       font-size: 42px;
       /*no*/ }
 
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .receiveCoupon {
   width: 720px;
   margin: 0 auto; }
@@ -1394,8 +2378,8 @@ p, a, span {
   .receiveCoupon .clickReceive {
     width: 680px;
     height: 80px;
-    text-align: center;
     line-height: 80px;
+    text-align: center;
     font-size: 14px;
     /*no*/
     color: #555555;
@@ -1414,6 +2398,31 @@ p, a, span {
       font-size: 42px;
       /*no*/ }
 
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .receiveSuccess {
   width: 720px;
   margin: 0 auto; }
@@ -1457,8 +2466,8 @@ p, a, span {
   .receiveSuccess .lookCoupon {
     width: 680px;
     height: 80px;
-    text-align: center;
     line-height: 80px;
+    text-align: center;
     font-size: 12px;
     /*no*/
     color: #fff;
@@ -1473,6 +2482,411 @@ p, a, span {
       font-size: 36px;
       /*no*/ }
 
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
+.tipss {
+  width: 720px;
+  height: 56px;
+  line-height: 56px;
+  background-color: #ffffff;
+  padding-left: 20px;
+  color: #ff8d24;
+  font-size: 14px;
+  /*no*/
+  position: fixed;
+  top: 100px;
+  z-index: 100;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%); }
+  [data-dpr="2"] .tipss {
+    font-size: 28px;
+    /*no*/ }
+  [data-dpr="3"] .tipss {
+    font-size: 42px;
+    /*no*/ }
+
+.all_checkbox {
+  width: 720px;
+  padding: 10px 0 10px 20px;
+  background-color: #f8f6f3;
+  position: fixed;
+  top: 156px;
+  z-index: 100;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.input_checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: #e0e0e0;
+  float: left;
+  outline: 0; }
+
+.checkbox_font {
+  height: 20px;
+  line-height: 20px;
+  float: left;
+  margin-left: 12px; }
+
+.stayPay .main {
+  width: 720px;
+  margin: 0 auto;
+  padding-top: 196px; }
+
+.stayPay .shoppingList_box_outer {
+  position: relative;
+  margin-bottom: 17px; }
+
+.stayPay .checkbox_box {
+  position: absolute;
+  top: 22px;
+  left: 19px; }
+
+.stayPay .shoppingList_box {
+  padding: 0 50px;
+  background-color: #ffffff; }
+  .stayPay .shoppingList_box li {
+    border-bottom: 1px solid #e3e3e3;
+    /*no*/ }
+    [data-dpr="2"] .stayPay .shoppingList_box li {
+      border-bottom: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .stayPay .shoppingList_box li {
+      border-bottom: 3px solid #e3e3e3;
+      /*no*/ }
+  .stayPay .shoppingList_box li:last-child {
+    border-bottom: none; }
+
+.stayPay .item_title {
+  /*height: 107px;*/
+  padding: 18px 0 16px 0;
+  position: relative; }
+
+.stayPay .item_title_img {
+  width: 76px;
+  height: 76px;
+  background-color: #7f4b2c;
+  float: left; }
+  .stayPay .item_title_img img {
+    width: 100%;
+    height: 100%; }
+
+.stayPay .mainTitle {
+  font-size: 12px;
+  /*no*/
+  color: #666;
+  padding-left: 104px;
+  padding-top: 10px; }
+  [data-dpr="2"] .stayPay .mainTitle {
+    font-size: 24px;
+    /*no*/ }
+  [data-dpr="3"] .stayPay .mainTitle {
+    font-size: 36px;
+    /*no*/ }
+
+.stayPay .Subtitle {
+  font-size: 10px;
+  /*no*/
+  color: #999;
+  padding-left: 104px;
+  padding-top: 5px; }
+  [data-dpr="2"] .stayPay .Subtitle {
+    font-size: 20px;
+    /*no*/ }
+  [data-dpr="3"] .stayPay .Subtitle {
+    font-size: 30px;
+    /*no*/ }
+
+.stayPay .arrow {
+  width: 13px;
+  height: 22px;
+  background-image: url("../images/orderList/arrow.png");
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.stayPay .item_number {
+  padding: 20px 0 24px 0; }
+
+.stayPay .item_number_left {
+  float: left; }
+
+.stayPay .item_font {
+  font-size: 10px;
+  /*no*/
+  color: #666; }
+  [data-dpr="2"] .stayPay .item_font {
+    font-size: 20px;
+    /*no*/ }
+  [data-dpr="3"] .stayPay .item_font {
+    font-size: 30px;
+    /*no*/ }
+
+.stayPay .item_font1 {
+  margin-bottom: 15px; }
+
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
+.stayShipped .main {
+  width: 720px;
+  margin: 0 auto;
+  padding-top: 100px; }
+
+.stayShipped .shoppingList_box {
+  padding: 0 20px;
+  background-color: #ffffff;
+  margin-top: 18px; }
+
+.stayShipped .shoppingList_box li {
+  border-bottom: 1px solid #e3e3e3;
+  /*no*/ }
+  [data-dpr="2"] .stayShipped .shoppingList_box li {
+    border-bottom: 2px solid #e3e3e3;
+    /*no*/ }
+  [data-dpr="3"] .stayShipped .shoppingList_box li {
+    border-bottom: 3px solid #e3e3e3;
+    /*no*/ }
+
+.stayShipped .shoppingList_box li:last-child {
+  border-bottom: none;
+  /*no*/ }
+
+.stayShipped .item_title {
+  /*height: 107px;*/
+  padding: 18px 0 16px 0;
+  position: relative; }
+
+.stayShipped .item_title_img {
+  width: 76px;
+  height: 76px;
+  background-color: #7f4b2c;
+  float: left; }
+  .stayShipped .item_title_img img {
+    width: 100%;
+    height: 100%; }
+
+.stayShipped .mainTitle {
+  font-size: 12px;
+  /*no*/
+  color: #666;
+  padding-left: 104px;
+  padding-top: 10px; }
+  [data-dpr="2"] .stayShipped .mainTitle {
+    font-size: 24px;
+    /*no*/ }
+  [data-dpr="3"] .stayShipped .mainTitle {
+    font-size: 36px;
+    /*no*/ }
+
+.stayShipped .Subtitle {
+  font-size: 10px;
+  /*no*/
+  color: #999;
+  padding-left: 104px;
+  padding-top: 5px; }
+  [data-dpr="2"] .stayShipped .Subtitle {
+    font-size: 20px;
+    /*no*/ }
+  [data-dpr="3"] .stayShipped .Subtitle {
+    font-size: 30px;
+    /*no*/ }
+
+.stayShipped .arrow {
+  width: 15px;
+  height: 22px;
+  background-image: url("../images/left-arrow.png");
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.stayShipped .item_number {
+  padding: 20px 0 24px 0; }
+
+.stayShipped .item_number_left {
+  float: left; }
+
+.stayShipped .item_font {
+  font-size: 10px;
+  /*no*/
+  color: #666; }
+  [data-dpr="2"] .stayShipped .item_font {
+    font-size: 20px;
+    /*no*/ }
+  [data-dpr="3"] .stayShipped .item_font {
+    font-size: 30px;
+    /*no*/ }
+
+.stayShipped .item_font1 {
+  margin-bottom: 15px; }
+
+.stayShipped .item_logistics {
+  height: 60px;
+  padding-right: 12px; }
+
+.stayShipped .logistics1 {
+  margin-right: 30px; }
+
+.stayShipped .logistics_shipped {
+  padding: 0 17px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  color: #FF8400;
+  font-size: 10px;
+  /*no*/
+  text-align: center;
+  border: 1px solid #ff8400;
+  /*no*/
+  -webkit-transform: translateY(25%);
+  -moz-transform: translateY(25%);
+  -ms-transform: translateY(25%);
+  -o-transform: translateY(25%);
+  transform: translateY(25%); }
+  [data-dpr="2"] .stayShipped .logistics_shipped {
+    font-size: 20px;
+    /*no*/ }
+  [data-dpr="3"] .stayShipped .logistics_shipped {
+    font-size: 30px;
+    /*no*/ }
+  [data-dpr="2"] .stayShipped .logistics_shipped {
+    border: 2px solid #ff8400;
+    /*no*/ }
+  [data-dpr="3"] .stayShipped .logistics_shipped {
+    border: 3px solid #ff8400;
+    /*no*/ }
+
+.stayShipped .logistics {
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  /*no*/
+  color: #FF8400;
+  font-size: 10px;
+  /*no*/
+  text-align: center;
+  border: 1px solid #ff8400;
+  /*no*/
+  float: right;
+  -webkit-transform: translateY(25%);
+  -moz-transform: translateY(25%);
+  -ms-transform: translateY(25%);
+  -o-transform: translateY(25%);
+  transform: translateY(25%); }
+  [data-dpr="2"] .stayShipped .logistics {
+    font-size: 20px;
+    /*no*/ }
+  [data-dpr="3"] .stayShipped .logistics {
+    font-size: 30px;
+    /*no*/ }
+  [data-dpr="2"] .stayShipped .logistics {
+    border: 2px solid #ff8400;
+    /*no*/ }
+  [data-dpr="3"] .stayShipped .logistics {
+    border: 3px solid #ff8400;
+    /*no*/ }
+
+.alreadyShipped .logistics_shipped {
+  width: 106px;
+  padding: 0; }
+
+.hasBeenCompleted .marginR {
+  margin-right: 30px; }
+
+.hasBeenCanceled {
+  position: relative; }
+
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .useCoupon {
   width: 720px;
   margin: 0 auto; }
@@ -1503,6 +2917,7 @@ p, a, span {
     /*no*/
     color: #999;
     border: 1px solid #e3e3e3;
+    /*no*/
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px; }
@@ -1511,6 +2926,12 @@ p, a, span {
       /*no*/ }
     [data-dpr="3"] .useCoupon .noUse {
       font-size: 42px;
+      /*no*/ }
+    [data-dpr="2"] .useCoupon .noUse {
+      border: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .useCoupon .noUse {
+      border: 3px solid #e3e3e3;
       /*no*/ }
   .useCoupon .couponBox {
     width: 629px;
@@ -1577,6 +2998,31 @@ p, a, span {
     .useCoupon .couponBoxPost .nowUse {
       color: #666; }
 
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
 .voucherDetails {
   width: 720px;
   margin: 20px auto 0;
@@ -1687,8 +3133,8 @@ p, a, span {
   .voucherDetails .clickReceive {
     width: 680px;
     height: 80px;
-    text-align: center;
     line-height: 80px;
+    text-align: center;
     font-size: 14px;
     /*no*/
     color: #FFFFFF;
@@ -1703,4 +3149,73 @@ p, a, span {
       font-size: 42px;
       /*no*/ }
 
-/*# sourceMappingURL=maps/main.css.map */
+/*
+ *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+*/
+/*
+ *¾ø¶Ô¶¨Î»
+*/
+/**
+ *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
+ * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
+ * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
+ * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
+ * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
+ *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ */
+/**
+ *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
+ *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
+ *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
+                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
+                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
+                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
+                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+**/
+.tips {
+  width: 200px;
+  /*no*/
+  height: 50px;
+  /*no*/
+  line-height: 50px;
+  /*no*/
+  text-align: center;
+  position: relative;
+  margin: 20px auto;
+  /*no*/
+  border: 1px solid orange;
+  /*no*/
+  border-radius: 3px;
+  /*no*/ }
+  .tips .caret {
+    top: 10px;
+    /*no*/
+    left: -10px;
+    /*no*/
+    position: absolute;
+    /*no*/ }
+    .tips .caret:before, .tips .caret:after {
+      content: "";
+      position: absolute; }
+    .tips .caret:before {
+      top: 0;
+      left: 0;
+      border-right: 10px solid orange;
+      /*no*/
+      border-top: 10px solid transparent;
+      /*no*/
+      border-bottom: 10px solid transparent;
+      /*no*/ }
+    .tips .caret:after {
+      left: 2px;
+      /*no*/
+      top: 2px;
+      /*no*/
+      border-right: 8px solid #fff;
+      /*no*/
+      border-top: 8px solid transparent;
+      /*no*/
+      border-bottom: 8px solid transparent;
+      /*no*/ }

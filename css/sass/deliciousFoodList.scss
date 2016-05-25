@@ -1,7 +1,6 @@
 @import "base.scss";
 .deliciousFoodList{
-	width: 720px;
-	margin: 0 auto;
+	@include LRcenter(720);
 	.foodOutBox{
 		height: 150px;
 		background-color: #FFFFFF;
@@ -24,16 +23,25 @@
 	}
 	.footFont{
 		padding-top: 8px;
+		width: 530px;
 		h3{
 			@include font-dpr(14px);
 			color: #333333;
+			width: 500px;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
 		}
 	}
 	.start{
 		margin-top: 10px;
 		font-size: 20px;
 		.starslist{
+			@include square(22px);
 			margin-right: 9px;
+			img{
+				width: 100%;
+			}
 		}
 		.span{
 			margin-left: 6px;
@@ -50,7 +58,7 @@
 	}
 	.group > span{
 		height: 30px;
-		line-height: 50px;
+		line-height: 30px;
 		color: #686868;
 		@include font-dpr(10px);
 	}

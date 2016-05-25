@@ -1,7 +1,4 @@
 @import "base.scss";
-p,a,span{
-	line-height: 100%;
-}
 .moreBenefits{
 	width: 720px;
 	margin: 20px auto 0;
@@ -14,12 +11,11 @@ p,a,span{
 		@include baceBorderB();
 		.now{
 			width: 114px;
-			height: 40px;
+			@include lineHeightEQHeight(40px);
 			@include font-dpr(10px);
 			color: #fff;
 			text-align: center;
 			right: 20px;
-			line-height: 40px;
 			background-color: #ff8400;
 			@include bdr-radius(5px);
 		}
@@ -34,6 +30,9 @@ p,a,span{
 		width: 134px;
 		height: 100px;
 		margin-right: 20px;
+		img{
+			width: 100%;
+		}
 	}
 	.benefitsFont{
 		@include font-dpr(12px);
@@ -45,7 +44,7 @@ p,a,span{
 			@include font-dpr(18px);
 			color: #ff8400;
 		}
-		.p{
+		p{
 			margin: 12px auto;
 		}
 	}

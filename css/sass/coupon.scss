@@ -18,8 +18,7 @@
 			box-flex: 1;
 			@include font-dpr(14px);
 			color: #555555;
-			height: 80px;
-			line-height: 80px;
+			@include lineHeightEQHeight(80px);
 			text-align: center;
 			a{
 				display: inline-block;
@@ -29,7 +28,7 @@
 		}
 		.active{
 			color: #ffa867;
-			border-bottom: 1px solid #ffa867;
+			@include borderB-dpr(1px,solid,#ffa867);
 		}
 		li:last-child{
 			a{
@@ -41,7 +40,7 @@
 		width: 680px;
 		height: 200px;
 		margin: 20px auto 0;
-		border-radius: 5px;
+		@include bdr-radius(5px);
 		background-color: #FFFFFF;
 		overflow: hidden;
 		padding: 20px;
@@ -55,12 +54,11 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		height: 46px;
-		line-height: 46px;
+		@include lineHeightEQHeight(46px);
 		padding-right: 20px;
 		text-align: right;
 		color: #999;
-		border-top: 1px dashed #999999;
+		@include borderT-dpr(1px,dashed,#999);
 	}
 	.left{
 		height: 100%;
@@ -68,7 +66,7 @@
 		.checkbox{
 			@include square(20px);
 			display: inline-block;
-			border: 1px solid #DBDBDB;
+			@include border-dpr(1px,solid,#dbdbdb);
 			background-color: #e0e0e0;
 			margin-right: 10px;
 			cursor: pointer;
@@ -82,7 +80,7 @@
 			color: #758794;
 			width: 100%;
 			text-align: center;
-			font-size: 16px;
+			@include font-dpr(8px);
 		}
 		span{
 			@include font-dpr(20px);
@@ -98,8 +96,7 @@
 		}
 	}
 	.ecode{
-		width: 56px;
-		height: 56px;
+		@include square(56px);
 		margin-top: 30px;
 		margin-right: 40px;
 		img{
@@ -108,15 +105,14 @@
 	}
 	.clickReceive{
 		width: 680px;
-		height: 80px;
+		@include lineHeightEQHeight(80px);
 		text-align: center;
-		line-height: 80px;
 		@include font-dpr(14px);
 		color: #555555;
 		margin: 78px auto 0;
 		display: block;
 		background-color: #FFFFFF;
-		border-radius: 5px;
+		@include bdr-radius(5px);
 		-webkit-box-shadow: 0 5px 10px #d2d1ce;
 		-moz-box-shadow: 0 5px 10px #d2d1ce;
 		box-shadow: 0 5px 10px #d2d1ce;

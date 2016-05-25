@@ -1,7 +1,6 @@
 @import "base.scss";
 .placeOrder{
-	width: 720px;
-	margin: 0 auto;
+	@include LRcenter(720);
 	.boxOne{
 		padding-top: 10px;
 		background-color: #f8f6f3;
@@ -11,8 +10,7 @@
 		background-color: #FFFFFF;
 	}
 	.herBox{
-		height: 89px;
-		line-height: 89px;
+		@include lineHeightEQHeight(89px);
 		padding-left: 25px;
 		padding-right: 50px;
 		@include font-dpr(14px);
@@ -29,15 +27,15 @@
 		display: inline-block;
 		font-size: 0;
 		overflow: hidden;
-		border: 1px solid #acacac;/*no*/
+		@include border-dpr(1px,solid,#acacac);
 		@include bdr-radius();
 		.add,.sub{
 			width: 52px;
 		}
 		.val{
 			width: 63px;
-			border-right: 1px solid #acacac;/*no*/
-			border-left: 1px solid #acacac;/*no*/
+			@include borderR-dpr(1px,solid,#acacac);
+			@include borderL-dpr(1px,solid,#acacac);
 		}
 		.active{
 			color: #ff8400;
@@ -45,9 +43,8 @@
 	}
 	.addAndSub > input{
 		background-color: inherit;
-		height: 52px;
 		text-align: center;
-		line-height: 52px;
+		@include lineHeightEQHeight(52px);
 		color: #868686;
 		@include font-dpr(14px);
 	}
@@ -56,9 +53,8 @@
 	}
 	.submitOrder{
 		width: 680px;
-		height: 82px;
+		@include lineHeightEQHeight(82px);
 		display: block;
-		line-height: 82px;
 		text-align: center;
 		color: #FFFFFF;
 		@include font-dpr(14px);

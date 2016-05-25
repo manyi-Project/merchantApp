@@ -5,9 +5,7 @@
 	box-shadow: 0 5px 10px #d2d1ce;/*no*/
 }
 .receiveCoupon{
-	width: 720px;
-	margin: 0 auto;
-
+	@include LRcenter(720);
 	.couponBox{
 		width: 680px;
 		height: 246px;
@@ -33,8 +31,7 @@
 		}
 	}
 	.validity{
-		height: 70px;
-		line-height: 70px;
+		@include lineHeightEQHeight(70px);
 		@include font-dpr(12px);
 		position: absolute;
 		background: url("../images/opacity.png") 0 0 repeat;
@@ -62,9 +59,8 @@
 	}
 	.clickReceive{
 		width: 680px;
-		height: 80px;
+		@include lineHeightEQHeight(80px);
 		text-align: center;
-		line-height: 80px;
 		@include font-dpr(14px);
 		color: #555555;
 		margin: 78px auto 0;

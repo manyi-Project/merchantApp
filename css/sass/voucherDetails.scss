@@ -41,8 +41,7 @@
 	}
 	.shareBox{
 		display: block;
-		height: 90px;
-		line-height: 90px;
+		@include lineHeightEQHeight(90px);
 		padding: 0 20px;
 		@include font-dpr(14px);
 		background-color: #FFFFFF;
@@ -56,8 +55,7 @@
 		right: 20px;
 	}
 	.rule{
-		height: 90px;
-		line-height: 90px;
+		@include lineHeightEQHeight(90px);
 		padding: 0 20px;
 		@include font-dpr(14px);
 		color: #333;
@@ -73,9 +71,8 @@
 	}
 	.clickReceive{
 		width: 680px;
-		height: 80px;
+		@include lineHeightEQHeight(80px);
 		text-align: center;
-		line-height: 80px;
 		@include font-dpr(14px);
 		color: #FFFFFF;
 		margin: 74px auto 0;

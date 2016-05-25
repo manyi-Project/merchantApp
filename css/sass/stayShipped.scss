@@ -1,0 +1,125 @@
+@import "base.scss";
+.stayShipped{
+	.main{
+		@include LRcenter(720);
+		padding-top: 100px;
+	}
+	.shoppingList_box{
+		padding: 0 20px;
+		background-color: #ffffff;
+		margin-top: 18px;
+	}
+	.shoppingList_box li{
+		@include borderB-dpr();
+	}
+	.shoppingList_box li:last-child{
+		border-bottom: none;/*no*/
+	}
+	.item_title{
+		/*height: 107px;*/
+		padding: 18px 0 16px 0;
+		position: relative;
+	}
+	.item_title_img{
+		@include square(76px);
+		background-color: #7f4b2c;
+		float: left;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.mainTitle{
+		@include font-dpr(12px);
+		color: #666;
+		padding-left: 104px;
+		padding-top: 10px;
+	}
+	.Subtitle{
+		@include font-dpr(10px);
+		color: #999;
+		padding-left: 104px;
+		padding-top: 5px;
+	}
+	.arrow{
+		width: 15px;
+		height: 22px;
+		background-image: url("../images/left-arrow.png");
+		background-size: cover;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	.item_number{
+		padding: 20px 0 24px 0;
+	}
+	.item_number_left{
+		float: left;
+	}
+	.item_font{
+		@include font-dpr(10px);
+		color: #666;
+	}
+	.item_font1{
+		margin-bottom: 15px;
+	}
+	.item_logistics{
+		height: 60px;
+		padding-right: 12px;
+	}
+	.logistics1{
+		margin-right: 30px;
+	}
+	.logistics_shipped{
+		padding: 0 17px;
+		@include lineHeightEQHeight(40px);
+		border-radius: 5px;
+		color: #FF8400;
+		@include font-dpr(10px);
+		text-align: center;
+		@include border-dpr(1px,solid,#ff8400);
+		-webkit-transform: translateY(25%);
+		-moz-transform: translateY(25%);
+		-ms-transform: translateY(25%);
+		-o-transform: translateY(25%);
+		transform: translateY(25%);
+	}
+	.logistics{
+		width: 110px;
+		@include lineHeightEQHeight(40px);
+		border-radius: 5px;/*no*/
+		color: #FF8400;
+		@include font-dpr(10px);
+		text-align: center;
+		@include border-dpr(1px,solid,#ff8400);
+		float: right;
+		-webkit-transform: translateY(25%);
+		-moz-transform: translateY(25%);
+		-ms-transform: translateY(25%);
+		-o-transform: translateY(25%);
+		transform: translateY(25%);
+	}
+}
+//已发货
+.alreadyShipped{
+	.logistics_shipped{
+		width: 106px;
+		padding: 0;
+	}
+}
+//已完成
+.hasBeenCompleted{
+	.marginR{
+		margin-right: 30px;
+	}
+}
+.hasBeenCanceled{
+	position: relative;
+}
+
+

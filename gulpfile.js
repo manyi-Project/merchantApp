@@ -17,13 +17,14 @@ var minifyCss = require("gulp-minify-css");
 
 //编译sass，标记maps文件
 gulp.task("sass",function(){
-	return  gulp.src(['css/sass/*.scss'])
-			.pipe(sourcemaps.init())
+	return  gulp.src(['css/import.scss'])
+			//.pipe(sourcemaps.init())
 			.pipe(sass().on('error', sass.logError))
-			.pipe(gulp.dest('./css/style'))
+			//.pipe(gulp.dest('./css/style'))
 			.pipe(concat('main.css'))
-			.pipe(sourcemaps.write('./maps'))
-			.pipe(gulp.dest('./css'));
+			//.pipe(sourcemaps.write('./maps'))
+			.pipe(gulp.dest('./css'))
+			.pipe(browserSync.stream());
 });
 //px转换rem
 gulp.task('px3rem',["sass"],function(){
@@ -33,7 +34,6 @@ gulp.task('px3rem',["sass"],function(){
 			.pipe(rename('main.merge.css'))//重命名文件
 			.pipe(gulp.dest('./css'))
 });
-
 
 //js压缩
 gulp.task('minify-js', function () {
@@ -78,9 +78,7 @@ gulp.task('watch', function () {
 	], ['minify-js','sass','px3rem']);
 });
 
-
-//,'browser-sync'
-gulp.task('default', ['watch']);
+gulp.task('default', ['watch',"browser-sync"]);
 function errorHandler(error){
 	this.emit('end');
 }

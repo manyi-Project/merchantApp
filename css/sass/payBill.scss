@@ -1,7 +1,6 @@
 @import "base.scss";
 .payBill{
-	width: 720px;
-	margin: 0 auto;
+	@include LRcenter(720);
 	@include font-dpr(14px);
 	.total{
 		margin-top: 10px;
@@ -10,8 +9,7 @@
 		@include baceBorderB();
 	}
 	.totalInner{
-		height: 82px;
-		line-height: 82px;
+		@include lineHeightEQHeight(82px);
 		background-color: #efefef;
 		@include bdr-radius();
 		label{
@@ -33,8 +31,7 @@
 		position: relative;
 	}
 	.couponLeft{
-		height: 77px;
-		line-height: 77px;
+		@include lineHeightEQHeight(77px);
 		color: #555;
 	}
 	.left_arrow{
@@ -47,9 +44,8 @@
 	.surePay{
 		display: block;
 		width: 680px;
-		height: 82px;
+		@include lineHeightEQHeight(82px);
 		margin: 45px auto 0;
-		line-height: 82px;
 		text-align: center;
 		color: #FFFFFF;
 		@include bdr-radius();

@@ -1,7 +1,6 @@
 @import "base.scss";
 .activityRule{
-	width: 720px;
-	margin: 0 auto;
+	@include LRcenter(720);
 	h3{
 		margin: 58px auto 42px;
 		@include font-dpr(14px);

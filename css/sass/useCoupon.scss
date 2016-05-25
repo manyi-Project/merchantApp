@@ -1,10 +1,8 @@
 @import "base.scss";
 .useCoupon{
-	width: 720px;
-	margin: 0 auto;
+	@include LRcenter(720);
 	.tips{
-		height: 78px;
-		line-height: 78px;
+		@include lineHeightEQHeight(78px);
 		text-align: center;
 		@include font-dpr(11px);
 		color: #555;
@@ -16,13 +14,12 @@
 	.noUse{
 		display: block;
 		width: 680px;
-		height: 73px;
-		line-height: 73px;
+		@include lineHeightEQHeight(73px);
 		text-align: center;
 		margin: 26px auto 38px;
 		@include font-dpr(14px);
 		color: #999;
-		border: 1px solid #e3e3e3;
+		@include border-dpr();
 		@include bdr-radius();
 	}
 	.couponBox{
@@ -36,8 +33,7 @@
 		.nowUse{
 			display: block;
 			width: 211px;
-			height: 62px;
-			line-height: 62px;
+			@include lineHeightEQHeight(62px);
 			color: #7c4f23;
 			@include font-dpr(17px);
 			text-align: center;

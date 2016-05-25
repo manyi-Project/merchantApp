@@ -1,7 +1,6 @@
 @import "base.scss";
 .activity{
-	width: 720px;
-	margin: 0 auto;
+	@include LRcenter(720);
 	.bannerBox{
 		padding: 20px;
 		margin: 20px auto 10px;

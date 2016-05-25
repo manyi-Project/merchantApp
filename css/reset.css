@@ -82,6 +82,8 @@ hr {
 .inline-block{display:inline-block;*zoom: 1;*display: inline;vertical-align:middle;overflow:hidden;}
 .justify{ text-align: justify; text-justify: inter-ideograph;}
 .clear { font-size: 0px; height: 0px; line-height: 0px; overflow: hidden; clear: both;}
+.textAlign_right{text-align: right;}
+.textAlign_left{text-align: left;}
 .marginAuto{
 	position: absolute;
 	margin: auto;
@@ -102,7 +104,7 @@ hr {
 }
 .verCenter{
 	position: absolute;  top: 50%;
-	-webkit-transform: translate(-50%);
+	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
@@ -118,26 +120,10 @@ hr {
 	transform: translate(-50%,-50%);}
 
 /* end Global */
-
-input::-webkit-input-placeholder{
-		font-size:28px
-		color:#999;
-	}
-input:-moz-placeholder{
-		font-size:28px
-		color:#999;
-	}
-input::-moz-placeholder{
-		font-size:28px
-		color:#999;
-	}
-input:-ms-input-placeholder{
-		font-size:28px
-		color:#999;
-	}
 body{
 	background-color: #f8f6f3;
 }
 p,a,span{
 	line-height: 100%;
 }
+

@@ -1,7 +1,6 @@
 @import "base.scss";
 .receiveSuccess{
-	width: 720px;
-	margin: 0 auto;
+	@include LRcenter(720);
 	.success{
 		height: 300px;
 		text-align: center;
@@ -13,8 +12,7 @@
 		}
 	}
 	.right{
-		width: 96px;
-		height: 96px;
+		@include square(96px);
 		background: url("../images/right.png") 0 0 no-repeat;
 		background-size: contain;
 		margin: 57px auto 54px;
@@ -32,9 +30,8 @@
 	}
 	.lookCoupon{
 		width: 680px;
-		height: 80px;
+		@include lineHeightEQHeight(80px);
 		text-align: center;
-		line-height: 80px;
 		@include font-dpr(12px);
 		color: #fff;
 		margin: 30px auto 0;

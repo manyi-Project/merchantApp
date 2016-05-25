@@ -23,12 +23,12 @@ $(function(){
     setInterval(GetRTime,0);
 
     $(".search input").focus(function(){
-        $(this).css({"textAlign":"left"});
+        //$(this).css({"textAlign":"left"});
         $(".searchImg").hide();
     });
     $(".search input").blur(function(){
         if($(this).val() == ""){
-            $(this).css({"textAlign":"center"});
+            //$(this).css({"textAlign":"center"});
             $(".searchImg").show();
         }
     });

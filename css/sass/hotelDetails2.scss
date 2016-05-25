@@ -42,8 +42,7 @@
 		background-color: #FFFFFF;
 	}
 	.groupNotes{
-		height: 79px;
-		line-height: 79px;
+		@include lineHeightEQHeight(79px);
 		@include font-dpr(14px);
 		color: #333;
 		@include baceBorderB();
@@ -83,7 +82,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		border-top: 1px solid #e3e3e3;
+		@include borderT-dpr();
 		background-color: #FFFFFF;
 		.pirce,.unit{
 			color: #fc1212;
@@ -101,8 +100,7 @@
 	}
 	.panBuy{
 		width: 188px;
-		height: 66px;
-		line-height: 66px;
+		@include lineHeightEQHeight(66px);
 		text-align: center;
 		@include bdr-radius();
 		background-color: #ff8400;
