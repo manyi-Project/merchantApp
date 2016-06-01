@@ -8,10 +8,10 @@
 	margin: 20px auto;/*no*/
 	border: 1px solid orange;/*no*/
 	border-radius: 3px;/*no*/
-
 	.caret {
 		top: 10px;/*no*/
 		left: -10px;/*no*/
 		@include caret(10px,2px,left,orange,#fff);/*no*/
 	}
+	body.ie8 & { background-color: green }
 }

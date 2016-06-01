@@ -1,4 +1,4 @@
-@import "base.scss";
+@import "base";
 .orderDetailPay{
 	@include LRcenter(720);
 	.o_header{
@@ -71,7 +71,7 @@
 	}
 	.o_subStateLeft{
 		float:left;
-		width:146px;
+		width:135px;
 	}
 	.o_subStateLeft span{
 		float:right;
@@ -92,6 +92,10 @@
 		@include borderB-dpr(2px);
 		color: #868686;
 		@include font-dpr(14px);
+		span{
+			@include font-dpr(14px);
+			color: #666;
+		}
 	}
 	.o_invoice{
 		padding-bottom:24px;
@@ -104,19 +108,22 @@
 	.o_subState2{
 		margin:0;
 	}
-	//.o_footer{
-	//	background: #fff;
-	//	width:100%;
-	//	height:98px;
-	//	@include borderT-dpr(2px);
-	//	padding-right:40px;
-	//}
+	.o_footer{
+		background: #fff;
+		width: 720px;
+		height:98px;
+		@include borderT-dpr(2px);
+		padding-right:40px;
+		position: fixed;
+		bottom: 0;
+		z-index: 10;
+	}
 	.o_again{
 		float:right;
 		width:180px;
 		@include lineHeightEQHeight(48px);
 		@include bdr-radius(5px);
-		@include borderB-dpr(1px,solid,#999);
+		@include border-dpr(1px,solid,#999);
 		color:#666;
 		text-align: center;
 		margin:24px 38px 0 0;
@@ -136,7 +143,7 @@
 	.od_shadow{
 		display: none;
 		@include square();
-		position:absolute;
+		position:fixed;
 		top:0;
 		left:0;
 		background:rgba(0,0,0,.6);
@@ -175,7 +182,7 @@
 		@include bdr-radius(5px);
 		margin:26px 0 0 90px;
 	}
-	/*ÎÒµÄ*/
+	/*æˆ‘çš„*/
 	.od_tel{
 		text-align: center;
 		@include font-dpr(14px);
@@ -244,4 +251,13 @@
 			background-size:34px 34px;
 		}
 	}
+	.o_subStateleftspan{
+		@include font-dpr(14px);
+	}
+	.o_subState2{
+		padding-top: 50px;
+		@include LRcenter(680);
+		color: #666;
+	}
 }
+

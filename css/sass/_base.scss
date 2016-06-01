@@ -1,4 +1,4 @@
-//background,IEÏÂÒ²Ö§³Öbackground-sizeÊôĞÔ
+//background,IEä¸‹ä¹Ÿæ”¯æŒbackground-sizeå±æ€§
 @mixin background($url,$cover:cover){
 	background: url($url);
 	background-position: inherit;
@@ -9,7 +9,7 @@
 	-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src=#{$url},sizingMethod='scale')";
 }
 
-//Õı·½ĞÎ
+//æ­£æ–¹å½¢
 @mixin square($def:100%){
 	width: $def;
 	height: $def;
@@ -26,12 +26,12 @@ $baceFontCol:#999;
 @mixin baceBorderB($baceBorderCol:#e3e3e3){
 	border-bottom: 1px solid $baceBorderCol;
 }
-//¿éÔªËØ×óÓÒ¾ÓÖĞ
+//å—å…ƒç´ å·¦å³å±…ä¸­
 @mixin LRcenter($width){
 	width: $width + px;
 	margin: 0 auto;
 }
-//²»Í¬dpr¶ÔÓ¦²»Í¬×ÖÌå
+//ä¸åŒdprå¯¹åº”ä¸åŒå­—ä½“
 @mixin font-dpr($font-size){
 	font-size: $font-size;/*no*/
 	[data-dpr="2"] & {
@@ -41,14 +41,14 @@ $baceFontCol:#999;
 		font-size: $font-size * 3;/*no*/
 	}
 }
-//heightµÈÓÚline-height£¬ÓÃÓÚÎÄ×Ö¾ÓÖĞ
+//heightç­‰äºline-heightï¼Œç”¨äºæ–‡å­—å±…ä¸­
 @mixin lineHeightEQHeight($height){
 	height: $height;
 	line-height: $height;
 }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 @mixin opacity($opacity) {
 	opacity: $opacity;
@@ -57,7 +57,7 @@ $baceFontCol:#999;
 }
 
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 @mixin pos-abs($top: null, $right: null, $bottom: null, $left: null) {
 	position: absolute;
@@ -66,7 +66,7 @@ $baceFontCol:#999;
 	bottom: $bottom;
 	left: $left;
 }
-//¶¨Òå²»Í¬dprÏÂµÄ²»Í¬±ß¿ò
+//å®šä¹‰ä¸åŒdprä¸‹çš„ä¸åŒè¾¹æ¡†
 //border
 @mixin border-dpr($border-size:1px,$border-style:solid,$border-color:#e3e3e3){
 	border: $border-size $border-style $border-color;/*no*/
@@ -120,13 +120,13 @@ $baceFontCol:#999;
 
 
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 @mixin center($width: null, $height: null) {
 	position: absolute;
@@ -162,14 +162,14 @@ $baceFontCol:#999;
 }
 
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 @mixin caret($caret-width,$border-width,$direction,$border-color,$background-color){
 	position: absolute;
