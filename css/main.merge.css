@@ -1,32 +1,32 @@
 @charset "UTF-8";
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .activity {
@@ -172,32 +172,32 @@
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .activityRule {
@@ -254,32 +254,32 @@
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 input::-webkit-input-placeholder {
@@ -448,32 +448,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .coupon {
@@ -684,32 +684,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .deliciousFoodList {
@@ -844,32 +844,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .hotelDetails {
@@ -1311,32 +1311,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .hotelDetails2 {
@@ -1574,32 +1574,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .pageHome {
@@ -1936,32 +1936,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .message {
@@ -2035,32 +2035,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .moreBenefits {
@@ -2152,38 +2152,38 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .orderDetailPay {
   width: 10rem;
   margin: 0 auto;
-  /*我的*/
+  /*�ҵ�*/
 }
 
 .orderDetailPay .o_header {
@@ -2333,7 +2333,7 @@ input:-ms-input-placeholder {
 
 .orderDetailPay .o_subStateLeft {
   float: left;
-  width: 1.875rem;
+  width: 2.027778rem;
 }
 
 .orderDetailPay .o_subStateLeft span {
@@ -2377,19 +2377,6 @@ input:-ms-input-placeholder {
   font-size: 42px;
 }
 
-.orderDetailPay .o_subAddressInfo span {
-  font-size: 14px;
-  color: #666;
-}
-
-[data-dpr="2"] .orderDetailPay .o_subAddressInfo span {
-  font-size: 28px;
-}
-
-[data-dpr="3"] .orderDetailPay .o_subAddressInfo span {
-  font-size: 42px;
-}
-
 .orderDetailPay .o_invoice {
   padding-bottom: 0.333333rem;
   border-bottom: 2px solid #e3e3e3;
@@ -2413,25 +2400,6 @@ input:-ms-input-placeholder {
   margin: 0;
 }
 
-.orderDetailPay .o_footer {
-  background: #fff;
-  width: 10rem;
-  height: 1.361111rem;
-  border-top: 2px solid #e3e3e3;
-  padding-right: 0.555556rem;
-  position: fixed;
-  bottom: 0;
-  z-index: 10;
-}
-
-[data-dpr="2"] .orderDetailPay .o_footer {
-  border-top: 4px solid #e3e3e3;
-}
-
-[data-dpr="3"] .orderDetailPay .o_footer {
-  border-top: 6px solid #e3e3e3;
-}
-
 .orderDetailPay .o_again {
   float: right;
   width: 2.5rem;
@@ -2440,7 +2408,7 @@ input:-ms-input-placeholder {
   -webkit-border-radius: 0.069444rem;
   -moz-border-radius: 0.069444rem;
   border-radius: 0.069444rem;
-  border: 1px solid #999;
+  border-bottom: 1px solid #999;
   color: #666;
   text-align: center;
   margin: 0.333333rem 0.527778rem 0 0;
@@ -2448,11 +2416,11 @@ input:-ms-input-placeholder {
 }
 
 [data-dpr="2"] .orderDetailPay .o_again {
-  border: 2px solid #999;
+  border-bottom: 2px solid #999;
 }
 
 [data-dpr="3"] .orderDetailPay .o_again {
-  border: 3px solid #999;
+  border-bottom: 3px solid #999;
 }
 
 .orderDetailPay .o_evaluate {
@@ -2473,7 +2441,7 @@ input:-ms-input-placeholder {
   display: none;
   width: 100%;
   height: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.6);
@@ -2672,52 +2640,33 @@ input:-ms-input-placeholder {
   background-size: 0.472222rem 0.472222rem;
 }
 
-.orderDetailPay .o_subStateleftspan {
-  font-size: 14px;
-}
-
-[data-dpr="2"] .orderDetailPay .o_subStateleftspan {
-  font-size: 28px;
-}
-
-[data-dpr="3"] .orderDetailPay .o_subStateleftspan {
-  font-size: 42px;
-}
-
-.orderDetailPay .o_subState2 {
-  padding-top: 0.694444rem;
-  width: 9.444444rem;
-  margin: 0 auto;
-  color: #666;
-}
-
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .payBill {
@@ -2798,32 +2747,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .placeOrder {
@@ -2968,32 +2917,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .receiveCoupon {
@@ -3137,32 +3086,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .receiveSuccess {
@@ -3241,32 +3190,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .tipss {
@@ -3453,32 +3402,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .stayShipped .main {
@@ -3686,32 +3635,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .useCoupon {
@@ -3856,32 +3805,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .voucherDetails {
@@ -4050,32 +3999,32 @@ input:-ms-input-placeholder {
 }
 
 /*
- *兼容ie8的透明度写法
+ *����ie8��͸����д��
 */
 
 /*
- *绝对定位
+ *���Զ�λ
 */
 
 /**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ *  ##���´�ֱ����centerʹ��˵��##
+ * һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *     2������Ԫ�ؾ��Ծ����ڸ�����
+ * ����û���� Sass mixin ���ݲ�����ʹ�� CSS transform ����ʵ�־���Ч��
+ * ������ Sass mixin �����˿��ȣ����Ծ�ʹ�ø��� margin ����ˮƽλ�ã�ʹ�� CSS transform ������ֱλ��
+ * �ġ��� Sass mixin �����˸߶ȣ����Ծ�ʹ�ø��� margin ������ֱλ�ã�ʹ�� CSS transform ����ˮƽλ��
+ *�塢 �� Sass mixin �����˸߶ȺͿ��ȣ����Ծ�ʹ�ø��� margin ����ˮƽ�ʹ�ֱλ��
  */
 
 /**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+ *  ##���ĵ����Ǽ�ͷ##
+ *  һ��1��Ϊ��Ԫ���趨��λ�����ģ������趨position:relative;
+ *  �����ٶ���Ԫ��class="caret",�÷� .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ��������˵����1.$caret-width���Ǽ�ͷ��������
+                  2.$border-width���Ǽ�ͷ���߿�
+                  3.$direction���Ǽ�ͷ�ķ���
+                  4.$border-color���Ǽ�ͷ��������ɫ
+                  5.$background-color���Ǽ�ͷ��������ɫ��������$border-color��ɫһֱ��Ϊʵ��������
 **/
 
 .tips {
@@ -4116,65 +4065,4 @@ input:-ms-input-placeholder {
   border-right: 8px solid #fff;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-}
-
-body.ie8 .tips {
-  background-color: green;
-}
-
-/*
- *兼容ie8的透明度写法
-*/
-
-/*
- *绝对定位
-*/
-
-/**
- *  ##上下垂直居中center使用说明##
- * 一、1：为子元素设定定位上下文，父级设定position:relative;
- *     2：让子元素绝对居中于父容器
- * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
- * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
- * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
- *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
- */
-
-/**
- *  ##空心的三角箭头##
- *  一、1：为子元素设定定位上下文，父级设定position:relative;
- *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  三、参数说明：1.$caret-width三角箭头的外层宽
-                  2.$border-width三角箭头的线宽
-                  3.$direction三角箭头的方向
-                  4.$border-color三角箭头的线条颜色
-                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
-**/
-
-.logisticsInformation .main {
-  width: 10rem;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 0.555556rem;
-  -webkit-box-flex: 1;
-  -o-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: hidden;
-}
-
-.logisticsInformation .logistics_list {
-  height: 100%;
-  border-left: 0.013889rem solid #5e6b85;
-  padding-top: 0.75rem;
-}
-
-.logisticsInformation .logistics_list li {
-  background: url("../images/tuoyuan.png") 0 0 no-repeat;
-  margin-left: -0.180556rem;
-  padding-left: 0.527778rem;
-  font-size: 0.305556rem;
-  color: #666;
-  line-height: 0.444444rem;
-  margin-bottom: 0.555556rem;
 }
