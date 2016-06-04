@@ -1,6 +1,2 @@
-# merchantApp
-<<<<<<< HEAD
-123
-=======
+﻿# merchantApp
 消费者项目
->>>>>>> 5c61fc448648377556c5dde33d349c505912731b

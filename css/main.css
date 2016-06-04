@@ -1,28 +1,28 @@
 @charset "UTF-8";
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .activity {
   width: 720px;
@@ -132,29 +132,29 @@
       /*no*/ }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .activityRule {
   width: 720px;
@@ -198,74 +198,30 @@
       /*no*/ }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
-input::-webkit-input-placeholder {
-  font-size: 14px;
-  /*no*/
-  color: #999; }
-  [data-dpr="2"] input::-webkit-input-placeholder {
-    font-size: 28px;
-    /*no*/ }
-  [data-dpr="3"] input::-webkit-input-placeholder {
-    font-size: 42px;
-    /*no*/ }
-
-input:-moz-placeholder {
-  font-size: 14px;
-  /*no*/
-  color: #999; }
-  [data-dpr="2"] input:-moz-placeholder {
-    font-size: 28px;
-    /*no*/ }
-  [data-dpr="3"] input:-moz-placeholder {
-    font-size: 42px;
-    /*no*/ }
-
-input::-moz-placeholder {
-  font-size: 14px;
-  /*no*/
-  color: #999; }
-  [data-dpr="2"] input::-moz-placeholder {
-    font-size: 28px;
-    /*no*/ }
-  [data-dpr="3"] input::-moz-placeholder {
-    font-size: 42px;
-    /*no*/ }
-
-input:-ms-input-placeholder {
-  font-size: 14px;
-  /*no*/
-  color: #999; }
-  [data-dpr="2"] input:-ms-input-placeholder {
-    font-size: 28px;
-    /*no*/ }
-  [data-dpr="3"] input:-ms-input-placeholder {
-    font-size: 42px;
-    /*no*/ }
-
 /*è®¢å•åˆ—è¡¨å…¬å…±å¤´*/
 .statusBar {
   width: 720px;
@@ -362,29 +318,29 @@ input:-ms-input-placeholder {
     /*no*/ }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .coupon {
   width: 720px;
@@ -553,29 +509,29 @@ input:-ms-input-placeholder {
       /*no*/ }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .deliciousFoodList {
   width: 720px;
@@ -646,6 +602,7 @@ input:-ms-input-placeholder {
     text-align: center;
     line-height: 30px;
     color: #FFFFFF;
+    margin: 0 22px;
     font-size: 10px;
     /*no*/
     width: 30px;
@@ -660,37 +617,34 @@ input:-ms-input-placeholder {
       font-size: 30px;
       /*no*/ }
   .deliciousFoodList .groupIcon {
-    background-color: #1fa78c;
-    margin-left: 32px;
-    margin-right: 5px; }
+    background-color: #1fa78c; }
   .deliciousFoodList .couponIcon {
-    background-color: #ff5a00;
-    margin-right: 14px; }
+    background-color: #ff5a00; }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .hotelDetails {
   width: 720px;
@@ -1014,29 +968,29 @@ input:-ms-input-placeholder {
       background-size: contain; }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .hotelDetails2 {
   padding-bottom: 142px; }
@@ -1219,300 +1173,328 @@ input:-ms-input-placeholder {
       /*no*/ }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
-.pageHome {
-  width: 720px;
-  margin: 0 auto; }
-  .pageHome .search {
-    width: 700px;
-    height: 64px;
-    margin: 10px auto;
-    overflow: hidden;
-    position: relative;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px; }
-    .pageHome .search input {
-      width: 100%;
-      height: 100%;
-      font-size: 11px;
-      /*no*/
-      color: #999;
-      background-color: #ebebeb;
-      text-align: center; }
-      [data-dpr="2"] .pageHome .search input {
-        font-size: 22px;
-        /*no*/ }
-      [data-dpr="3"] .pageHome .search input {
-        font-size: 33px;
-        /*no*/ }
-    .pageHome .search .searchImg {
-      width: 20px;
-      height: 20px;
-      background: url("../images/iconfont-search.png") 0 0 no-repeat;
-      background-size: contain;
-      left: 289px; }
-  .pageHome .swiper-container {
+.pageHome .search {
+  width: 700px;
+  height: 64px;
+  margin: 10px auto;
+  overflow: hidden;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+  .pageHome .search input {
     width: 100%;
-    height: 300px; }
-  .pageHome .swiper-slide {
-    text-align: center;
-    font-size: 19px;
-    /*no*/
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center; }
-    [data-dpr="2"] .pageHome .swiper-slide {
-      font-size: 38px;
-      /*no*/ }
-    [data-dpr="3"] .pageHome .swiper-slide {
-      font-size: 57px;
-      /*no*/ }
-  .pageHome .swiper-slide img {
-    width: 100%;
-    height: 100%; }
-  .pageHome .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    border-radius: 100%;
-    background: #e5e5e5;
-    opacity: 1; }
-  .pageHome .swiper-pagination-bullet-active {
-    background-color: #ff8400; }
-  .pageHome .swiper-container-horizontal > .swiper-pagination {
-    bottom: 15px; }
-  .pageHome .localClass {
-    background-color: #fff;
-    margin-top: 10px; }
-    .pageHome .localClass .classList {
-      width: 640px;
-      margin: 0 auto;
-      overflow: hidden; }
-      .pageHome .localClass .classList ul {
-        width: 680px;
-        margin-top: 20px; }
-      .pageHome .localClass .classList li {
-        width: 100px;
-        float: left;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        text-align: center;
-        margin-right: 35px; }
-      .pageHome .localClass .classList .icon {
-        width: 72px;
-        height: 72px;
-        margin: 0 auto; }
-        .pageHome .localClass .classList .icon img {
-          width: 100%; }
-      .pageHome .localClass .classList .font {
-        margin-top: 15px;
-        font-size: 11px;
-        /*no*/
-        color: #555; }
-        [data-dpr="2"] .pageHome .localClass .classList .font {
-          font-size: 22px;
-          /*no*/ }
-        [data-dpr="3"] .pageHome .localClass .classList .font {
-          font-size: 33px;
-          /*no*/ }
-  .pageHome .title {
-    height: 79px;
-    padding: 0 22px;
-    border-bottom: 1px solid #e3e3e3; }
-    .pageHome .title .name {
-      font-size: 14px;
-      /*no*/
-      color: #555;
-      position: relative; }
-      [data-dpr="2"] .pageHome .title .name {
-        font-size: 28px;
-        /*no*/ }
-      [data-dpr="3"] .pageHome .title .name {
-        font-size: 42px;
-        /*no*/ }
-    .pageHome .title .more {
-      font-size: 11px;
-      /*no*/
-      color: #999;
-      position: relative;
-      background: url("../images/left-arrow.png") right 0 no-repeat;
-      background-size: contain;
-      padding-right: 20px; }
-      [data-dpr="2"] .pageHome .title .more {
-        font-size: 22px;
-        /*no*/ }
-      [data-dpr="3"] .pageHome .title .more {
-        font-size: 33px;
-        /*no*/ }
-  .pageHome .discount {
-    margin-top: 20px;
-    background-color: #FFFFFF; }
-  .pageHome .cont {
-    padding: 20px 20px 0 20px;
-    overflow: hidden; }
-    .pageHome .cont a {
-      display: block;
-      height: 200px;
-      margin-bottom: 20px;
-      overflow: hidden; }
-      .pageHome .cont a img {
-        width: 100%; }
-  .pageHome .Countdown a {
-    width: 468px; }
-  .pageHome .countDown {
-    width: 202px;
-    height: 200px;
-    background: url("../images/Countdown.png") 0 0 no-repeat;
-    background-size: contain; }
-  .pageHome .conuntdown {
-    word-spacing: -1px;
-    font-size: 0;
-    text-align: center;
-    margin-top: 110px; }
-    .pageHome .conuntdown span {
-      display: inline-block;
-      width: 46px;
-      height: 30px;
-      line-height: 30px;
-      vertical-align: middle;
-      color: #ff8400;
-      background: #1d1d1d;
-      text-align: center;
-      font-size: 12px;
-      /*no*/
-      border-radius: 5px; }
-      [data-dpr="2"] .pageHome .conuntdown span {
-        font-size: 24px;
-        /*no*/ }
-      [data-dpr="3"] .pageHome .conuntdown span {
-        font-size: 36px;
-        /*no*/ }
-    .pageHome .conuntdown .dot {
-      width: 25px;
-      color: #333;
-      background: transparent; }
-  .pageHome .localMall {
-    margin-top: 20px;
-    background-color: #FFFFFF; }
-  .pageHome .goodsList {
-    margin-left: 20px;
-    padding: 20px 20px 20px 134px;
-    border-bottom: 1px solid #e3e3e3; }
-  .pageHome .goodsImg {
-    width: 134px;
-    height: 100px;
-    margin-left: -134px; }
-    .pageHome .goodsImg img {
-      width: 100%; }
-  .pageHome .goodsOut {
-    width: 100%;
-    padding-left: 20px; }
-  .pageHome .goodsName {
-    margin-top: 15px;
-    margin-bottom: 15px; }
-  .pageHome .goodsname {
-    font-size: 14px;
-    /*no*/
-    color: #555555;
-    line-height: 100%; }
-    [data-dpr="2"] .pageHome .goodsname {
-      font-size: 28px;
-      /*no*/ }
-    [data-dpr="3"] .pageHome .goodsname {
-      font-size: 42px;
-      /*no*/ }
-  .pageHome .position {
-    font-size: 12px;
+    height: 100%;
+    font-size: 11px;
     /*no*/
     color: #999;
-    line-height: 100%; }
-    [data-dpr="2"] .pageHome .position {
-      font-size: 24px;
+    background-color: #ebebeb;
+    text-align: center; }
+    [data-dpr="2"] .pageHome .search input {
+      font-size: 22px;
       /*no*/ }
-    [data-dpr="3"] .pageHome .position {
-      font-size: 36px;
+    [data-dpr="3"] .pageHome .search input {
+      font-size: 33px;
       /*no*/ }
-  .pageHome .goodspirce {
-    color: #ff8400;
+  .pageHome .search .searchImg {
+    width: 20px;
+    height: 20px;
+    background: url("../images/iconfont-search.png") 0 0 no-repeat;
+    background-size: contain;
+    left: 289px; }
+
+.pageHome .swiper-container {
+  width: 100%;
+  height: 300px; }
+
+.pageHome .swiper-slide {
+  text-align: center;
+  font-size: 19px;
+  /*no*/
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  [data-dpr="2"] .pageHome .swiper-slide {
+    font-size: 38px;
+    /*no*/ }
+  [data-dpr="3"] .pageHome .swiper-slide {
+    font-size: 57px;
+    /*no*/ }
+
+.pageHome .swiper-slide img {
+  width: 100%;
+  height: 100%; }
+
+.pageHome .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #e5e5e5;
+  opacity: 1; }
+
+.pageHome .swiper-pagination-bullet-active {
+  background-color: #ff8400; }
+
+.pageHome .swiper-container-horizontal > .swiper-pagination {
+  bottom: 15px; }
+
+.pageHome .localClass {
+  background-color: #fff;
+  margin-top: 10px; }
+  .pageHome .localClass .classList {
+    width: 720px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .pageHome .localClass .classList ul {
+      width: 720px;
+      margin-top: 20px;
+      padding: 0 50px;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: box;
+      display: flexbox;
+      display: flex;
+      -ms-justify-content: space-between;
+      -webkit-justify-content: space-between;
+      justify-content: space-between; }
+    .pageHome .localClass .classList li {
+      width: 100px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      text-align: center; }
+    .pageHome .localClass .classList .icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto; }
+      .pageHome .localClass .classList .icon img {
+        width: 100%; }
+    .pageHome .localClass .classList .font {
+      margin-top: 15px;
+      font-size: 11px;
+      /*no*/
+      color: #555; }
+      [data-dpr="2"] .pageHome .localClass .classList .font {
+        font-size: 22px;
+        /*no*/ }
+      [data-dpr="3"] .pageHome .localClass .classList .font {
+        font-size: 33px;
+        /*no*/ }
+
+.pageHome .title {
+  height: 79px;
+  padding: 0 22px;
+  border-bottom: 1px solid #e3e3e3; }
+  .pageHome .title .name {
     font-size: 14px;
     /*no*/
-    line-height: 100%; }
-    [data-dpr="2"] .pageHome .goodspirce {
+    color: #555;
+    position: relative; }
+    [data-dpr="2"] .pageHome .title .name {
       font-size: 28px;
       /*no*/ }
-    [data-dpr="3"] .pageHome .goodspirce {
+    [data-dpr="3"] .pageHome .title .name {
       font-size: 42px;
       /*no*/ }
-  .pageHome .saleNumb {
-    color: #555555;
-    font-size: 12px;
-    /*no*/ }
-    [data-dpr="2"] .pageHome .saleNumb {
-      font-size: 24px;
+  .pageHome .title .more {
+    font-size: 11px;
+    /*no*/
+    color: #999;
+    position: relative;
+    background: url("../images/left-arrow.png") right 0 no-repeat;
+    background-size: contain;
+    padding-right: 20px; }
+    [data-dpr="2"] .pageHome .title .more {
+      font-size: 22px;
       /*no*/ }
-    [data-dpr="3"] .pageHome .saleNumb {
-      font-size: 36px;
+    [data-dpr="3"] .pageHome .title .more {
+      font-size: 33px;
       /*no*/ }
 
+.pageHome .discount {
+  margin-top: 20px;
+  background-color: #FFFFFF; }
+
+.pageHome .cont {
+  padding: 20px 20px 0 20px;
+  overflow: hidden; }
+  .pageHome .cont a {
+    display: block;
+    height: 200px;
+    margin-bottom: 20px;
+    overflow: hidden; }
+    .pageHome .cont a img {
+      width: 100%; }
+
+.pageHome .Countdown a {
+  width: 468px; }
+
+.pageHome .countDown {
+  width: 202px;
+  height: 200px;
+  background: url("../images/Countdown.png") 0 0 no-repeat;
+  background-size: contain; }
+
+.pageHome .conuntdown {
+  word-spacing: -1px;
+  font-size: 0;
+  text-align: center;
+  margin-top: 110px; }
+  .pageHome .conuntdown span {
+    display: inline-block;
+    width: 46px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    color: #ff8400;
+    background: #1d1d1d;
+    text-align: center;
+    font-size: 12px;
+    /*no*/
+    border-radius: 5px; }
+    [data-dpr="2"] .pageHome .conuntdown span {
+      font-size: 24px;
+      /*no*/ }
+    [data-dpr="3"] .pageHome .conuntdown span {
+      font-size: 36px;
+      /*no*/ }
+  .pageHome .conuntdown .dot {
+    width: 25px;
+    color: #333;
+    background: transparent; }
+
+.pageHome .localMall {
+  margin-top: 20px;
+  background-color: #FFFFFF; }
+
+.pageHome .goodsList {
+  margin-left: 20px;
+  padding: 20px 20px 20px 134px;
+  border-bottom: 1px solid #e3e3e3; }
+
+.pageHome .goodsImg {
+  width: 134px;
+  height: 100px;
+  margin-left: -134px; }
+  .pageHome .goodsImg img {
+    width: 100%; }
+
+.pageHome .goodsOut {
+  width: 100%;
+  padding-left: 20px; }
+
+.pageHome .goodsName {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.pageHome .goodsname {
+  font-size: 14px;
+  /*no*/
+  color: #555555;
+  line-height: 100%; }
+  [data-dpr="2"] .pageHome .goodsname {
+    font-size: 28px;
+    /*no*/ }
+  [data-dpr="3"] .pageHome .goodsname {
+    font-size: 42px;
+    /*no*/ }
+
+.pageHome .position {
+  font-size: 12px;
+  /*no*/
+  color: #999;
+  line-height: 100%; }
+  [data-dpr="2"] .pageHome .position {
+    font-size: 24px;
+    /*no*/ }
+  [data-dpr="3"] .pageHome .position {
+    font-size: 36px;
+    /*no*/ }
+
+.pageHome .goodspirce {
+  color: #ff8400;
+  font-size: 14px;
+  /*no*/
+  line-height: 100%; }
+  [data-dpr="2"] .pageHome .goodspirce {
+    font-size: 28px;
+    /*no*/ }
+  [data-dpr="3"] .pageHome .goodspirce {
+    font-size: 42px;
+    /*no*/ }
+
+.pageHome .saleNumb {
+  color: #555555;
+  font-size: 12px;
+  /*no*/ }
+  [data-dpr="2"] .pageHome .saleNumb {
+    font-size: 24px;
+    /*no*/ }
+  [data-dpr="3"] .pageHome .saleNumb {
+    font-size: 36px;
+    /*no*/ }
+
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .message {
   width: 720px;
@@ -1567,29 +1549,29 @@ input:-ms-input-placeholder {
       /*no*/ }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .moreBenefits {
   width: 720px;
@@ -1656,34 +1638,34 @@ input:-ms-input-placeholder {
       margin: 12px auto; }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .orderDetailPay {
   width: 720px;
   margin: 0 auto;
-  /*ÎÒµÄ*/ }
+  /*æˆ‘çš„*/ }
   .orderDetailPay .o_header {
     position: relative; }
   .orderDetailPay .a_back {
@@ -1799,7 +1781,7 @@ input:-ms-input-placeholder {
       /*no*/ }
   .orderDetailPay .o_subStateLeft {
     float: left;
-    width: 146px; }
+    width: 135px; }
   .orderDetailPay .o_subStateLeft span {
     float: right; }
   .orderDetailPay .o_subStateRight {
@@ -1829,6 +1811,16 @@ input:-ms-input-placeholder {
     [data-dpr="3"] .orderDetailPay .o_subAddressInfo {
       font-size: 42px;
       /*no*/ }
+    .orderDetailPay .o_subAddressInfo span {
+      font-size: 14px;
+      /*no*/
+      color: #666; }
+      [data-dpr="2"] .orderDetailPay .o_subAddressInfo span {
+        font-size: 28px;
+        /*no*/ }
+      [data-dpr="3"] .orderDetailPay .o_subAddressInfo span {
+        font-size: 42px;
+        /*no*/ }
   .orderDetailPay .o_invoice {
     padding-bottom: 24px;
     border-bottom: 2px solid #e3e3e3;
@@ -1845,6 +1837,22 @@ input:-ms-input-placeholder {
     line-height: 60px; }
   .orderDetailPay .o_subState2 {
     margin: 0; }
+  .orderDetailPay .o_footer {
+    background: #fff;
+    width: 720px;
+    height: 98px;
+    border-top: 2px solid #e3e3e3;
+    /*no*/
+    padding-right: 40px;
+    position: fixed;
+    bottom: 0;
+    z-index: 10; }
+    [data-dpr="2"] .orderDetailPay .o_footer {
+      border-top: 4px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .o_footer {
+      border-top: 6px solid #e3e3e3;
+      /*no*/ }
   .orderDetailPay .o_again {
     float: right;
     width: 180px;
@@ -1853,17 +1861,17 @@ input:-ms-input-placeholder {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border-bottom: 1px solid #999;
+    border: 1px solid #999;
     /*no*/
     color: #666;
     text-align: center;
     margin: 24px 38px 0 0;
     background-color: #fff; }
     [data-dpr="2"] .orderDetailPay .o_again {
-      border-bottom: 2px solid #999;
+      border: 2px solid #999;
       /*no*/ }
     [data-dpr="3"] .orderDetailPay .o_again {
-      border-bottom: 3px solid #999;
+      border: 3px solid #999;
       /*no*/ }
   .orderDetailPay .o_evaluate {
     float: right;
@@ -1881,7 +1889,7 @@ input:-ms-input-placeholder {
     display: none;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.6);
@@ -2039,31 +2047,45 @@ input:-ms-input-placeholder {
     height: 34px;
     background: url(../images/iconfont-jia.png) no-repeat;
     background-size: 34px 34px; }
+  .orderDetailPay .o_subStateleftspan {
+    font-size: 14px;
+    /*no*/ }
+    [data-dpr="2"] .orderDetailPay .o_subStateleftspan {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .orderDetailPay .o_subStateleftspan {
+      font-size: 42px;
+      /*no*/ }
+  .orderDetailPay .o_subState2 {
+    padding-top: 50px;
+    width: 680px;
+    margin: 0 auto;
+    color: #666; }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .payBill {
   width: 720px;
@@ -2125,29 +2147,29 @@ input:-ms-input-placeholder {
     background-color: #ff8400; }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .placeOrder {
   width: 720px;
@@ -2260,29 +2282,29 @@ input:-ms-input-placeholder {
       /*no*/ }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .receiveCoupon {
   width: 720px;
@@ -2399,29 +2421,29 @@ input:-ms-input-placeholder {
       /*no*/ }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .receiveSuccess {
   width: 720px;
@@ -2483,29 +2505,29 @@ input:-ms-input-placeholder {
       /*no*/ }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .tipss {
   width: 720px;
@@ -2663,29 +2685,29 @@ input:-ms-input-placeholder {
   margin-bottom: 15px; }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .stayShipped .main {
   width: 720px;
@@ -2863,29 +2885,29 @@ input:-ms-input-placeholder {
   position: relative; }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .useCoupon {
   width: 720px;
@@ -2999,29 +3021,29 @@ input:-ms-input-placeholder {
       color: #666; }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .voucherDetails {
   width: 720px;
@@ -3150,29 +3172,29 @@ input:-ms-input-placeholder {
       /*no*/ }
 
 /*
- *¼æÈİie8µÄÍ¸Ã÷¶ÈĞ´·¨
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
 */
 /*
- *¾ø¶Ô¶¨Î»
+ *ç»å¯¹å®šä½
 */
 /**
- *  ##ÉÏÏÂ´¹Ö±¾ÓÖĞcenterÊ¹ÓÃËµÃ÷##
- * Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *     2£ºÈÃ×ÓÔªËØ¾ø¶Ô¾ÓÖĞÓÚ¸¸ÈİÆ÷
- * ¶ş¡¢Ã»ÓĞÏò Sass mixin ´«µİ²ÎÊı£¬Ê¹ÓÃ CSS transform ÊôĞÔÊµÏÖ¾ÓÖĞĞ§¹û
- * Èı¡¢Ïò Sass mixin ´«µİÁË¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦Àí´¹Ö±Î»ÖÃ
- * ËÄ¡¢Ïò Sass mixin ´«µİÁË¸ß¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦Àí´¹Ö±Î»ÖÃ£¬Ê¹ÓÃ CSS transform ´¦ÀíË®Æ½Î»ÖÃ
- *Îå¡¢ Ïò Sass mixin ´«µİÁË¸ß¶ÈºÍ¿í¶È£¬ËùÒÔ¾ÍÊ¹ÓÃ¸ºÏò margin ´¦ÀíË®Æ½ºÍ´¹Ö±Î»ÖÃ
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
  */
 /**
- *  ##¿ÕĞÄµÄÈı½Ç¼ıÍ·##
- *  Ò»¡¢1£ºÎª×ÓÔªËØÉè¶¨¶¨Î»ÉÏÏÂÎÄ£¬¸¸¼¶Éè¶¨position:relative;
- *  ¶ş¡¢¼Ù¶¨×ÓÔªËØclass="caret",ÓÃ·¨ .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
- *  Èı¡¢²ÎÊıËµÃ÷£º1.$caret-widthÈı½Ç¼ıÍ·µÄÍâ²ã¿í
-                  2.$border-widthÈı½Ç¼ıÍ·µÄÏß¿í
-                  3.$directionÈı½Ç¼ıÍ·µÄ·½Ïò
-                  4.$border-colorÈı½Ç¼ıÍ·µÄÏßÌõÑÕÉ«
-                  5.$background-colorÈı½Ç¼ıÍ·µÄÖĞĞÄÑÕÉ«£¬Èç¹ûºÍ$border-colorÑÕÉ«Ò»Ö±ÔòÎªÊµĞÄÈı½ÇĞÍ
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
 **/
 .tips {
   width: 200px;
@@ -3219,3 +3241,55 @@ input:-ms-input-placeholder {
       /*no*/
       border-bottom: 8px solid transparent;
       /*no*/ }
+  body.ie8 .tips {
+    background-color: green; }
+
+/*
+ *å…¼å®¹ie8çš„é€æ˜åº¦å†™æ³•
+*/
+/*
+ *ç»å¯¹å®šä½
+*/
+/**
+ *  ##ä¸Šä¸‹å‚ç›´å±…ä¸­centerä½¿ç”¨è¯´æ˜##
+ * ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *     2ï¼šè®©å­å…ƒç´ ç»å¯¹å±…ä¸­äºçˆ¶å®¹å™¨
+ * äºŒã€æ²¡æœ‰å‘ Sass mixin ä¼ é€’å‚æ•°ï¼Œä½¿ç”¨ CSS transform å±æ€§å®ç°å±…ä¸­æ•ˆæœ
+ * ä¸‰ã€å‘ Sass mixin ä¼ é€’äº†å®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†å‚ç›´ä½ç½®
+ * å››ã€å‘ Sass mixin ä¼ é€’äº†é«˜åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†å‚ç›´ä½ç½®ï¼Œä½¿ç”¨ CSS transform å¤„ç†æ°´å¹³ä½ç½®
+ *äº”ã€ å‘ Sass mixin ä¼ é€’äº†é«˜åº¦å’Œå®½åº¦ï¼Œæ‰€ä»¥å°±ä½¿ç”¨è´Ÿå‘ margin å¤„ç†æ°´å¹³å’Œå‚ç›´ä½ç½®
+ */
+/**
+ *  ##ç©ºå¿ƒçš„ä¸‰è§’ç®­å¤´##
+ *  ä¸€ã€1ï¼šä¸ºå­å…ƒç´ è®¾å®šå®šä½ä¸Šä¸‹æ–‡ï¼Œçˆ¶çº§è®¾å®šposition:relative;
+ *  äºŒã€å‡å®šå­å…ƒç´ class="caret",ç”¨æ³• .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  ä¸‰ã€å‚æ•°è¯´æ˜ï¼š1.$caret-widthä¸‰è§’ç®­å¤´çš„å¤–å±‚å®½
+                  2.$border-widthä¸‰è§’ç®­å¤´çš„çº¿å®½
+                  3.$directionä¸‰è§’ç®­å¤´çš„æ–¹å‘
+                  4.$border-colorä¸‰è§’ç®­å¤´çš„çº¿æ¡é¢œè‰²
+                  5.$background-colorä¸‰è§’ç®­å¤´çš„ä¸­å¿ƒé¢œè‰²ï¼Œå¦‚æœå’Œ$border-coloré¢œè‰²ä¸€ç›´åˆ™ä¸ºå®å¿ƒä¸‰è§’å‹
+**/
+.logisticsInformation .main {
+  width: 720px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  -webkit-box-flex: 1;
+  -o-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden; }
+
+.logisticsInformation .logistics_list {
+  height: 100%;
+  border-left: 1px solid #5e6b85;
+  padding-top: 54px; }
+
+.logisticsInformation .logistics_list li {
+  background: url("../images/tuoyuan.png") 0 0 no-repeat;
+  margin-left: -13px;
+  padding-left: 38px;
+  font-size: 22px;
+  color: #666;
+  line-height: 32px;
+  margin-bottom: 40px; }

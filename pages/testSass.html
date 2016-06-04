@@ -1,36 +1,508 @@
+
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="../css/main.merge.css"/>
-	<title>sass样式测试文件</title>
+	<title>商务部中国国际经济合作学会对外交流中心</title>
+	<meta name="viewport" id="viewport" content="width=950, user-scalable=no">
+	<script type="text/javascript"
+	        src="http://www.mccedc.org/script/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript"
+	        src="http://www.mccedc.org/script/fixed.js"></script>
+	<script type="text/javascript"
+	        src="http://www.mccedc.org/script/slider.js"></script>
+	<link type="text/css" href="http://www.mccedc.org/css/style.css"
+	      rel="stylesheet">
+	<link type="text/css" href="http://www.mccedc.org/css/main.css"
+	      rel="stylesheet">
+	<style type="text/css">
+		/*焦点图*/
+		.focuscontent{width:950px;height:340px;background:url(http://www.cpdcea.com/public/images/focusback.png) repeat-x left bottom;position:relative}
+		.fpic_show{width:430px; height:320px;float:left;padding:10px 5px;}
+		.fpic_show .imgborder{width:410px;height:300px;border:8px solid #ffffff;}
+		.fpic_show img{width:410px;height:300px;display:none;position:absolute;border:0;}
+		.fpic_right{font-family: "微软雅黑", "宋体","Arial Narrow";width:450px;height:340px;float:left;padding-left:10px;}
+		.fpic_right .fpic_date{width:455px;height:50px;padding-top:10px; font-weight:bold;}
+		.fpic_right .fpic_date h3{display:block;float:left;height:50px; line-height:50px;padding-right:10px;}
+		.fpic_right .fpic_date span{width:30px;height:50px;display:block;float:left;}
+		.fpic_right .fpic_title{ width:430px;height:55px;overflow:hidden;}
+		.fpic_right .fpic_title a{font-size:19px; font-weight:bold;}
+		.fpic_right .fpic_content{width:430px;height:80px;line-height:21px;padding:10px 5px 0 0;overflow:hidden}
+		.fpic_right .fpic_list{width:470px;padding-top:5px;}
+		.fpic_right .fpic_list ul{float:left;}
+		.fpic_right .fpic_list ul li{display:block;float:left;}
+		.fpic_right .fpic_list ul li a{}
+		.fpic_right .fpic_list ul li a img{border:4px solid #ffffff;margin-right:8px;}
+
+
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(e) {
+			var broWidth = $(window).width();
+			$("#mailbox").css("right",(broWidth/2-280)+"px");
+			$('#erwei').mouseover(function() {
+				$('#ewpic').toggle();
+			})
+			$('#erwei').mouseout(function() {
+				$('#ewpic').toggle();
+			})
+			$('#closemail').click(function() {
+				$('#mailbox').css("display","none");
+			})
+			$('#home').click(function() {
+				$('#mailbox').toggle();
+			})
+		});
+	</script>
+	<script type="text/javascript">
+		//焦点图动画
+		var picArr = [
+			["http://www.mccedc.org/script/editor/attached/image/20160527/20160527151922_52338.jpg","http://www.mccedc.org/script/editor/attached/image/20160527/20160527151922_52338.jpg","2016年05月27日","戴绪龙会见瑞士联邦主席约翰•施奈德•阿曼","2016年4月8日，戴绪龙博士会谈访华的瑞士总统（联邦主席）约翰·施奈德·阿曼。友好交流在愉快的氛围中进行。会见快结束时，约翰·施奈德-阿曼先生对创新问题与戴绪龙博士也交换了意见。...","http://www.mccedc.org/index.php/welcome/news_info/46/999"],
+			["http://www.mccedc.org/script/editor/attached/image/20160603/20160603090904_46342.jpg","http://www.mccedc.org/script/editor/attached/image/20160603/20160603090904_46342.jpg","2016年05月27日","姜大明部长、戴绪龙博士受邀出席智利驻华大使馆招待会","2014年9月18日，在智利独立204周年之际，商务部中国国际经济合作学会副秘书长戴绪龙受智利驻华大使贺乔治邀请与中国国土资源部部长姜大明以及驻华外交官等出席招待会。贺乔治大使表示，...","http://www.mccedc.org/index.php/welcome/news_info/45/999"],
+			["http://www.mccedc.org/script/editor/attached/image/20160603/20160603091058_38344.jpg","http://www.mccedc.org/script/editor/attached/image/20160603/20160603091058_38344.jpg","2016年05月27日","戴绪龙:深刻学习李克强总理关于中国经济的7个重要判断","2015年本月9日在达沃斯经济论坛，李克强总理表示，目前世界经济仍然增长乏力，中国经济也的确受到下行的压力。中国经济形势可以说是“形有波动，势仍向好”。今年上半年中国经济增长7％...","http://www.mccedc.org/index.php/welcome/news_info/44/999"],
+			["http://www.mccedc.org/script/editor/attached/image/20160527/20160527151131_41978.jpeg","http://www.mccedc.org/script/editor/attached/image/20160527/20160527151131_41978.jpeg","2016年05月27日","戴绪龙会见新加坡共和国李显龙总理","2015年8月9日，新加坡建国50周年大庆之际，中国国际经济合作学会副秘书长兼EDC对外交流中心主任戴绪龙博士，衷心的表达了对节日的祝贺。戴绪龙认为50年前新加坡宣布成为一个自主、独立...","http://www.mccedc.org/index.php/welcome/news_info/43/999"],
+		];
+
+		$(function(){
+
+			//IE6兼容性下拉菜单
+			$(".menu ul li").hover(function(){
+				$(this).find("ul").css({"display":"block","width":"123px","position":"absolute","display":"block","z-index":"1001","background":"#0f3853","top":"88px","left":"2px","padding-bottom":"10px"});
+			},function(){
+				$(this).find("ul").css({"display":"none"});
+			});
+
+			//去除第三个元素的下边框
+			$(".centernews ul:last").css("border","0");
+			$(".pdnews ul:last").css("border","0");
+			$("div.tab_video:last").css("border","0");
+
+			//Tab标签
+			$.microTab = function(tabNav, tabContent, tabEvent){
+				$(tabContent).find(".tabText").hide();
+				$(tabNav).find("li:first").addClass("tabOne").css("border-right","none");
+				$(tabContent).find(".tabText:first").show();
+				var liTitle = $(tabNav).find("li");
+				liTitle.bind(tabEvent,function(){
+					$(this).addClass("tabOne").siblings().removeClass();
+					$_index = liTitle.index(this);
+					if($_index==0)
+						$(tabNav).find("li:first").css("border-right","none");
+					else
+						$(tabNav).find("li:first").css("border-right","1px");
+					$(tabContent).find(".tabText").eq($_index).show()
+							.siblings().hide();
+				});
+			}
+			$.microTab("#tabNav", "#tabContent", "mouseover");
+			//$.microTab("#tabNav", "#tabContent", "click");
+
+			$("#scrollsidebar").fix({
+				float : 'right',    //default.left or right
+				minStatue : true,
+				skin : 'gray',  //default.gray or yellow 、blue 、green 、orange 、gray 、white
+				durationTime : 1000
+			});
+
+		})
+	</script>
+
 </head>
 <body>
-	<div class="tips">
-		<span class="caret"></span>
-		我是一个tooltip
-	</div>
-	<div id="div1"></div>
-</body>
-<script>
-	function judgeIE (){
-		/*判断是否为ie，如果是则给body添加对应的类名*/
-		var str = window.navigator.userAgent.toLowerCase();
-		var obj = document.getElementsByTagName("body")[0];
-		if (str.indexOf('msie')!=-1) {
-			if(str.indexOf('msie 6')!=-1){
-				obj.setAttribute("class", "ie ie6");
-			}else if(str.indexOf('msie 7')!=-1){
-				obj.setAttribute("class", "ie ie7");
-			}else if(str.indexOf('msie 8')!=-1){
-				obj.setAttribute("class", "ie ie8");
-			}else if(str.indexOf('msie 9')!=-1){
-				obj.setAttribute("class", "ie ie9");
-			}else if(str.indexOf('msie 10')!=-1){
-				obj.setAttribute("class", "ie ie10");
-			}
-		}
-	}
-	judgeIE();
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('li.mainlevel').mousemove(function(){
+			$(this).find('ul').slideDown();//you can give it a speed
+		});
+		$('li.mainlevel').mouseleave(function(){
+			$(this).find('ul').slideUp("fast");
+		});
+
+	});
 </script>
-</html>
+<div id="head">
+	<img src="http://www.mccedc.org/images/banner.jpg">
+	<div class="nav">
+		<ul id="jsddm">
+			<li class="mainlevel" style="background: none"><a
+					href="http://www.mccedc.org/index.php/welcome">首页</a>
+			</li>
+			<li class="mainlevel" style="background: none">
+				<a href="http://www.mccedc.org/index.php/welcome/news_list/2">关于我们</a>
+			</li>
+			<li class="mainlevel" style="background: none">
+				<a href="http://www.mccedc.org/index.php/welcome/news_list/3">中心动态</a>
+			</li>
+			<li class="mainlevel" style="background: none">
+				<a href="http://www.mccedc.org/index.php/welcome/news_list/4">合作与交流</a>
+			</li>
+			<li class="mainlevel" style="background: none">
+				<a href="http://www.mccedc.org/index.php/welcome/news_list/5">工作通知</a>
+			</li>
+			<li class="mainlevel" style="background: none">
+				<a href="http://www.mccedc.org/index.php/welcome/news_list/6">联系我们</a>
+			</li>
+		</ul>
+	</div>
+</div><!--焦点图开始-->
+<div class="m focusbox">
+	<div class="m focusbox_in">
+		<!-- <div class="focuscontent m" style="background-color: #e0dcc4;filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity: 0.5;opacity: 0.5;"> -->
+		<div class="focuscontent m" style="background-color: #e0dcc4;">
+			<div class="fpic_show">
+				<div class="imgborder">
+					<img style="display: none;"
+					     src="http://www.mccedc.org/script/editor/attached/image/20160527/20160527151922_52338.jpg">
+					<img style="display: none;"
+					     src="http://www.mccedc.org/script/editor/attached/image/20160603/20160603090904_46342.jpg">
+					<img style="display: none;"
+					     src="http://www.mccedc.org/script/editor/attached/image/20160603/20160603091058_38344.jpg">
+					<img style="display: inline;"
+					     src="http://www.mccedc.org/script/editor/attached/image/20160527/20160527151131_41978.jpeg">
+				</div>
+			</div>
+			<div class="fpic_right">
+				<div class="fpic_date l">
+					<h3>2016年05月27日</h3>
+					<span></span>
+				</div>
+				<div class="fpic_title l">
+					<a href="http://www.mccedc.org/index.php/welcome/news_info/46/999">戴绪龙会见瑞士联邦主席约翰•施奈德•阿曼</a>
+				</div>
+				<div class="fpic_content l">&nbsp;
+
+
+
+
+					&nbsp;2016年4月8日，戴绪龙博士会谈访华的瑞士总统（联邦主席）约翰·施奈德·阿曼。友好交流在愉快的氛围中进行。会见快结束时，约��...</div>
+				<div class="blank h20"></div>
+				<div class="fpic_list l">
+					<ul>
+						<li><a href="http://www.mccedc.org/index.php/welcome/news_info/46/999" >
+							<img style="border-color: rgb(255, 255, 255);"
+							     src="http://www.mccedc.org/script/editor/attached/image/20160527/20160527151922_52338.jpg"
+							     height="80" width="100"></a></li>
+						<li><a href="http://www.mccedc.org/index.php/welcome/news_info/45/999" >
+							<img style="border-color: rgb(255, 255, 255);"
+							     src="http://www.mccedc.org/script/editor/attached/image/20160603/20160603090904_46342.jpg"
+							     height="80" width="100"></a></li>
+						<li><a href="http://www.mccedc.org/index.php/welcome/news_info/44/999" >
+							<img style="border-color: rgb(255, 255, 255);"
+							     src="http://www.mccedc.org/script/editor/attached/image/20160603/20160603091058_38344.jpg"
+							     height="80" width="100"></a></li>
+						<li><a href="http://www.mccedc.org/index.php/welcome/news_info/43/999" >
+							<img style="border-color: rgb(255, 255, 255);"
+							     src="http://www.mccedc.org/script/editor/attached/image/20160527/20160527151131_41978.jpeg"
+							     height="80" width="100"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--焦点图结束-->
+	<div id="container">
+		<div class="main-left">
+			<div class="pm02">
+				<div class="pm02-hd">
+					<h2>关于我们</h2>
+				</div>
+				<div class="pm02-bd">
+					<ul>
+						<li style="padding-bottom: 15px;"><a title="中心简介"
+						                                     href="http://www.mccedc.org/index.php/welcome/news_info/35/2"
+						                                     class="prolink">中心简介</a></li>
+						<li style="padding-bottom: 15px;"><a title="中心领导"
+						                                     href="http://www.mccedc.org/index.php/welcome/news_info/23/2"
+						                                     class="prolink">中心领导</a></li>
+						<li style="padding-bottom: 15px;"><a title="理事会"
+						                                     href="http://www.mccedc.org/index.php/welcome/news_info/22/2"
+						                                     class="prolink">理事会</a></li>
+						<li style="padding-bottom: 15px;"><a title="顾问"
+						                                     href="http://www.mccedc.org/index.php/welcome/news_info/21/2"
+						                                     class="prolink">顾问</a></li>
+						<li style="padding-bottom: 15px;"><a title="理事单位"
+						                                     href="http://www.mccedc.org/index.php/welcome/news_info/20/2"
+						                                     class="prolink">理事单位</a></li>
+						<li style="padding-bottom: 15px;"><a title="会员单位"
+						                                     href="http://www.mccedc.org/index.php/welcome/news_info/19/2"
+						                                     class="prolink">会员单位</a></li>
+						<li style="padding-bottom: 15px;"><a title="学术委员"
+						                                     href="http://www.mccedc.org/index.php/welcome/news_info/18/2"
+						                                     class="prolink">学术委员</a></li>
+						<li class="more"></li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="pm02">
+				<!--
+			<div class="pm02-hd">
+				<h2>联系方式</h2>
+			</div>
+			<div class="pm02-bd">
+				<ul style="line-height: 20px;">
+					地 址：北京市朝阳区广渠门外大街8号A座1708室					<br> 邮 编：100022					<br> 电 话：(010)58613598										<br> Email：edccafiec@126.com				</ul>
+			</div> -->
+			</div>
+
+		</div>
+		<div class="main-center">
+
+
+			<div class="pm03">
+				<div class="pm03-hd">
+					<h2>
+						<span><a
+								href="http://www.mccedc.org/index.php/welcome/news_list/3">更多&gt;&gt;</a></span>中心动态				</h2>
+				</div>
+				<div class="pm03-bd cooperate">
+					<ul class="inlist">
+						<li><a class="complink" title="崔明谟会长会见Smadjr&Smadjr战略咨询公司总裁斯马嘉先生"
+						       href="http://www.mccedc.org/index.php/welcome/news_info/15/3">崔明谟会长会见Smadjr&Smadjr战略咨询公司总裁斯马嘉先生</a><span
+								class="comptime">2016-04-10</span>
+						</li>
+						<li><a class="complink" title="学会领导出席“一带一路”国际合作与发展高层论坛"
+						       href="http://www.mccedc.org/index.php/welcome/news_info/10/3">学会领导出席“一带一路”国际合作与发展高层论坛</a><span
+								class="comptime">2016-04-09</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pm03 mt10p">
+				<div class="pm03-hd">
+					<h2>
+						<span><a
+								href="http://www.mccedc.org/index.php/welcome/news_list/4">更多&gt;&gt;</a></span>合作与交流				</h2>
+				</div>
+				<div class="pm03-bd">
+					<ul class="inlist">
+						<li><a class="complink" title="海上丝绸之路：成功投资缅甸的九个要素"
+						       href="http://www.mccedc.org/index.php/welcome/news_info/28/4">海上丝绸之路：成功投资缅甸的九个要素</a><span
+								class="comptime">2016-04-13</span>
+						</li>
+						<li><a class="complink" title="海上丝绸之路：马来西亚投资环境"
+						       href="http://www.mccedc.org/index.php/welcome/news_info/27/4">海上丝绸之路：马来西亚投资环境</a><span
+								class="comptime">2016-04-13</span>
+						</li>
+						<li><a class="complink" title="企业“走出去”跨境并购贷款解析"
+						       href="http://www.mccedc.org/index.php/welcome/news_info/26/4">企业“走出去”跨境并购贷款解析</a><span
+								class="comptime">2016-04-13</span>
+						</li>
+						<li><a class="complink" title="海尔告诉你：去一带一路国家投资秘密在这里"
+						       href="http://www.mccedc.org/index.php/welcome/news_info/7/4">海尔告诉你：去一带一路国家投资秘密在这里</a><span
+								class="comptime">2016-04-09</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="pm03 mt10p">
+				<div class="pm03-hd">
+					<h2>
+						<span><a
+								href="http://www.mccedc.org/index.php/welcome/news_list/5">更多&gt;&gt;</a></span>工作通知				</h2>
+				</div>
+				<div class="pm03-bd">
+					<ul class="inlist">
+						<li><a class="complink" title="第四届京交会中国国际经济合作“走出去”高峰论坛邀请函"
+						       href="http://www.mccedc.org/index.php/welcome/news_info/32/5">第四届京交会中国国际经济合作“走出去”高峰论坛邀请函</a><span
+								class="comptime">2016-04-13</span>
+						</li>
+						<li><a class="complink" title="《海外华人风采（2016）》约稿函"
+						       href="http://www.mccedc.org/index.php/welcome/news_info/31/5">《海外华人风采（2016）》约稿函</a><span
+								class="comptime">2016-04-13</span>
+						</li>
+						<li><a class="complink" title="关于编辑出版《中国国际工程咨询设计承包商年鉴（2016）》征稿的函"
+						       href="http://www.mccedc.org/index.php/welcome/news_info/30/5">关于编辑出版《中国国际工程咨询设计承包商年鉴（2016）》征稿的函</a><span
+								class="comptime">2016-04-13</span>
+						</li>
+						<li><a class="complink" title="关于邀请出席“拉美市场交流会”的函"
+						       href="http://www.mccedc.org/index.php/welcome/news_info/29/5">关于邀请出席“拉美市场交流会”的函</a><span
+								class="comptime">2016-04-13</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- <div class="pm03">
+			<div class="pm03-hd">
+				<h2>
+					<span><a href="http://www.mccedc.org/index.php/welcome/news_list/5">更多&gt;&gt;</a></span>工作通知				</h2>
+			</div>
+			<div class="pm03-bd cooperate">
+				<ul class="inlist">
+									<li><a class="complink" title="第四届京交会中国国际经济合作“走出去”高峰论坛邀请函"
+						href="http://www.mccedc.org/index.php/welcome/news_info/32/5">第四届京交会中国国际经济合作“走出去”高峰论坛邀请函</a><span
+						class="comptime">2016-04-13</span>
+					</li>
+									<li><a class="complink" title="《海外华人风采（2016）》约稿函"
+						href="http://www.mccedc.org/index.php/welcome/news_info/31/5">《海外华人风采（2016）》约稿函</a><span
+						class="comptime">2016-04-13</span>
+					</li>
+									<li><a class="complink" title="关于编辑出版《中国国际工程咨询设计承包商年鉴（2016）》征稿的函"
+						href="http://www.mccedc.org/index.php/welcome/news_info/30/5">关于编辑出版《中国国际工程咨询设计承包商年鉴（2016）》征稿的函</a><span
+						class="comptime">2016-04-13</span>
+					</li>
+									<li><a class="complink" title="关于邀请出席“拉美市场交流会”的函"
+						href="http://www.mccedc.org/index.php/welcome/news_info/29/5">关于邀请出席“拉美市场交流会”的函</a><span
+						class="comptime">2016-04-13</span>
+					</li>
+								</ul>
+			</div>
+		</div> -->
+
+
+		</div>
+		<div class="main-right">
+			<div class="pm01">
+				<div class="pm01-hd">
+					<h2>会员动态</h2>
+				</div>
+				<div class="pm01-bd">
+					<ul class="riglist">
+						<li><a class="complink" title="中交集团承建的柬埔寨41号路通车"
+						       href="http://www.mccedc.org/index.php/welcome/news_info/37/13">中交集团承建的柬埔寨41号路通车</a><span
+								class="comptime">2016-04-14</span></li>
+						<li><a class="complink" title="中交集团所属中国港湾公司承建的文莱摩拉大桥项目签约和动工仪式举行"
+						       href="http://www.mccedc.org/index.php/welcome/news_info/36/13">中交集团所属中国港湾公司承建的文莱摩拉大桥项目签约和动工仪式举行</a><span
+								class="comptime">2016-04-14</span></li>
+						<li><a class="complink" title="中国铁建签约35亿美元尼日利亚奥贡州城际铁路项目"
+						       href="http://www.mccedc.org/index.php/welcome/news_info/34/13">中国铁建签约35亿美元尼日利亚奥贡州城际铁路项目</a><span
+								class="comptime">2016-04-13</span></li>
+						<li><a class="complink" title="中国铁建集团在非洲签署近55亿美元订单"
+						       href="http://www.mccedc.org/index.php/welcome/news_info/33/13">中国铁建集团在非洲签署近55亿美元订单</a><span
+								class="comptime">2016-04-13</span></li>
+						<li class="more" style="background: none"><a
+								href="http://www.mccedc.org/index.php/welcome/news_list/5">更多&gt;&gt;</a></li>
+
+					</ul>
+
+				</div>
+
+			</div>
+			<br>
+
+			<!-- <div class="pm01">
+			<div class="pm01-hd">
+				<h2><div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: pro_info</p>
+<p>Filename: views/index.php</p>
+<p>Line Number: 179</p>
+
+</div></h2>
+			</div>
+			<div class="pm01-bd">
+
+				<ul class="riglist">
+				<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: int_list</p>
+<p>Filename: views/index.php</p>
+<p>Line Number: 184</p>
+
+</div><div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Warning</p>
+<p>Message:  Invalid argument supplied for foreach()</p>
+<p>Filename: views/index.php</p>
+<p>Line Number: 184</p>
+
+</div>				</ul>
+
+				<ul class="riglist">
+				<div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Notice</p>
+<p>Message:  Undefined variable: mission_list</p>
+<p>Filename: views/index.php</p>
+<p>Line Number: 192</p>
+
+</div><div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
+
+<h4>A PHP Error was encountered</h4>
+
+<p>Severity: Warning</p>
+<p>Message:  Invalid argument supplied for foreach()</p>
+<p>Filename: views/index.php</p>
+<p>Line Number: 192</p>
+
+</div>				</ul>
+
+
+			</div>
+
+		</div> -->
+			<br>
+
+			<div class="pm01"></div>
+		</div>
+	</div>
+	<div id="tplj1">
+		<table width="100%" border="0">
+			<tbody>
+			<tr>
+				<td width="124"><img src="http://www.mccedc.org/images/22.jpg"
+				                     height="60" width="56"></td>
+				<td width="39">&nbsp;</td>
+				<td width="1228"><table width="100%" border="0" cellpadding="0"
+				                        cellspacing="0">
+					<tbody>
+					<!-- <tr>
+					<td><a href="http://hzs.mofcom.gov.cn/"><img
+							src="http://www.mccedc.org/images/p2.jpg" height="42" width="200"
+							border="0"></a></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="http://fec.mofcom.gov.cn/"><img
+							src="http://www.mccedc.org/images/p3.jpg" height="42" width="200"
+							border="0"></a></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><img src="http://www.mccedc.org/images/p4.jpg" height="42"
+						width="200" border="0"></td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="http://www.ciftis.org/"><img
+							src="http://www.mccedc.org/images/p1.jpg" height="42" width="200"
+							border="0"></a></td>
+				</tr> -->
+					<tr>
+						<td align="left"><a href="http://hzs.mofcom.gov.cn/"><img
+								src="http://www.mccedc.org/images/p2.jpg" height="42" width="200"
+								border="0"></a>&nbsp;&nbsp;&nbsp;&nbsp; <a
+								href="http://www.mccedc.org/index.php/welcome"><img
+								src="http://www.mccedc.org/images/logo.png" height="42"
+								width="200" border="0"></a></td>
+					</tr>
+					</tbody>
+				</table></td>
+			</tr>
+			</tbody>
+		</table>
+	</div><div id="footer" style="text-align: center;">
+	<p>主管单位：中华人民共和国商务部</p>
+	<p>版权所有：中华人民共和国商务部中国国际经济合作学会对外交流中心</p>
+	<!-- <img class="logo" src="http://www.mccedc.org/images/logo.gif"> -->
+
+	<div class="logo1"><!--<span id="_ideConac"> <a href="http://bszs.conac.cn/sitename?method=show&amp;id=0726B28348831856E053012819AC9312" target="_blank"><img id="imgConac" src="http://www.mccedc.org/images/red.png" data-bd-imgshare-binded="1" hspace="0" vspace="0" border="0"></a></span> <script src="http://www.mccedc.org/script/CA330000000406725680001.js" type="text/javascript"></script><span id="_ideConac"></span>--></div>
+</div>
+	<script>
+		if(typeof(colname)!="undefined" && typeof(aid)=="undefined"){
+			document.title=colname;
+		}
+	</script>
+
+</body></html>

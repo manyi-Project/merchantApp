@@ -1,6 +1,6 @@
 @import "base";
 .pageHome{
-	@include LRcenter(720);
+	//@include LRcenter(720);
 	.search{
 		width: 700px;
 		height: 64px;
@@ -65,20 +65,31 @@
 		background-color: #fff;
 		margin-top: 10px;
 		.classList{
-			@include LRcenter(640);
+			@include LRcenter(720);
 			overflow: hidden;
 			ul{
-				width: 680px;
+				width: 720px;
 				margin-top: 20px;
-
+				padding: 0 50px;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: box;
+				display: flexbox;
+				display: flex;
+				-ms-justify-content: space-between;
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
 			}
 			li{
 				width: 100px;
-				float: left;
+				//display: inline-block;
+				//float: left;
 				margin-top: 10px;
 				margin-bottom: 30px;
 				text-align: center;
-				margin-right: 35px;
+				//margin-right: 35px;
 			}
 			.icon{
 				@include square(72px);
