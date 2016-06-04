@@ -66,7 +66,7 @@ gulp.task('browser-sync', function() {
 	];
 	browserSync.init(files,{
 		server: {
-			baseDir: "//"//定义从那个位置启动服务器
+			baseDir: "./"//定义从那个位置启动服务器
 		}
 	});
 });
