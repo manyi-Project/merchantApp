@@ -537,9 +537,9 @@
   width: 720px;
   margin: 0 auto; }
   .deliciousFoodList .foodOutBox {
-    height: 150px;
     background-color: #FFFFFF;
-    padding-left: 20px; }
+    padding-left: 20px;
+    margin-bottom: 10px; }
   .deliciousFoodList .foodInnerBox {
     padding: 18px 0;
     border-bottom: 1px solid #e3e3e3; }
@@ -570,7 +570,16 @@
         /*no*/ }
   .deliciousFoodList .start {
     margin-top: 10px;
-    font-size: 20px; }
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #e3e3e3;
+    /*no*/ }
+    [data-dpr="2"] .deliciousFoodList .start {
+      border-bottom: 2px dashed #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .deliciousFoodList .start {
+      border-bottom: 3px dashed #e3e3e3;
+      /*no*/ }
     .deliciousFoodList .start .starslist {
       width: 22px;
       height: 22px;
@@ -584,11 +593,10 @@
     .deliciousFoodList .start .span2 {
       color: #999; }
   .deliciousFoodList .group {
-    margin-top: 14px;
+    margin-top: 8px;
     font-size: 0; }
   .deliciousFoodList .group > span {
-    height: 30px;
-    line-height: 30px;
+    vertical-align: bottom;
     color: #686868;
     font-size: 10px;
     /*no*/ }
@@ -602,7 +610,7 @@
     text-align: center;
     line-height: 30px;
     color: #FFFFFF;
-    margin: 0 22px;
+    margin-right: 22px;
     font-size: 10px;
     /*no*/
     width: 30px;
@@ -1197,279 +1205,260 @@
                   4.$border-color三角箭头的线条颜色
                   5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
 **/
-.pageHome .search {
-  width: 700px;
-  height: 64px;
-  margin: 10px auto;
-  overflow: hidden;
-  position: relative;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px; }
-  .pageHome .search input {
-    width: 100%;
-    height: 100%;
-    font-size: 11px;
-    /*no*/
-    color: #999;
-    background-color: #ebebeb;
-    text-align: center; }
-    [data-dpr="2"] .pageHome .search input {
-      font-size: 22px;
-      /*no*/ }
-    [data-dpr="3"] .pageHome .search input {
-      font-size: 33px;
-      /*no*/ }
-  .pageHome .search .searchImg {
-    width: 20px;
-    height: 20px;
-    background: url("../images/iconfont-search.png") 0 0 no-repeat;
-    background-size: contain;
-    left: 289px; }
-
-.pageHome .swiper-container {
-  width: 100%;
-  height: 300px; }
-
-.pageHome .swiper-slide {
-  text-align: center;
-  font-size: 19px;
-  /*no*/
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; }
-  [data-dpr="2"] .pageHome .swiper-slide {
-    font-size: 38px;
-    /*no*/ }
-  [data-dpr="3"] .pageHome .swiper-slide {
-    font-size: 57px;
-    /*no*/ }
-
-.pageHome .swiper-slide img {
-  width: 100%;
-  height: 100%; }
-
-.pageHome .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  border-radius: 100%;
-  background: #e5e5e5;
-  opacity: 1; }
-
-.pageHome .swiper-pagination-bullet-active {
-  background-color: #ff8400; }
-
-.pageHome .swiper-container-horizontal > .swiper-pagination {
-  bottom: 15px; }
-
-.pageHome .localClass {
-  background-color: #fff;
-  margin-top: 10px; }
-  .pageHome .localClass .classList {
-    width: 720px;
-    margin: 0 auto;
-    overflow: hidden; }
-    .pageHome .localClass .classList ul {
-      width: 720px;
-      margin-top: 20px;
-      padding: 0 50px;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: box;
-      display: flexbox;
-      display: flex;
-      -ms-justify-content: space-between;
-      -webkit-justify-content: space-between;
-      justify-content: space-between; }
-    .pageHome .localClass .classList li {
-      width: 100px;
-      margin-top: 10px;
-      margin-bottom: 30px;
-      text-align: center; }
-    .pageHome .localClass .classList .icon {
-      width: 72px;
-      height: 72px;
-      margin: 0 auto; }
-      .pageHome .localClass .classList .icon img {
-        width: 100%; }
-    .pageHome .localClass .classList .font {
-      margin-top: 15px;
+.pageHome {
+  width: 720px;
+  margin: 0 auto; }
+  .pageHome .search {
+    width: 700px;
+    height: 64px;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+    .pageHome .search input {
+      width: 100%;
+      height: 100%;
       font-size: 11px;
       /*no*/
-      color: #555; }
-      [data-dpr="2"] .pageHome .localClass .classList .font {
+      color: #999;
+      background-color: #ebebeb;
+      text-align: center; }
+      [data-dpr="2"] .pageHome .search input {
         font-size: 22px;
         /*no*/ }
-      [data-dpr="3"] .pageHome .localClass .classList .font {
+      [data-dpr="3"] .pageHome .search input {
         font-size: 33px;
         /*no*/ }
-
-.pageHome .title {
-  height: 79px;
-  padding: 0 22px;
-  border-bottom: 1px solid #e3e3e3; }
-  .pageHome .title .name {
+    .pageHome .search .searchImg {
+      width: 20px;
+      height: 20px;
+      background: url("../images/iconfont-search.png") 0 0 no-repeat;
+      background-size: contain;
+      left: 289px; }
+  .pageHome .swiper-container {
+    width: 100%;
+    height: 300px; }
+  .pageHome .swiper-slide {
+    text-align: center;
+    font-size: 19px;
+    /*no*/
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    [data-dpr="2"] .pageHome .swiper-slide {
+      font-size: 38px;
+      /*no*/ }
+    [data-dpr="3"] .pageHome .swiper-slide {
+      font-size: 57px;
+      /*no*/ }
+  .pageHome .swiper-slide img {
+    width: 100%;
+    height: 100%; }
+  .pageHome .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #e5e5e5;
+    opacity: 1; }
+  .pageHome .swiper-pagination-bullet-active {
+    background-color: #ff8400; }
+  .pageHome .swiper-container-horizontal > .swiper-pagination {
+    bottom: 15px; }
+  .pageHome .localClass {
+    background-color: #fff;
+    margin-top: 10px; }
+    .pageHome .localClass .classList {
+      width: 720px;
+      margin: 0 auto;
+      overflow: hidden; }
+      .pageHome .localClass .classList ul {
+        width: 720px;
+        margin-top: 20px;
+        padding: 0 100px;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: box;
+        display: flexbox;
+        display: flex;
+        -ms-justify-content: space-between;
+        -webkit-justify-content: space-between;
+        justify-content: space-between; }
+      .pageHome .localClass .classList li {
+        width: 100px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center; }
+      .pageHome .localClass .classList .icon {
+        width: 72px;
+        height: 72px;
+        margin: 0 auto; }
+        .pageHome .localClass .classList .icon img {
+          width: 100%; }
+      .pageHome .localClass .classList .font {
+        margin-top: 15px;
+        font-size: 11px;
+        /*no*/
+        color: #555; }
+        [data-dpr="2"] .pageHome .localClass .classList .font {
+          font-size: 22px;
+          /*no*/ }
+        [data-dpr="3"] .pageHome .localClass .classList .font {
+          font-size: 33px;
+          /*no*/ }
+  .pageHome .title {
+    height: 79px;
+    padding: 0 22px;
+    border-bottom: 1px solid #e3e3e3; }
+    .pageHome .title .name {
+      font-size: 14px;
+      /*no*/
+      color: #555;
+      position: relative; }
+      [data-dpr="2"] .pageHome .title .name {
+        font-size: 28px;
+        /*no*/ }
+      [data-dpr="3"] .pageHome .title .name {
+        font-size: 42px;
+        /*no*/ }
+    .pageHome .title .more {
+      font-size: 11px;
+      /*no*/
+      color: #999;
+      position: relative;
+      background: url("../images/left-arrow.png") right 0 no-repeat;
+      background-size: contain;
+      padding-right: 20px; }
+      [data-dpr="2"] .pageHome .title .more {
+        font-size: 22px;
+        /*no*/ }
+      [data-dpr="3"] .pageHome .title .more {
+        font-size: 33px;
+        /*no*/ }
+  .pageHome .discount {
+    margin-top: 20px;
+    background-color: #FFFFFF; }
+  .pageHome .cont {
+    padding: 20px 20px 0 20px;
+    overflow: hidden; }
+    .pageHome .cont a {
+      display: block;
+      height: 200px;
+      margin-bottom: 20px;
+      overflow: hidden; }
+      .pageHome .cont a img {
+        width: 100%; }
+  .pageHome .Countdown a {
+    width: 468px; }
+  .pageHome .countDown {
+    width: 202px;
+    height: 200px;
+    background: url("../images/Countdown.png") 0 0 no-repeat;
+    background-size: contain; }
+  .pageHome .conuntdown {
+    word-spacing: -1px;
+    font-size: 0;
+    text-align: center;
+    margin-top: 110px; }
+    .pageHome .conuntdown span {
+      display: inline-block;
+      width: 46px;
+      height: 30px;
+      line-height: 30px;
+      vertical-align: middle;
+      color: #ff8400;
+      background: #1d1d1d;
+      text-align: center;
+      font-size: 12px;
+      /*no*/
+      border-radius: 5px; }
+      [data-dpr="2"] .pageHome .conuntdown span {
+        font-size: 24px;
+        /*no*/ }
+      [data-dpr="3"] .pageHome .conuntdown span {
+        font-size: 36px;
+        /*no*/ }
+    .pageHome .conuntdown .dot {
+      width: 25px;
+      color: #333;
+      background: transparent; }
+  .pageHome .localMall {
+    margin-top: 20px;
+    background-color: #FFFFFF; }
+  .pageHome .goodsList {
+    margin-left: 20px;
+    padding: 20px 20px 20px 134px;
+    border-bottom: 1px solid #e3e3e3; }
+  .pageHome .goodsImg {
+    width: 134px;
+    height: 100px;
+    margin-left: -134px; }
+    .pageHome .goodsImg img {
+      width: 100%; }
+  .pageHome .goodsOut {
+    width: 100%;
+    padding-left: 20px; }
+  .pageHome .goodsName {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .pageHome .goodsname {
     font-size: 14px;
     /*no*/
-    color: #555;
-    position: relative; }
-    [data-dpr="2"] .pageHome .title .name {
+    color: #555555;
+    line-height: 100%; }
+    [data-dpr="2"] .pageHome .goodsname {
       font-size: 28px;
       /*no*/ }
-    [data-dpr="3"] .pageHome .title .name {
+    [data-dpr="3"] .pageHome .goodsname {
       font-size: 42px;
       /*no*/ }
-  .pageHome .title .more {
-    font-size: 11px;
-    /*no*/
-    color: #999;
-    position: relative;
-    background: url("../images/left-arrow.png") right 0 no-repeat;
-    background-size: contain;
-    padding-right: 20px; }
-    [data-dpr="2"] .pageHome .title .more {
-      font-size: 22px;
-      /*no*/ }
-    [data-dpr="3"] .pageHome .title .more {
-      font-size: 33px;
-      /*no*/ }
-
-.pageHome .discount {
-  margin-top: 20px;
-  background-color: #FFFFFF; }
-
-.pageHome .cont {
-  padding: 20px 20px 0 20px;
-  overflow: hidden; }
-  .pageHome .cont a {
-    display: block;
-    height: 200px;
-    margin-bottom: 20px;
-    overflow: hidden; }
-    .pageHome .cont a img {
-      width: 100%; }
-
-.pageHome .Countdown a {
-  width: 468px; }
-
-.pageHome .countDown {
-  width: 202px;
-  height: 200px;
-  background: url("../images/Countdown.png") 0 0 no-repeat;
-  background-size: contain; }
-
-.pageHome .conuntdown {
-  word-spacing: -1px;
-  font-size: 0;
-  text-align: center;
-  margin-top: 110px; }
-  .pageHome .conuntdown span {
-    display: inline-block;
-    width: 46px;
-    height: 30px;
-    line-height: 30px;
-    vertical-align: middle;
-    color: #ff8400;
-    background: #1d1d1d;
-    text-align: center;
+  .pageHome .position {
     font-size: 12px;
     /*no*/
-    border-radius: 5px; }
-    [data-dpr="2"] .pageHome .conuntdown span {
+    color: #999;
+    line-height: 100%; }
+    [data-dpr="2"] .pageHome .position {
       font-size: 24px;
       /*no*/ }
-    [data-dpr="3"] .pageHome .conuntdown span {
+    [data-dpr="3"] .pageHome .position {
       font-size: 36px;
       /*no*/ }
-  .pageHome .conuntdown .dot {
-    width: 25px;
-    color: #333;
-    background: transparent; }
-
-.pageHome .localMall {
-  margin-top: 20px;
-  background-color: #FFFFFF; }
-
-.pageHome .goodsList {
-  margin-left: 20px;
-  padding: 20px 20px 20px 134px;
-  border-bottom: 1px solid #e3e3e3; }
-
-.pageHome .goodsImg {
-  width: 134px;
-  height: 100px;
-  margin-left: -134px; }
-  .pageHome .goodsImg img {
-    width: 100%; }
-
-.pageHome .goodsOut {
-  width: 100%;
-  padding-left: 20px; }
-
-.pageHome .goodsName {
-  margin-top: 15px;
-  margin-bottom: 15px; }
-
-.pageHome .goodsname {
-  font-size: 14px;
-  /*no*/
-  color: #555555;
-  line-height: 100%; }
-  [data-dpr="2"] .pageHome .goodsname {
-    font-size: 28px;
+  .pageHome .goodspirce {
+    color: #ff8400;
+    font-size: 14px;
+    /*no*/
+    line-height: 100%; }
+    [data-dpr="2"] .pageHome .goodspirce {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .pageHome .goodspirce {
+      font-size: 42px;
+      /*no*/ }
+  .pageHome .saleNumb {
+    color: #555555;
+    font-size: 12px;
     /*no*/ }
-  [data-dpr="3"] .pageHome .goodsname {
-    font-size: 42px;
-    /*no*/ }
-
-.pageHome .position {
-  font-size: 12px;
-  /*no*/
-  color: #999;
-  line-height: 100%; }
-  [data-dpr="2"] .pageHome .position {
-    font-size: 24px;
-    /*no*/ }
-  [data-dpr="3"] .pageHome .position {
-    font-size: 36px;
-    /*no*/ }
-
-.pageHome .goodspirce {
-  color: #ff8400;
-  font-size: 14px;
-  /*no*/
-  line-height: 100%; }
-  [data-dpr="2"] .pageHome .goodspirce {
-    font-size: 28px;
-    /*no*/ }
-  [data-dpr="3"] .pageHome .goodspirce {
-    font-size: 42px;
-    /*no*/ }
-
-.pageHome .saleNumb {
-  color: #555555;
-  font-size: 12px;
-  /*no*/ }
-  [data-dpr="2"] .pageHome .saleNumb {
-    font-size: 24px;
-    /*no*/ }
-  [data-dpr="3"] .pageHome .saleNumb {
-    font-size: 36px;
-    /*no*/ }
+    [data-dpr="2"] .pageHome .saleNumb {
+      font-size: 24px;
+      /*no*/ }
+    [data-dpr="3"] .pageHome .saleNumb {
+      font-size: 36px;
+      /*no*/ }
 
 /*
  *兼容ie8的透明度写法

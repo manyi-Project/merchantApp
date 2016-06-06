@@ -1,6 +1,6 @@
 @import "base";
 .pageHome{
-	//@include LRcenter(720);
+	@include LRcenter(720);
 	.search{
 		width: 700px;
 		height: 64px;
@@ -70,7 +70,7 @@
 			ul{
 				width: 720px;
 				margin-top: 20px;
-				padding: 0 50px;
+				padding: 0 100px;
 				display: -moz-box;
 				display: -ms-flexbox;
 				display: -webkit-box;
