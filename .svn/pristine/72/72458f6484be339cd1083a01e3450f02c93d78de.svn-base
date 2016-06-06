@@ -1,0 +1,265 @@
+@import "base.scss";
+.hotelDetails{
+	width: 720px;
+	margin: 0 auto;
+	padding-bottom: 88px;
+	.banner{
+		height: 270px;
+		position: relative;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		.photo{
+			width: 68px;
+			height: 68px;
+			position: absolute;
+			right: 30px;
+			bottom: 16px;
+			background: url("../images/photoNumb.png") 0 0 no-repeat;
+			background-size: contain;
+			text-align: center;
+			padding-top: 38px;
+			color: #FFFFFF;
+			.span{
+				font-size: 18px;
+			}
+		}
+	}
+	.payBil{
+		padding: 22px;
+		background-color: #FFFFFF;
+		border-bottom: 1px solid #e3e3e3;
+		position: relative;
+		h3{
+			font-size: 28px;
+			color: #333;
+		}
+	}
+	.start{
+		margin-top: 10px;
+		font-size: 20px;
+		.starslist{
+			margin-right: 9px;
+		}
+		.span{
+			margin-left: 6px;
+			color: #333;
+			margin-right: 25px;
+		}
+		.span2{
+			color: #999;
+		}
+	}
+	.payBilButton{
+		width: 131px;
+		height: 52px;
+		line-height: 52px;
+		text-align: center;
+		font-size: 26px;
+		right: 40px;
+		background-color: #ff8400;
+		@include bdr-radius();
+		color: #FFFFFF;
+	}
+	.dress{
+		height: 125px;
+		padding: 20px 20px;
+		border-bottom: 1px solid #e3e3e3;
+		background-color: #FFFFFF;
+		font-size: 22px;
+		color: #686868;
+		p{
+			height: 32px;
+			line-height: 32px;
+			margin: 10px 0;
+		}
+	}
+	.dressIcon{
+		background: url("../images/didian.png") 0 0 no-repeat;
+	}
+	.photoIcon{
+		background: url("../images/phone.png") 0 0 no-repeat;
+	}
+	.dressIcon,.photoIcon{
+		width: 32px;
+		height: 32px;
+		background-size: contain;
+		margin-right: 10px;
+	}
+	.singleSelf{
+		padding: 26px 20px;
+		background-color: #FFFFFF;
+		@include baceBorderB();
+		position: relative;
+	}
+	.singleImg{
+		width: 147px;
+		height: 100px;
+		margin-right: 35px;
+		img{
+			width: 100%;
+		}
+	}
+	.singleFont{
+		font-size: 28px;
+		padding-top: 6px;
+		p:first-child{
+			color: #333;
+			margin-bottom: 24px;
+		}
+		.presentPrice{
+			color: #fc1212;
+		}
+		.originalPrice{
+			color: #999;
+			margin-left: 48px;
+			text-decoration: line-through;
+		}
+	}
+	.rightArrow{
+		width: 13px;
+		height: 22px;
+		background: url("../images/left-arrow.png") 0 0 no-repeat;
+		background-size: contain;
+		right: 20px;
+	}
+	.comment{
+		padding: 0 20px;
+		height: 80px;
+		line-height: 80px;
+		border-bottom: 1px solid #e3e3e3;
+		background-color: #FFFFFF;
+		position: relative;
+	}
+	.commetLeft{
+		font-size: 28px;
+		color: #333333;
+	}
+	.commetRight{
+		font-size: 22px;
+		color: #999;
+		padding-right: 26px;
+	}
+	.commentBox{
+		padding: 20px;
+		background-color: #FFFFFF;
+		border-bottom: 1px solid #e3e3e3;
+	}
+	.commentImg{
+		width: 75px;
+		height: 75px;
+		margin-right: 30px;
+		img{
+			width: 100%;
+		}
+	}
+	.userStart{
+		margin-top: 10px;
+	}
+	.usename{
+		@include font-dpr(11px);
+		color: #ff8400;
+		margin-top: 8px;
+	}
+	.userStart{
+		.userStartlist{
+			margin-right: 10px;
+		}
+		.font{
+			@include font-dpr(11px);
+			color: #686868;
+			margin-left: 12px;
+		}
+	}
+	.commentFont{
+		@include font-dpr(11px);
+		color: #686868;
+		margin: 22px 0 26px 0;
+	}
+	.commentImg2{
+		margin-bottom: 26px;
+		li{
+			width: 115px;
+			height: 115px;
+			margin-right: 10px;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.kuangOut{
+		text-align: right;
+		font-size: 0;
+		word-spacing: -1px;
+	}
+	.kuang{
+		width: 98px;
+		height: 48px;
+		border-radius: 48px;
+		position: relative;
+	}
+	.zan{
+		background: url("../images/weizan.png") 0 0 no-repeat;
+		background-size: contain;
+	}
+	.zanActive{
+		background: url("../images/zan.png") 0 0 no-repeat;
+		background-size: contain;
+	}
+	.pinglun{
+		margin-left: 20px;
+		background: url("../images/comment.png") 0 0 no-repeat;
+		background-size: contain;
+	}
+	.zanAlert{
+		display: none;
+		position: fixed;
+		z-index: 20;
+		background: url("../images/opacity_alert.png") 0 0 repeat;
+	}
+	.zanInner{
+		width: 515px;
+		height: 216px;
+		background-color: #FFFFFF;
+		@include bdr-radius();
+		p{
+			@include font-dpr(17px);
+			color: #333333;
+			text-align: center;
+			line-height: 48px;
+		}
+	}
+	.success{
+		width: 73px;
+		height: 73px;
+		margin: 35px auto 0;
+		background: url("../images/iconfont-success.png") 0 0 no-repeat;
+		background-size: contain;
+	}
+	.fail{
+		background: url("../images/iconfont-fail.png") 0 0 no-repeat;
+		background-size: contain;
+	}
+	.comments{
+		width: 720px;
+		height: 88px;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 88px;
+		background-color: #ff8400;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		@include font-dpr(14px);
+		color: #FFFFFF;
+		.pencil{
+			width: 42px;
+			height: 42px;
+			margin-right: 12px;
+			background: url("../images/pencil.png")0 0 no-repeat;
+			background-size: contain;
+		}
+	}
+}

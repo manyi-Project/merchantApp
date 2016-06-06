@@ -1,0 +1,54 @@
+.payBill {
+  width: 720px;
+  margin: 0 auto; }
+  .payBill .total {
+    margin-top: 10px;
+    padding: 26px 20px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #e3e3e3; }
+  .payBill .totalInner {
+    height: 82px;
+    line-height: 82px;
+    background-color: #efefef;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
+    .payBill .totalInner label {
+      font-size: 28px;
+      color: #333333;
+      padding-left: 27px; }
+    .payBill .totalInner input {
+      width: 75%;
+      height: 28px;
+      background-color: #efefef;
+      font-size: 28px; }
+  .payBill .coupons {
+    display: block;
+    padding: 0 46px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #e3e3e3;
+    position: relative; }
+  .payBill .couponLeft {
+    font-size: 28px;
+    height: 77px;
+    line-height: 77px;
+    color: #555; }
+  .payBill .left_arrow {
+    width: 13px;
+    height: 22px;
+    right: 46px;
+    background: url("../images/left-arrow.png") 0 0 no-repeat;
+    background-size: contain; }
+  .payBill .surePay {
+    display: block;
+    width: 680px;
+    height: 82px;
+    margin: 45px auto 0;
+    line-height: 82px;
+    text-align: center;
+    font-size: 28px;
+    color: #FFFFFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #f8b063; }

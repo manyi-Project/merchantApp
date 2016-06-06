@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/main.merge.css"/>
+	<link rel="stylesheet" href="../css/swiper-3.2.7.min.css"/>
+	<script src="../js/minJs/flexible.debug.js"></script>
+	<script src="../js/minJs/jquery-1.11.3.min.js"></script>
+	<title>美食</title>
+</head>
+<body>
+	<div class="deliciousFoodList">
+		<div class="foodOutBox">
+			<div class="foodInnerBox clearfix">
+				<div class="foodImg fl">
+					<img src="../images/benefits1.png" alt=""/>
+				</div>
+				<div class="footFont fl">
+					<h3>美味来餐厅（飞天路）</h3>
+					<ul class="start clearself">
+						<li class="starslist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="starslist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="starslist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="starslist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="starslist fl"><img src="../images/startBan.png" alt=""/></li>
+						<li class="span fl">45元/人</li>
+						<li class="span2 fl">中餐厅</li>
+					</ul>
+					<div class="group">
+						<span class="inline-block">中餐厅</span>
+						<div class="groupIcon inline-block">团</div>
+						<div class="couponIcon inline-block">券</div>
+						<span class="inline-block">满100可使用优惠券</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foodOutBox">
+			<div class="foodInnerBox clearfix">
+				<div class="foodImg fl">
+					<img src="../images/benefits1.png" alt=""/>
+				</div>
+				<div class="footFont fl">
+					<h3>美味来餐厅（飞天路）</h3>
+					<ul class="start clearself">
+						<li class="starslist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="starslist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="starslist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="starslist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="starslist fl"><img src="../images/startBan.png" alt=""/></li>
+						<li class="span fl">45元/人</li>
+						<li class="span2 fl">中餐厅</li>
+					</ul>
+					<div class="group">
+						<span class="inline-block">中餐厅</span>
+						<div class="groupIcon inline-block">团</div>
+						<div class="couponIcon inline-block">券</div>
+						<span class="inline-block">满100可使用优惠券</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

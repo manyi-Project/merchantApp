@@ -1,0 +1,106 @@
+.activity {
+  width: 720px;
+  margin: 0 auto; }
+  .activity .bannerBox {
+    padding: 20px;
+    margin: 20px auto 10px;
+    background-color: #FFFFFF; }
+    .activity .bannerBox img {
+      width: 100%; }
+  .activity .list li:first-child {
+    border-right: 1px solid #e3e3e3; }
+  .activity .list li {
+    width: 50%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 14px;
+    /*no*/
+    color: #555555;
+    text-align: center;
+    background-color: #FFFFFF; }
+    [data-dpr="2"] .activity .list li {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .activity .list li {
+      font-size: 42px;
+      /*no*/ }
+    .activity .list li a {
+      display: inline-block;
+      width: 100%;
+      height: 100%; }
+  .activity .tips {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    font-size: 12px;
+    /*no*/
+    color: #999; }
+    [data-dpr="2"] .activity .tips {
+      font-size: 24px;
+      /*no*/ }
+    [data-dpr="3"] .activity .tips {
+      font-size: 36px;
+      /*no*/ }
+  .activity .coupon {
+    padding: 20px 20px 20px 160px;
+    background-color: #FFFFFF;
+    position: relative; }
+  .activity .couponImg {
+    width: 120px;
+    height: 120px;
+    background-color: #d1d1d1;
+    margin-left: -140px; }
+  .activity .couponFont {
+    width: 100%; }
+    .activity .couponFont p {
+      line-height: 64px; }
+    .activity .couponFont p:first-child {
+      font-size: 14px;
+      /*no*/
+      color: #555; }
+      [data-dpr="2"] .activity .couponFont p:first-child {
+        font-size: 28px;
+        /*no*/ }
+      [data-dpr="3"] .activity .couponFont p:first-child {
+        font-size: 42px;
+        /*no*/ }
+    .activity .couponFont p:last-child {
+      font-size: 12px;
+      /*no*/
+      color: #999; }
+      [data-dpr="2"] .activity .couponFont p:last-child {
+        font-size: 24px;
+        /*no*/ }
+      [data-dpr="3"] .activity .couponFont p:last-child {
+        font-size: 36px;
+        /*no*/ }
+  .activity .pirce {
+    font-size: 12px;
+    /*no*/
+    color: #999999;
+    line-height: 44px; }
+    [data-dpr="2"] .activity .pirce {
+      font-size: 24px;
+      /*no*/ }
+    [data-dpr="3"] .activity .pirce {
+      font-size: 36px;
+      /*no*/ }
+  .activity .now {
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    background-color: #ff8400;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    bottom: 24px;
+    font-size: 10px;
+    /*no*/ }
+    [data-dpr="2"] .activity .now {
+      font-size: 20px;
+      /*no*/ }
+    [data-dpr="3"] .activity .now {
+      font-size: 30px;
+      /*no*/ }

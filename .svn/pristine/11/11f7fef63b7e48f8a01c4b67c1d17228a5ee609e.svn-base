@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/main.merge.css"/>
+	<link rel="stylesheet" href="../css/swiper-3.2.7.min.css"/>
+	<script src="../js/minJs/flexible.debug.js"></script>
+	<script src="../js/minJs/jquery-1.11.3.min.js"></script>
+	<title>全部评论</title>
+</head>
+<body>
+	<div class="comments hotelDetails" style="padding-top: 10px">
+		<div class="commentBox">
+			<div class="commentTitle clearself">
+				<div class="commentImg fl"><img src="../images/userPhoto.png" alt=""/></div>
+				<div class="commentName fl">
+					<p class="usename">谁家的小芳</p>
+					<ul class="userStart clearself">
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/startBan.png" alt=""/></li>
+						<li class="font fl">2016-05-08</li>
+					</ul>
+				</div>
+			</div>
+			<p class="commentFont">好好吃哦，下次还来啊。</p>
+			<ul class="commentImg2 clearself">
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+			</ul>
+			<div class="kuangOut clearself">
+				<div class="kuang zan inline-block"></div>
+				<div class="kuang pinglun inline-block"></div>
+			</div>
+		</div>
+		<div class="commentBox">
+			<div class="commentTitle clearself">
+				<div class="commentImg fl"><img src="../images/userPhoto.png" alt=""/></div>
+				<div class="commentName fl">
+					<p class="usename">谁家的小芳</p>
+					<ul class="userStart clearself">
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/startBan.png" alt=""/></li>
+						<li class="font fl">2016-05-08</li>
+					</ul>
+				</div>
+			</div>
+			<p class="commentFont">好好吃哦，下次还来啊。</p>
+			<ul class="commentImg2 clearself">
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+			</ul>
+			<div class="kuangOut clearself">
+				<div class="kuang zan inline-block"></div>
+				<div class="kuang pinglun inline-block"></div>
+			</div>
+		</div>
+		<div class="commentBox">
+			<div class="commentTitle clearself">
+				<div class="commentImg fl"><img src="../images/userPhoto.png" alt=""/></div>
+				<div class="commentName fl">
+					<p class="usename">谁家的小芳</p>
+					<ul class="userStart clearself">
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/startBan.png" alt=""/></li>
+						<li class="font fl">2016-05-08</li>
+					</ul>
+				</div>
+			</div>
+			<p class="commentFont">好好吃哦，下次还来啊。</p>
+			<ul class="commentImg2 clearself">
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+			</ul>
+			<div class="kuangOut clearself">
+				<div class="kuang zan inline-block"></div>
+				<div class="kuang pinglun inline-block"></div>
+			</div>
+		</div>
+		<div class="commentBox">
+			<div class="commentTitle clearself">
+				<div class="commentImg fl"><img src="../images/userPhoto.png" alt=""/></div>
+				<div class="commentName fl">
+					<p class="usename">谁家的小芳</p>
+					<ul class="userStart clearself">
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/startBan.png" alt=""/></li>
+						<li class="font fl">2016-05-08</li>
+					</ul>
+				</div>
+			</div>
+			<p class="commentFont">好好吃哦，下次还来啊。</p>
+			<ul class="commentImg2 clearself">
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+			</ul>
+			<div class="kuangOut clearself">
+				<div class="kuang zan inline-block"></div>
+				<div class="kuang pinglun inline-block"></div>
+			</div>
+		</div>
+		<div class="commentBox">
+			<div class="commentTitle clearself">
+				<div class="commentImg fl"><img src="../images/userPhoto.png" alt=""/></div>
+				<div class="commentName fl">
+					<p class="usename">谁家的小芳</p>
+					<ul class="userStart clearself">
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/startBan.png" alt=""/></li>
+						<li class="font fl">2016-05-08</li>
+					</ul>
+				</div>
+			</div>
+			<p class="commentFont">好好吃哦，下次还来啊。</p>
+			<ul class="commentImg2 clearself">
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+			</ul>
+			<div class="kuangOut clearself">
+				<div class="kuang zan inline-block"></div>
+				<div class="kuang pinglun inline-block"></div>
+			</div>
+		</div>
+		<div class="commentBox">
+			<div class="commentTitle clearself">
+				<div class="commentImg fl"><img src="../images/userPhoto.png" alt=""/></div>
+				<div class="commentName fl">
+					<p class="usename">谁家的小芳</p>
+					<ul class="userStart clearself">
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/start.png" alt=""/></li>
+						<li class="userStartlist fl"><img src="../images/startBan.png" alt=""/></li>
+						<li class="font fl">2016-05-08</li>
+					</ul>
+				</div>
+			</div>
+			<p class="commentFont">好好吃哦，下次还来啊。</p>
+			<ul class="commentImg2 clearself">
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+				<li class="fl"><img src="../images/comment1.png" alt=""/></li>
+			</ul>
+			<div class="kuangOut clearself">
+				<div class="kuang zan inline-block"></div>
+				<div class="kuang pinglun inline-block"></div>
+			</div>
+		</div>
+		<div class="zanAlert marginAuto">
+			<div class="zanInner verLRCenter">
+				<div class="success"></div>
+				<div id="success">
+					<p>收藏成功</p>
+					<p>可以在 "我的收藏" 中查看</p>
+				</div>
+				<div id="fail" style="display:none;">
+					<p>已取消</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	$(function(){
+		$(".zan").on("click",function(){
+			$(this).toggleClass('zanActive');
+			if(!$(this).hasClass("zanActive")){
+				$(".success").addClass("fail");
+				$("#fail").show();
+				$("#success").hide();
+			}else{
+				$(".success").removeClass("fail");
+				$("#success").show();
+				$("#fail").hide();
+			}
+			$(".zanAlert").fadeIn(function(){
+				setTimeout(function(){
+					$(".zanAlert").fadeOut();
+				},500)
+			});
+		})
+	})
+</script>
+</html>

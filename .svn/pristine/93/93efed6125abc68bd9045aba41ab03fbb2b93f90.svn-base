@@ -1,0 +1,81 @@
+@import "base";
+.deliciousFoodList{
+	@include LRcenter(720);
+	.foodOutBox{
+		background-color: #FFFFFF;
+		padding-left: 20px;
+		margin-bottom: 10px;
+	}
+	.foodInnerBox{
+		padding: 18px 0;
+		@include baceBorderB();
+	}
+	.foodOutBox:last-child > .foodInnerBox{
+		border-bottom: none;
+	}
+	.foodImg{
+		width: 145px;
+		height: 112px;
+		margin-right: 22px;
+		img{
+			width: 100%;
+		}
+	}
+	.footFont{
+		padding-top: 8px;
+		width: 530px;
+		h3{
+			@include font-dpr(14px);
+			color: #333333;
+			width: 500px;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+	}
+	.start{
+		margin-top: 10px;
+		font-size: 20px;
+		padding-bottom: 10px;
+		@include borderB-dpr($border-style:dashed);
+		.starslist{
+			@include square(22px);
+			margin-right: 9px;
+			img{
+				width: 100%;
+			}
+		}
+		.span{
+			margin-left: 6px;
+			color: #333;
+			margin-right: 25px;
+		}
+		.span2{
+			color: #999;
+		}
+	}
+	.group{
+		margin-top: 8px;
+		font-size: 0;
+	}
+	.group > span{
+		vertical-align: bottom;
+		color: #686868;
+		@include font-dpr(10px);
+	}
+	.groupIcon,.couponIcon{
+		text-align: center;
+		line-height: 30px;
+		color: #FFFFFF;
+		margin-right:22px;
+		@include font-dpr(10px);
+		@include square(30px);
+		@include bdr-radius(5px);
+	}
+	.groupIcon{
+		background-color: #1fa78c;
+	}
+	.couponIcon{
+		background-color: #ff5a00;
+	}
+}

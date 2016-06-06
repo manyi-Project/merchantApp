@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/main.merge.css"/>
+	<link rel="stylesheet" href="../css/swiper-3.2.7.min.css"/>
+	<script src="../js/minJs/flexible.debug.js"></script>
+	<script src="../js/minJs/jquery-1.11.3.min.js"></script>
+	<title>消息</title>
+</head>
+<body>
+<div class="message">
+	<ul>
+		<li class="message_out clearself">
+			<div class="dianping fl"></div>
+			<div class="messCont fr">
+				<div class="title clearself">
+					<div class="name fl">点评活动</div>
+					<div class="time fr">11:03</div>
+				</div>
+				<p>30抵用券已经为你准备好</p>
+			</div>
+		</li>
+		<li class="message_out clearself">
+			<div class="dianping fl"></div>
+			<div class="messCont fr">
+				<div class="title clearself">
+					<div class="name fl">点评活动</div>
+					<div class="time fr">11:03</div>
+				</div>
+				<p>30抵用券已经为你准备好</p>
+			</div>
+		</li>
+		<li class="message_out clearself">
+			<div class="dianping fl"></div>
+			<div class="messCont fr">
+				<div class="title clearself">
+					<div class="name fl">点评活动</div>
+					<div class="time fr">11:03</div>
+				</div>
+				<p>30抵用券已经为你准备好</p>
+			</div>
+		</li>
+	</ul>
+</div>
+</body>
+</html>

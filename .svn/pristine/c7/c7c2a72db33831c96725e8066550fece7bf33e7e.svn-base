@@ -1,0 +1,59 @@
+@import "base.scss";
+
+//input样式
+input::-webkit-input-placeholder{
+	@include font-dpr(14px);
+	color:#999;
+}
+input:-moz-placeholder{
+	@include font-dpr(14px);
+	color:#999;
+}
+input::-moz-placeholder{
+	@include font-dpr(14px);
+	color:#999;
+}
+input:-ms-input-placeholder{
+	@include font-dpr(14px);
+	color:#999;
+}
+/*订单列表公共头*/
+.statusBar{
+	width: 720px;
+	height: 100px;
+	margin: 0 auto;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	li{
+		width: 20%;
+		float: left;
+		height: 100px;
+		line-height: 100px;
+	}
+	a{
+		width: 100%;
+		line-height: normal;
+		color: #666;
+		display: inline-block;
+		@include borderR-dpr();
+		@include font-dpr(14px);
+		text-align: center;
+	}
+	li:last-child a{
+		border-right: none;/*no*/
+	}
+}
+.selected{
+	@include borderB-dpr(2px,solid,#ff8400);
+}
+.selected a{
+	color: #ff8400;
+}

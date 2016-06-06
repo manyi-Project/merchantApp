@@ -1,0 +1,64 @@
+p, a, span {
+  line-height: 100%; }
+
+.moreBenefits {
+  width: 720px;
+  margin: 20px auto 0;
+  background-color: #FFFFFF;
+  padding-left: 20px; }
+  .moreBenefits .benefitsBox {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    border-bottom: 1px solid #e3e3e3; }
+    .moreBenefits .benefitsBox .now {
+      width: 114px;
+      height: 40px;
+      font-size: 10px;
+      /*no*/
+      color: #fff;
+      text-align: center;
+      right: 20px;
+      line-height: 40px;
+      background-color: #ff8400;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px; }
+      [data-dpr="2"] .moreBenefits .benefitsBox .now {
+        font-size: 20px;
+        /*no*/ }
+      [data-dpr="3"] .moreBenefits .benefitsBox .now {
+        font-size: 30px;
+        /*no*/ }
+    .moreBenefits .benefitsBox .clickActive {
+      background-color: #e3e3e3; }
+  .moreBenefits .benefitsBox:last-child {
+    border-bottom: none; }
+  .moreBenefits .benefitsImg {
+    width: 134px;
+    height: 100px;
+    margin-right: 20px; }
+  .moreBenefits .benefitsFont {
+    font-size: 12px;
+    /*no*/
+    color: #999; }
+    [data-dpr="2"] .moreBenefits .benefitsFont {
+      font-size: 24px;
+      /*no*/ }
+    [data-dpr="3"] .moreBenefits .benefitsFont {
+      font-size: 36px;
+      /*no*/ }
+    .moreBenefits .benefitsFont .mt {
+      margin-top: -8px; }
+    .moreBenefits .benefitsFont .numb {
+      font-size: 18px;
+      /*no*/
+      color: #ff8400; }
+      [data-dpr="2"] .moreBenefits .benefitsFont .numb {
+        font-size: 36px;
+        /*no*/ }
+      [data-dpr="3"] .moreBenefits .benefitsFont .numb {
+        font-size: 54px;
+        /*no*/ }
+    .moreBenefits .benefitsFont .p {
+      margin: 12px auto; }

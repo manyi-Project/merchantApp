@@ -1,0 +1,83 @@
+@import "base.scss";
+.voucherDetails{
+	width: 720px;
+	margin: 20px auto 0;
+	color: #999;
+	.details{
+		padding: 32px 20px;
+		background-color: #FFFFFF;
+	}
+	.shopName{
+		@include font-dpr(14px);
+		color: #555;
+		line-height: 100%;
+		margin-bottom: 26px;
+	}
+	.time{
+		line-height: 100%;
+		@include font-dpr(11px);
+	}
+	.validity{
+		line-height: 100%;
+	}
+	.sold{
+		line-height: 100%;
+		color: #ec3e27;
+	}
+	.mt{
+		margin-top: 10px;
+	}
+	.priceBox{
+		background-color: #FFFFFF;
+		padding: 16px 20px;
+	}
+	.price{
+		@include font-dpr(13px);
+		color: #ff8400;
+		margin-bottom: 16px;
+	}
+	.price2{
+		@include font-dpr(11px);
+	}
+	.shareBox{
+		display: block;
+		@include lineHeightEQHeight(90px);
+		padding: 0 20px;
+		@include font-dpr(14px);
+		background-color: #FFFFFF;
+		position: relative;
+	}
+	.leftArrow{
+		width: 13px;
+		height: 22px;
+		background:url("../images/left-arrow.png") 0 0 no-repeat;
+		background-size: contain;
+		right: 20px;
+	}
+	.rule{
+		@include lineHeightEQHeight(90px);
+		padding: 0 20px;
+		@include font-dpr(14px);
+		color: #333;
+	}
+	.ruleCont{
+		padding: 30px 25px 44px ;
+		@include font-dpr(11px);
+		color: #999;
+		background-color: #FFFFFF;
+		p{
+			margin: 5px 0;
+		}
+	}
+	.clickReceive{
+		width: 680px;
+		@include lineHeightEQHeight(80px);
+		text-align: center;
+		@include font-dpr(14px);
+		color: #FFFFFF;
+		margin: 74px auto 0;
+		display: block;
+		background-color: #ff8400;
+		border-radius: 5px;
+	}
+}

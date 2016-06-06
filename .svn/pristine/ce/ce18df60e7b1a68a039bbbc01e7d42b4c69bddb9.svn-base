@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/main.merge.css"/>
+	<link rel="stylesheet" href="../css/swiper-3.2.7.min.css"/>
+	<script src="../js/minJs/flexible.debug.js"></script>
+	<script src="../js/minJs/jquery-1.11.3.min.js"></script>
+	<title>提交订单</title>
+</head>
+<body>
+	<div class="placeOrder">
+		<div class="boxOut">
+			<div class="herBox"></div>
+		</div>
+	</div>
+</body>
+</html>

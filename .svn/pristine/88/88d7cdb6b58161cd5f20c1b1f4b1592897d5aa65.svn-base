@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/main.merge.css"/>
+	<link rel="stylesheet" href="../css/swiper-3.2.7.min.css"/>
+	<script src="../js/minJs/flexible.debug.js"></script>
+	<script src="../js/minJs/jquery-1.11.3.min.js"></script>
+	<title>待发货</title>
+</head>
+<body>
+<ul class="statusBar">
+	<li><a href="stayPay.html">待支付</a></li>
+	<li><a href="stayShipped.html">待发货</a></li>
+	<li><a href="alreadyShipped.html">已发货</a></li>
+	<li><a href="hasBeenCompleted.html">已完成</a></li>
+	<li class="selected"><a href="hasBeenCanceled.html">已取消</a></li>
+</ul>
+<div class="hasBeenCanseled">
+	<div class="common_noOrder">
+		<p class="bigfont">您还没有相关的订单</p>
+		<p class="smallfont">可以去看看有哪些想买的</p>
+	</div>
+</div>
+
+</body>
+</html>

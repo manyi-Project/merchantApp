@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/main.merge.css"/>
+	<link rel="stylesheet" href="../css/swiper-3.2.7.min.css"/>
+	<script src="../js/minJs/flexible.debug.js"></script>
+	<script src="../js/minJs/jquery-1.11.3.min.js"></script>
+	<title>买单</title>
+</head>
+<body>
+	<div class="payBill">
+		<div class="total">
+			<div class="totalInner">
+				<label>消费总额:</label>
+				<input type="tel" placeholder="询问服务员后输入"/>
+			</div>
+		</div>
+		<a id="coupons" href=""
+		   class="coupons clearself">
+			<span class="couponLeft fl">使用优惠券</span>
+			<span class="left_arrow verCenter"></span>
+		</a>
+		<a href="javascript:;" class="coupons clearself">
+			<span class="couponLeft fl">实付金额</span>
+			<span class="couponLeft fr">10元</span>
+		</a>
+		<a href="javascript:;" class="surePay">确定买单</a>
+	</div>
+</body>
+<script>
+</script>
+</html>

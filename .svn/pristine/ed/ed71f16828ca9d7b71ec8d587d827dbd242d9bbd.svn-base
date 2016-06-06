@@ -1,0 +1,14 @@
+@import "base.scss";
+.placeOrder{
+	width: 720px;
+	margin: 0 auto;
+	.boxOut{
+		padding-left: 20px;
+		background-color: #FFFFFF;
+	}
+	.herBox{
+		height: 89px;
+		padding-left: 25px;
+		@include baceBorderB();
+	}
+}

@@ -1,0 +1,78 @@
+@import "base.scss";
+.deliciousFoodList{
+	width: 720px;
+	margin: 0 auto;
+	.foodOutBox{
+		height: 150px;
+		background-color: #FFFFFF;
+		padding-left: 20px;
+	}
+	.foodInnerBox{
+		padding: 18px 0;
+		@include baceBorderB();
+	}
+	.foodOutBox:last-child > .foodInnerBox{
+		border-bottom: none;
+	}
+	.foodImg{
+		width: 145px;
+		height: 112px;
+		margin-right: 22px;
+		img{
+			width: 100%;
+		}
+	}
+	.footFont{
+		padding-top: 8px;
+		h3{
+			@include font-dpr(14px);
+			color: #333333;
+		}
+	}
+	.start{
+		margin-top: 10px;
+		font-size: 20px;
+		.starslist{
+			@include square(22px);
+			margin-right: 9px;
+			img{
+				width: 100%;
+			}
+		}
+		.span{
+			margin-left: 6px;
+			color: #333;
+			margin-right: 25px;
+		}
+		.span2{
+			color: #999;
+		}
+	}
+	.group{
+		margin-top: 14px;
+		font-size: 0;
+	}
+	.group > span{
+		height: 30px;
+		line-height: 30px;
+		color: #686868;
+		@include font-dpr(10px);
+	}
+	.groupIcon,.couponIcon{
+		text-align: center;
+		line-height: 30px;
+		color: #FFFFFF;
+		@include font-dpr(10px);
+		@include square(30px);
+		@include bdr-radius(5px);
+	}
+	.groupIcon{
+		background-color: #1fa78c;
+		margin-left: 32px;
+		margin-right: 5px;
+	}
+	.couponIcon{
+		background-color: #ff5a00;
+		margin-right: 14px;
+	}
+}

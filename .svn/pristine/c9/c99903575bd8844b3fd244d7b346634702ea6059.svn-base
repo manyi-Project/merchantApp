@@ -1,0 +1,85 @@
+.deliciousFoodList {
+  width: 720px;
+  margin: 0 auto; }
+  .deliciousFoodList .foodOutBox {
+    height: 150px;
+    background-color: #FFFFFF;
+    padding-left: 20px; }
+  .deliciousFoodList .foodInnerBox {
+    padding: 18px 0;
+    border-bottom: 1px solid #e3e3e3; }
+  .deliciousFoodList .foodOutBox:last-child > .foodInnerBox {
+    border-bottom: none; }
+  .deliciousFoodList .foodImg {
+    width: 145px;
+    height: 112px;
+    margin-right: 22px; }
+    .deliciousFoodList .foodImg img {
+      width: 100%; }
+  .deliciousFoodList .footFont {
+    padding-top: 8px;
+    width: 530px; }
+    .deliciousFoodList .footFont h3 {
+      font-size: 14px;
+      /*no*/
+      color: #333333; }
+      [data-dpr="2"] .deliciousFoodList .footFont h3 {
+        font-size: 28px;
+        /*no*/ }
+      [data-dpr="3"] .deliciousFoodList .footFont h3 {
+        font-size: 42px;
+        /*no*/ }
+  .deliciousFoodList .start {
+    margin-top: 10px;
+    font-size: 20px; }
+    .deliciousFoodList .start .starslist {
+      width: 22px;
+      height: 22px;
+      margin-right: 9px; }
+      .deliciousFoodList .start .starslist img {
+        width: 100%; }
+    .deliciousFoodList .start .span {
+      margin-left: 6px;
+      color: #333;
+      margin-right: 25px; }
+    .deliciousFoodList .start .span2 {
+      color: #999; }
+  .deliciousFoodList .group {
+    margin-top: 14px;
+    font-size: 0; }
+  .deliciousFoodList .group > span {
+    height: 30px;
+    line-height: 30px;
+    color: #686868;
+    font-size: 10px;
+    /*no*/ }
+    [data-dpr="2"] .deliciousFoodList .group > span {
+      font-size: 20px;
+      /*no*/ }
+    [data-dpr="3"] .deliciousFoodList .group > span {
+      font-size: 30px;
+      /*no*/ }
+  .deliciousFoodList .groupIcon, .deliciousFoodList .couponIcon {
+    text-align: center;
+    line-height: 30px;
+    color: #FFFFFF;
+    font-size: 10px;
+    /*no*/
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+    [data-dpr="2"] .deliciousFoodList .groupIcon, [data-dpr="2"] .deliciousFoodList .couponIcon {
+      font-size: 20px;
+      /*no*/ }
+    [data-dpr="3"] .deliciousFoodList .groupIcon, [data-dpr="3"] .deliciousFoodList .couponIcon {
+      font-size: 30px;
+      /*no*/ }
+  .deliciousFoodList .groupIcon {
+    background-color: #1fa78c;
+    margin-left: 32px;
+    margin-right: 5px; }
+  .deliciousFoodList .couponIcon {
+    background-color: #ff5a00;
+    margin-right: 14px; }

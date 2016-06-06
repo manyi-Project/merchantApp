@@ -1,0 +1,45 @@
+@import "base.scss";
+.receiveSuccess{
+	width: 720px;
+	margin: 0 auto;
+	.success{
+		height: 300px;
+		text-align: center;
+		background-color: #5e6b85;
+		overflow: hidden;
+		p{
+			@include font-dpr(14px);
+			color: #FFFFFF;
+		}
+	}
+	.right{
+		width: 96px;
+		height: 96px;
+		background: url("../images/right.png") 0 0 no-repeat;
+		background-size: contain;
+		margin: 57px auto 54px;
+	}
+	.cont{
+		height: 205px;
+		text-align: center;
+		color: #999999;
+		@include font-dpr(12px);
+		background-color: #fff;
+		padding-top: 26px;
+		p{
+			line-height: 36px;
+		}
+	}
+	.lookCoupon{
+		width: 680px;
+		height: 80px;
+		text-align: center;
+		line-height: 80px;
+		@include font-dpr(12px);
+		color: #fff;
+		margin: 30px auto 0;
+		display: block;
+		background-color: #ff8400;
+		border-radius: 5px;
+	}
+}

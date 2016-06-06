@@ -1,0 +1,247 @@
+@import "base.scss";
+.orderDetailPay{
+	@include LRcenter(720);
+	.o_header{
+		position:relative;
+	}
+	.a_back{
+		@include font-dpr(14px);
+		color:#fff;
+		background:url(../images/left_arrow.png) no-repeat;
+		background-size:18px 30px;
+		position:absolute;
+		display: block;
+		top:33px;
+		left:20px;
+		padding-left:20px;
+		line-height: 30px;
+	}
+	.o_order{
+		margin: 10px 0;
+		padding:8px 20px;
+		background:#fff;
+	}
+	.o_orderLeft{
+		float:left;
+		@include square(163px);
+		margin-right:24px;
+	}
+	.o_orderRight{
+		float:left;
+		width:436px;
+		position:relative;
+	}
+	.o_title{
+		@include font-dpr(14px);
+		color:#333;
+	}
+	.o_intro{
+		@include font-dpr(11px);
+		color:#999;
+		margin:12px 0 24px 0;
+	}
+	.o_price{
+		@include font-dpr(14px);
+		color:#FF8400;
+	}
+	.o_num{
+		@include font-dpr(14px);
+		color:#FF8400;
+		position:absolute;
+		bottom:0;
+		right:40px;
+	}
+	.o_orderState{
+		background-color:#fff;
+		margin-bottom:28px;
+	}
+	.o_orderCode{
+		width:100%;
+		height:82px;
+		@include borderB-dpr(2px);
+		padding-left:20px;
+		line-height: 80px;
+		color:#999;
+		@include font-dpr(12px);
+	}
+	.o_subState{
+		margin-top:24px;
+		color:#999;
+		@include font-dpr(12px);
+	}
+	.o_subStateLeft{
+		float:left;
+		width:146px;
+	}
+	.o_subStateLeft span{
+		float:right;
+	}
+	.o_subStateRight{
+		float:left;
+		width:550px;
+		word-break: break-all;
+	}
+	.o_color{
+		color:#FF8400;
+	}
+	.o_addressInfo{
+		padding:0 20px;
+	}
+	.o_subAddressInfo{
+		padding:52px 0 22px 0;
+		@include borderB-dpr(2px);
+		color: #868686;
+		@include font-dpr(14px);
+	}
+	.o_invoice{
+		padding-bottom:24px;
+		@include borderB-dpr(2px);
+	}
+	.o_remark{
+		width:100%;
+		@include lineHeightEQHeight(60px);
+	}
+	.o_subState2{
+		margin:0;
+	}
+	//.o_footer{
+	//	background: #fff;
+	//	width:100%;
+	//	height:98px;
+	//	@include borderT-dpr(2px);
+	//	padding-right:40px;
+	//}
+	.o_again{
+		float:right;
+		width:180px;
+		@include lineHeightEQHeight(48px);
+		@include bdr-radius(5px);
+		@include borderB-dpr(1px,solid,#999);
+		color:#666;
+		text-align: center;
+		margin:24px 38px 0 0;
+		background-color:#fff;
+	}
+	.o_evaluate{
+		float:right;
+		width:180px;
+		@include lineHeightEQHeight(48px);
+		@include bdr-radius(5px);
+		color:#fff;
+		background-color:#f4471f;
+		text-align: center;
+		margin-top:24px;
+	}
+
+	.od_shadow{
+		display: none;
+		@include square();
+		position:absolute;
+		top:0;
+		left:0;
+		background:rgba(0,0,0,.6);
+		z-index:20;
+	}
+	.od_pop{
+		width:470px;
+		height:244px;
+		background-color: #fff;
+		@include bdr-radius(5px);
+		position:absolute;
+		top:50%;
+		left:50%;
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+	}
+	.od_confirm{
+		width:100%;
+		@include lineHeightEQHeight(148px);
+		text-align: center;
+		@include font-dpr(14px);
+		color:#666;
+		@include borderB-dpr();
+	}
+	.od_confirmOpt span{
+		float:left;
+		width:90px;
+		@include lineHeightEQHeight(42px);
+		background-color: #FF8400;
+		color:#fff;
+		@include font-dpr(12px);
+		text-align: center;
+		@include bdr-radius(5px);
+		margin:26px 0 0 90px;
+	}
+	/*ÎÒµÄ*/
+	.od_tel{
+		text-align: center;
+		@include font-dpr(14px);
+		color:#666;
+	}
+	.od_tel p{
+		margin:40px 0 15px 0;
+	}
+	.od_subtel{
+		display: inline-block;
+		width:312px;
+		height:46px;
+		border: none;
+		@include border-dpr(1px,solid,#cbcbcb);
+	}
+	.my_confirm{
+		line-height:28px;
+		@include font-dpr(14px);
+	}
+	.my_jifen{
+		color:#999;
+		@include font-dpr(9px);
+	}
+	.my_gongxi{
+		padding:40px 0 25px 0;
+	}
+	.od_confirmOpt{
+		.my_insure{
+			margin-left:190px;
+		}
+	}
+	.op_bottom {
+		padding:0 20px;
+		margin:60px 0 20px 0;
+	}
+	.op_pay {
+		display: block;
+		width:100%;
+		@include lineHeightEQHeight(80px);
+		text-align: center;
+		color:#fff;
+		@include font-dpr(14px);
+		background-color:#F4471F;
+		@include bdr-radius(5px);
+	}
+	.op_subStateRight {
+		em{
+			display: block;
+			float: right;
+			width:13px;
+			height:22px;
+			background:url(../images/left-arrow.png) no-repeat;
+			background-size:13px 22px;
+			margin: 6px 0 0 20px;
+		}
+	}
+	.op_substate {
+		@include borderB-dpr();
+		padding-bottom:24px;
+	}
+	.op_addAddress{
+		em{
+			float:right;
+			@include square(34px);
+			background:url(../images/iconfont-jia.png) no-repeat;
+			background-size:34px 34px;
+		}
+	}
+}

@@ -1,0 +1,65 @@
+@import "base.scss";
+.placeOrder{
+	@include LRcenter(720);
+	.boxOne{
+		padding-top: 10px;
+		background-color: #f8f6f3;
+	}
+	.boxOut{
+		padding-left: 20px;
+		background-color: #FFFFFF;
+	}
+	.herBox{
+		@include lineHeightEQHeight(89px);
+		padding-left: 25px;
+		padding-right: 50px;
+		@include font-dpr(14px);
+		color: #868686;
+		@include baceBorderB();
+	}
+	.herBox > span{
+		height: 100%;
+		line-height: inherit;
+	}
+	.addAndSub{
+		height: 52px;
+		margin-top: 16px;
+		display: inline-block;
+		font-size: 0;
+		overflow: hidden;
+		@include border-dpr(1px,solid,#acacac);
+		@include bdr-radius();
+		.add,.sub{
+			width: 52px;
+		}
+		.val{
+			width: 63px;
+			@include borderR-dpr(1px,solid,#acacac);
+			@include borderL-dpr(1px,solid,#acacac);
+		}
+		.active{
+			color: #ff8400;
+		}
+	}
+	.addAndSub > input{
+		background-color: inherit;
+		text-align: center;
+		@include lineHeightEQHeight(52px);
+		color: #868686;
+		@include font-dpr(14px);
+	}
+	.addAndSub > input[type="button"]{
+		@include font-dpr(20px);
+	}
+	.submitOrder{
+		width: 680px;
+		@include lineHeightEQHeight(82px);
+		display: block;
+		text-align: center;
+		color: #FFFFFF;
+		@include font-dpr(14px);
+		margin: 45px auto 0;
+		background-color: #ff8400;
+		@include bdr-radius();
+	}
+}

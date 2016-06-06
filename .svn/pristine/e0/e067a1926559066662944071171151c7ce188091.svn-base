@@ -1,0 +1,72 @@
+@import "base.scss";
+@mixin boxshadow{
+	-webkit-box-shadow: 0 10px 5px #d2d1ce;
+	-moz-box-shadow: 0 10px 5px #d2d1ce;
+	box-shadow: 0 5px 10px #d2d1ce;/*no*/
+}
+.receiveCoupon{
+	@include LRcenter(720);
+	.couponBox{
+		width: 680px;
+		height: 246px;
+		margin: 20px auto;
+		background-color: #f78f05;
+		border-radius: 10px;
+		@include boxshadow;
+		color: #FFFFFF;
+		text-align: center;
+		overflow: hidden;
+		position: relative;
+		h3{
+			@include font-dpr(12px);
+			margin: 38px auto 48px;
+			line-height: 100%;
+		}
+	}
+	.extras{
+		@include font-dpr(15px);
+		line-height: 100%;
+		span{
+			@include font-dpr(23px);
+		}
+	}
+	.validity{
+		@include lineHeightEQHeight(70px);
+		@include font-dpr(12px);
+		position: absolute;
+		background: url("../images/opacity.png") 0 0 repeat;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.reminder{
+		margin-top: 53px;
+		padding-left: 40px;
+		h3{
+			@include font-dpr(14px);
+			color: #555555;
+			line-height: 100%;
+		}
+		.tips{
+			margin-top: 44px;
+			padding-left: 42px;
+			@include font-dpr(11px);
+			color: #999;
+			p{
+				line-height: 28px;
+			}
+		}
+	}
+	.clickReceive{
+		width: 680px;
+		@include lineHeightEQHeight(80px);
+		text-align: center;
+		@include font-dpr(14px);
+		color: #555555;
+		margin: 78px auto 0;
+		@include boxshadow;
+		display: block;
+		background-color: #FFFFFF;
+		border-radius: 5px;
+	}
+}

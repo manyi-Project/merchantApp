@@ -1,0 +1,51 @@
+.message {
+  width: 720px;
+  margin: 20px auto 0;
+  background-color: #FFFFFF; }
+  .message .message_out {
+    padding: 20px 0 20px 20px; }
+  .message .dianping {
+    width: 70px;
+    height: 70px;
+    background: url("../images/dianping.png") 0 0 no-repeat;
+    background-size: contain; }
+  .message .messCont {
+    border-bottom: 1px solid #e3e3e3;
+    width: 610px;
+    height: 109px;
+    padding-right: 20px; }
+    .message .messCont p {
+      color: #999;
+      font-size: 12px;
+      /*no*/
+      line-height: 100%; }
+      [data-dpr="2"] .message .messCont p {
+        font-size: 24px;
+        /*no*/ }
+      [data-dpr="3"] .message .messCont p {
+        font-size: 36px;
+        /*no*/ }
+  .message .title {
+    margin-bottom: 24px; }
+  .message .name {
+    color: #555555;
+    font-size: 14px;
+    /*no*/
+    line-height: 100%; }
+    [data-dpr="2"] .message .name {
+      font-size: 28px;
+      /*no*/ }
+    [data-dpr="3"] .message .name {
+      font-size: 42px;
+      /*no*/ }
+  .message .time {
+    color: #999;
+    font-size: 10px;
+    /*no*/
+    line-height: 100%; }
+    [data-dpr="2"] .message .time {
+      font-size: 20px;
+      /*no*/ }
+    [data-dpr="3"] .message .time {
+      font-size: 30px;
+      /*no*/ }

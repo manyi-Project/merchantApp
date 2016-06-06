@@ -1,0 +1,58 @@
+.receiveSuccess {
+  width: 720px;
+  margin: 0 auto; }
+  .receiveSuccess .success {
+    height: 300px;
+    text-align: center;
+    background-color: #5e6b85;
+    overflow: hidden; }
+    .receiveSuccess .success p {
+      font-size: 14px;
+      /*no*/
+      color: #FFFFFF; }
+      [data-dpr="2"] .receiveSuccess .success p {
+        font-size: 28px;
+        /*no*/ }
+      [data-dpr="3"] .receiveSuccess .success p {
+        font-size: 42px;
+        /*no*/ }
+  .receiveSuccess .right {
+    width: 96px;
+    height: 96px;
+    background: url("../images/right.png") 0 0 no-repeat;
+    background-size: contain;
+    margin: 57px auto 54px; }
+  .receiveSuccess .cont {
+    height: 205px;
+    text-align: center;
+    color: #999999;
+    font-size: 12px;
+    /*no*/
+    background-color: #fff;
+    padding-top: 26px; }
+    [data-dpr="2"] .receiveSuccess .cont {
+      font-size: 24px;
+      /*no*/ }
+    [data-dpr="3"] .receiveSuccess .cont {
+      font-size: 36px;
+      /*no*/ }
+    .receiveSuccess .cont p {
+      line-height: 36px; }
+  .receiveSuccess .lookCoupon {
+    width: 680px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 12px;
+    /*no*/
+    color: #fff;
+    margin: 30px auto 0;
+    display: block;
+    background-color: #ff8400;
+    border-radius: 5px; }
+    [data-dpr="2"] .receiveSuccess .lookCoupon {
+      font-size: 24px;
+      /*no*/ }
+    [data-dpr="3"] .receiveSuccess .lookCoupon {
+      font-size: 36px;
+      /*no*/ }

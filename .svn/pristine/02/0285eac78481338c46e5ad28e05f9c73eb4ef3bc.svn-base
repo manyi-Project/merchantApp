@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/main.merge.css"/>
+	<link rel="stylesheet" href="../css/swiper-3.2.7.min.css"/>
+	<script src="../js/minJs/flexible.debug.js"></script>
+	<script src="../js/minJs/jquery-1.11.3.min.js"></script>
+	<title>使用优惠券</title>
+	<style>
+		body{
+			background-color: #FFFFFF;
+		}
+	</style>
+</head>
+<body>
+	<div class="useCoupon">
+		<div class="tips">
+			请选择优惠券，支付完成后优惠不可退
+		</div>
+		<div class="out">
+			<a href="javascript:;" class="noUse">
+				不使用优惠券
+			</a>
+			<div class="couponBox">
+				<p class="p1"><span>20</span>元优惠券</p>
+				<p class="p2">消费100以上可用</p>
+				<a class="nowUse" href="javascript:;">立即使用</a>
+			</div>
+			<div class="couponBox couponBoxPost">
+				<p class="p1"><span>20</span>元优惠券</p>
+				<p class="p2">消费100以上可用</p>
+				<a class="nowUse" href="javascript:;">立即使用</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

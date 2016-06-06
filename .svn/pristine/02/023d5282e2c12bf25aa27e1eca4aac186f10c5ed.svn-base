@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/main.merge.css"/>
+	<link rel="stylesheet" href="../css/swiper-3.2.7.min.css"/>
+	<script src="../js/minJs/flexible.debug.js"></script>
+	<script src="../js/minJs/jquery-1.11.3.min.js"></script>
+	<title>代金券详情</title>
+</head>
+<body>
+	<div class="voucherDetails">
+		<div class="details">
+			<div class="shopName">汉拿山韩式烤肉100元代金券</div>
+			<div class="time clearself">
+				<span class="validity fl">有效期：2016-04-29至2016-05-31</span>
+				<span class="sold fr">已售：1000</span>
+			</div>
+		</div>
+		<div class="priceBox mt">
+			<p class="price">80元</p>
+			<p class="price2">市场价格：100元</p>
+		</div>
+		<a href="javascript:;" class="shareBox mt">
+			查看可实用门店
+			<div class="leftArrow verCenter"></div>
+		</a>
+		<a href="javascript:;" class="shareBox mt">
+			分享给好友
+			<div class="leftArrow verCenter"></div>
+		</a>
+		<div class="rule">
+			优惠细则
+		</div>
+		<div class="ruleCont">
+			<p>【商品详情】80元可购买汉拿山韩式烤肉100元代金券1张</p>
+			<p>【有效期限】即日起至2016年5月31日</p>
+			<p>【购买须知】有效期内每位顾客最多可购买20张</p>
+			<p>【使用规则】本券不支持外送服务，可累计使用，不兑现，不找零，
+				不  与其他优惠同享</p>
+			<p>【发票开具】按实际支付金额开具发票，优惠部分不开发票</p>
+			<p>【使用范围】可在“查看适用门店”中查询</p>
+		</div>
+		<a href="javascript:;" class="clickReceive">立刻购买</a>
+	</div>
+</body>
+</html>
