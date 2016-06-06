@@ -12,7 +12,7 @@
 }
 .logisticsInformation .logistics_list{
 	height: 100%;
-	border-left: 1px solid #5e6b85;
+	@include borderL-dpr();
 	padding-top: 54px;
 }
 .logisticsInformation .logistics_list li{
