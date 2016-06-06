@@ -666,9 +666,9 @@
 }
 
 .deliciousFoodList .foodOutBox {
-  height: 2.083333rem;
   background-color: #FFFFFF;
   padding-left: 0.277778rem;
+  margin-bottom: 0.138889rem;
 }
 
 .deliciousFoodList .foodInnerBox {
@@ -715,6 +715,16 @@
 .deliciousFoodList .start {
   margin-top: 0.138889rem;
   font-size: 0.277778rem;
+  padding-bottom: 0.138889rem;
+  border-bottom: 1px dashed #e3e3e3;
+}
+
+[data-dpr="2"] .deliciousFoodList .start {
+  border-bottom: 2px dashed #e3e3e3;
+}
+
+[data-dpr="3"] .deliciousFoodList .start {
+  border-bottom: 3px dashed #e3e3e3;
 }
 
 .deliciousFoodList .start .starslist {
@@ -738,13 +748,12 @@
 }
 
 .deliciousFoodList .group {
-  margin-top: 0.194444rem;
+  margin-top: 0.111111rem;
   font-size: 0;
 }
 
 .deliciousFoodList .group > span {
-  height: 0.416667rem;
-  line-height: 0.416667rem;
+  vertical-align: bottom;
   color: #686868;
   font-size: 10px;
 }
@@ -762,7 +771,7 @@
   text-align: center;
   line-height: 0.416667rem;
   color: #FFFFFF;
-  margin: 0 0.305556rem;
+  margin-right: 0.305556rem;
   font-size: 10px;
   width: 0.416667rem;
   height: 0.416667rem;
@@ -1548,6 +1557,11 @@
                   5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
 **/
 
+.pageHome {
+  width: 10rem;
+  margin: 0 auto;
+}
+
 .pageHome .search {
   width: 9.722222rem;
   height: 0.888889rem;
@@ -1652,7 +1666,7 @@
 .pageHome .localClass .classList ul {
   width: 10rem;
   margin-top: 0.277778rem;
-  padding: 0 0.694444rem;
+  padding: 0 1.388889rem;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -3669,7 +3683,7 @@
   margin: 0 auto;
 }
 
-.useCoupon .tips {
+.useCoupon .tipsss {
   height: 1.083333rem;
   line-height: 1.083333rem;
   text-align: center;
@@ -3678,11 +3692,11 @@
   background-color: #f8f6f3;
 }
 
-[data-dpr="2"] .useCoupon .tips {
+[data-dpr="2"] .useCoupon .tipsss {
   font-size: 22px;
 }
 
-[data-dpr="3"] .useCoupon .tips {
+[data-dpr="3"] .useCoupon .tipsss {
   font-size: 33px;
 }
 
