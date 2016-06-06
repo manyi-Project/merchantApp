@@ -1713,7 +1713,15 @@
 .pageHome .title {
   height: 1.097222rem;
   padding: 0 0.305556rem;
-  border-bottom: 0.013889rem solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+[data-dpr="2"] .pageHome .title {
+  border-bottom: 2px solid #e3e3e3;
+}
+
+[data-dpr="3"] .pageHome .title {
+  border-bottom: 3px solid #e3e3e3;
 }
 
 .pageHome .title .name {

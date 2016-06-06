@@ -108,7 +108,7 @@
 	.title{
 		height: 79px;
 		padding: 0 22px;
-		@include baceBorderB();
+		@include borderB-dpr();
 		.name{
 			@include font-dpr(14px);
 			color: #555;

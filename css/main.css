@@ -1324,7 +1324,14 @@
   .pageHome .title {
     height: 79px;
     padding: 0 22px;
-    border-bottom: 1px solid #e3e3e3; }
+    border-bottom: 1px solid #e3e3e3;
+    /*no*/ }
+    [data-dpr="2"] .pageHome .title {
+      border-bottom: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .pageHome .title {
+      border-bottom: 3px solid #e3e3e3;
+      /*no*/ }
     .pageHome .title .name {
       font-size: 14px;
       /*no*/
