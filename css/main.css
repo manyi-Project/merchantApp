@@ -2901,7 +2901,7 @@
 .useCoupon {
   width: 720px;
   margin: 0 auto; }
-  .useCoupon .tips {
+  .useCoupon .tipsss {
     height: 78px;
     line-height: 78px;
     text-align: center;
@@ -2909,10 +2909,10 @@
     /*no*/
     color: #555;
     background-color: #f8f6f3; }
-    [data-dpr="2"] .useCoupon .tips {
+    [data-dpr="2"] .useCoupon .tipsss {
       font-size: 22px;
       /*no*/ }
-    [data-dpr="3"] .useCoupon .tips {
+    [data-dpr="3"] .useCoupon .tipsss {
       font-size: 33px;
       /*no*/ }
   .useCoupon .out {
