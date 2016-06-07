@@ -1359,7 +1359,7 @@
   .pageHome .title {
     height: 79px;
     padding: 0 22px;
-    border: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
     /*no*/ }
     .pageHome .title .name {
       font-size: 14px;

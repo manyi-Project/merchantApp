@@ -1753,7 +1753,7 @@
 .pageHome .title {
   height: 1.097222rem;
   padding: 0 0.305556rem;
-  border: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 .pageHome .title .name {
