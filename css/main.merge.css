@@ -4272,10 +4272,26 @@ body.ie8 .tips {
   width: 10rem;
   margin: 0 auto;
   height: 100%;
-  background: url("../images/shareBackground.jpg") 0 0 no-repeat;
+  background: url("../images/shareBackground.png") 0 0 no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
+}
+
+.share .readIcon {
+  width: 1.75rem;
+  height: 1.833333rem;
+  margin: 1.638889rem auto 0;
+  background: url("../images/readIcon.png") 0 0 no-repeat;
+  background-size: contain;
+}
+
+.share .font {
+  width: 6.041667rem;
+  height: 1.458333rem;
+  margin: 1.555556rem auto 1.694444rem;
+  background: url("../images/font.png") 0 0 no-repeat;
+  background-size: contain;
 }
 
 .share .appDownload {
@@ -4287,8 +4303,9 @@ body.ie8 .tips {
   background-size: contain;
 }
 
-.share .marginT {
-  margin-top: 8.097222rem;
+.share .andriodDown {
+  background: url("../images/andriod.png") 0 0 no-repeat;
+  background-size: contain;
 }
 
 .share .ercode {

@@ -3396,10 +3396,22 @@
   width: 720px;
   margin: 0 auto;
   height: 100%;
-  background: url("../images/shareBackground.jpg") 0 0 no-repeat;
+  background: url("../images/shareBackground.png") 0 0 no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative; }
+  .share .readIcon {
+    width: 126px;
+    height: 132px;
+    margin: 118px auto 0;
+    background: url("../images/readIcon.png") 0 0 no-repeat;
+    background-size: contain; }
+  .share .font {
+    width: 435px;
+    height: 105px;
+    margin: 112px auto 122px;
+    background: url("../images/font.png") 0 0 no-repeat;
+    background-size: contain; }
   .share .appDownload {
     display: block;
     margin: 0 auto 38px;
@@ -3407,8 +3419,9 @@
     height: 67px;
     background: url("../images/ios.png") 0 0 no-repeat;
     background-size: contain; }
-  .share .marginT {
-    margin-top: 583px; }
+  .share .andriodDown {
+    background: url("../images/andriod.png") 0 0 no-repeat;
+    background-size: contain; }
   .share .ercode {
     width: 160px;
     height: 160px;
