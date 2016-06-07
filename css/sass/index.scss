@@ -108,8 +108,7 @@
 	.title{
 		height: 79px;
 		padding: 0 22px;
-		//@include borderB-dpr();
-		border-bottom:1px solid #e3e3e3;/*no*/
+		@include borderB-dpr();
 		.name{
 			@include font-dpr(14px);
 			color: #555;

@@ -1756,6 +1756,14 @@
   border-bottom: 1px solid #e3e3e3;
 }
 
+[data-dpr="2"] .pageHome .title {
+  border-bottom: 2px solid #e3e3e3;
+}
+
+[data-dpr="3"] .pageHome .title {
+  border-bottom: 3px solid #e3e3e3;
+}
+
 .pageHome .title .name {
   font-size: 14px;
   color: #555;
