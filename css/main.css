@@ -3360,3 +3360,61 @@
   color: #666;
   line-height: 32px;
   margin-bottom: 40px; }
+
+/*
+ *兼容ie8的透明度写法
+*/
+/*
+ *绝对定位
+*/
+/**
+ *  ##上下垂直居中center使用说明##
+ * 一、1：为子元素设定定位上下文，父级设定position:relative;
+ *     2：让子元素绝对居中于父容器
+ * 二、没有向 Sass mixin 传递参数，使用 CSS transform 属性实现居中效果
+ * 三、向 Sass mixin 传递了宽度，所以就使用负向 margin 处理水平位置，使用 CSS transform 处理垂直位置
+ * 四、向 Sass mixin 传递了高度，所以就使用负向 margin 处理垂直位置，使用 CSS transform 处理水平位置
+ *五、 向 Sass mixin 传递了高度和宽度，所以就使用负向 margin 处理水平和垂直位置
+ */
+/**
+ *  ##空心的三角箭头##
+ *  一、1：为子元素设定定位上下文，父级设定position:relative;
+ *  二、假定子元素class="caret",用法 .caret{ left:xx; top:xx; @include caret(10px,2px,right,orange,orange);}
+ *  三、参数说明：1.$caret-width三角箭头的外层宽
+                  2.$border-width三角箭头的线宽
+                  3.$direction三角箭头的方向
+                  4.$border-color三角箭头的线条颜色
+                  5.$background-color三角箭头的中心颜色，如果和$border-color颜色一直则为实心三角型
+**/
+.share {
+  width: 720px;
+  margin: 0 auto;
+  height: 100%;
+  background: url("../images/shareBackground.jpg") 0 0 no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative; }
+  .share .appDownload {
+    display: block;
+    margin: 0 auto 38px;
+    width: 269px;
+    height: 67px;
+    background: url("../images/ios.png") 0 0 no-repeat;
+    background-size: contain; }
+  .share .marginT {
+    margin-top: 583px; }
+  .share .ercode {
+    width: 160px;
+    height: 160px;
+    margin: 63px auto 0; }
+    .share .ercode img {
+      width: 100%; }
+  .share .bottom {
+    width: 720px;
+    height: 179px;
+    background: url("../images/sharebottom.png") 0 0 no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; }
