@@ -8,7 +8,7 @@
 		padding-top: 20px;
 		padding-bottom: 20px;
 		position: relative;
-		@include baceBorderB();
+		@include borderB-dpr();
 		.now{
 			width: 114px;
 			@include lineHeightEQHeight(40px);

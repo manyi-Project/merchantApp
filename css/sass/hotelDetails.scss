@@ -27,7 +27,7 @@
 	.payBil{
 		padding: 22px;
 		background-color: #FFFFFF;
-		border-bottom: 1px solid #e3e3e3;
+		@include borderB-dpr();
 		position: relative;
 		h3{
 			@include font-dpr(14px);
@@ -63,7 +63,7 @@
 	.dress{
 		height: 125px;
 		padding: 20px 20px;
-		border-bottom: 1px solid #e3e3e3;
+		@include borderB-dpr();
 		background-color: #FFFFFF;
 		@include font-dpr(11px);
 		color: #686868;

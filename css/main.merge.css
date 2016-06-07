@@ -45,7 +45,15 @@
 }
 
 .activity .list li:first-child {
-  border-right: 0.013889rem solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+}
+
+[data-dpr="2"] .activity .list li:first-child {
+  border-right: 2px solid #e3e3e3;
+}
+
+[data-dpr="3"] .activity .list li:first-child {
+  border-right: 3px solid #e3e3e3;
 }
 
 .activity .list li {
@@ -463,7 +471,15 @@
 .coupon .tapOut li a {
   display: inline-block;
   width: 100%;
-  border-right: 0.013889rem solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+}
+
+[data-dpr="2"] .coupon .tapOut li a {
+  border-right: 2px solid #e3e3e3;
+}
+
+[data-dpr="3"] .coupon .tapOut li a {
+  border-right: 3px solid #e3e3e3;
 }
 
 .coupon .tapOut .active {
@@ -871,8 +887,16 @@
 .hotelDetails .payBil {
   padding: 0.305556rem;
   background-color: #FFFFFF;
-  border-bottom: 0.013889rem solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
   position: relative;
+}
+
+[data-dpr="2"] .hotelDetails .payBil {
+  border-bottom: 2px solid #e3e3e3;
+}
+
+[data-dpr="3"] .hotelDetails .payBil {
+  border-bottom: 3px solid #e3e3e3;
 }
 
 .hotelDetails .payBil h3 {
@@ -940,10 +964,18 @@
 .hotelDetails .dress {
   height: 1.736111rem;
   padding: 0.277778rem 0.277778rem;
-  border-bottom: 0.013889rem solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
   background-color: #FFFFFF;
   font-size: 11px;
   color: #686868;
+}
+
+[data-dpr="2"] .hotelDetails .dress {
+  border-bottom: 2px solid #e3e3e3;
+}
+
+[data-dpr="3"] .hotelDetails .dress {
+  border-bottom: 3px solid #e3e3e3;
 }
 
 [data-dpr="2"] .hotelDetails .dress {
@@ -1391,7 +1423,7 @@
   line-height: 1.097222rem;
   font-size: 14px;
   color: #333;
-  border-bottom: 0.013889rem solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 [data-dpr="2"] .hotelDetails2 .groupNotes {
@@ -1400,6 +1432,14 @@
 
 [data-dpr="3"] .hotelDetails2 .groupNotes {
   font-size: 42px;
+}
+
+[data-dpr="2"] .hotelDetails2 .groupNotes {
+  border-bottom: 2px solid #e3e3e3;
+}
+
+[data-dpr="3"] .hotelDetails2 .groupNotes {
+  border-bottom: 3px solid #e3e3e3;
 }
 
 .hotelDetails2 .groupCont {
@@ -1713,7 +1753,7 @@
 .pageHome .title {
   height: 1.097222rem;
   padding: 0 0.305556rem;
-  border-bottom: 0.013889rem solid #e3e3e3;
+  border: 1px solid #e3e3e3;
 }
 
 .pageHome .title .name {
@@ -1946,10 +1986,18 @@
 }
 
 .message .messCont {
-  border-bottom: 0.013889rem solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
   width: 8.472222rem;
   height: 1.513889rem;
   padding-right: 0.277778rem;
+}
+
+[data-dpr="2"] .message .messCont {
+  border-bottom: 2px solid #e3e3e3;
+}
+
+[data-dpr="3"] .message .messCont {
+  border-bottom: 3px solid #e3e3e3;
 }
 
 .message .messCont p {
@@ -2038,7 +2086,15 @@
   padding-top: 0.277778rem;
   padding-bottom: 0.277778rem;
   position: relative;
-  border-bottom: 0.013889rem solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+[data-dpr="2"] .moreBenefits .benefitsBox {
+  border-bottom: 2px solid #e3e3e3;
+}
+
+[data-dpr="3"] .moreBenefits .benefitsBox {
+  border-bottom: 3px solid #e3e3e3;
 }
 
 .moreBenefits .benefitsBox .now {
@@ -2702,7 +2758,15 @@
   margin-top: 0.138889rem;
   padding: 0.361111rem 0.277778rem;
   background-color: #FFFFFF;
-  border-bottom: 0.013889rem solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+[data-dpr="2"] .payBill .total {
+  border-bottom: 2px solid #e3e3e3;
+}
+
+[data-dpr="3"] .payBill .total {
+  border-bottom: 3px solid #e3e3e3;
 }
 
 .payBill .totalInner {
@@ -2729,8 +2793,16 @@
   display: block;
   padding: 0 0.638889rem;
   background-color: #FFFFFF;
-  border-bottom: 0.013889rem solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
   position: relative;
+}
+
+[data-dpr="2"] .payBill .coupons {
+  border-bottom: 2px solid #e3e3e3;
+}
+
+[data-dpr="3"] .payBill .coupons {
+  border-bottom: 3px solid #e3e3e3;
 }
 
 .payBill .couponLeft {
@@ -2812,7 +2884,7 @@
   padding-right: 0.694444rem;
   font-size: 14px;
   color: #868686;
-  border-bottom: 0.013889rem solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 [data-dpr="2"] .placeOrder .herBox {
@@ -2821,6 +2893,14 @@
 
 [data-dpr="3"] .placeOrder .herBox {
   font-size: 42px;
+}
+
+[data-dpr="2"] .placeOrder .herBox {
+  border-bottom: 2px solid #e3e3e3;
+}
+
+[data-dpr="3"] .placeOrder .herBox {
+  border-bottom: 3px solid #e3e3e3;
 }
 
 .placeOrder .herBox > span {
@@ -4129,8 +4209,16 @@ body.ie8 .tips {
 
 .logisticsInformation .logistics_list {
   height: 100%;
-  border-left: 0.013889rem solid #5e6b85;
+  border-left: 1px solid #e3e3e3;
   padding-top: 0.75rem;
+}
+
+[data-dpr="2"] .logisticsInformation .logistics_list {
+  border-left: 2px solid #e3e3e3;
+}
+
+[data-dpr="3"] .logisticsInformation .logistics_list {
+  border-left: 3px solid #e3e3e3;
 }
 
 .logisticsInformation .logistics_list li {

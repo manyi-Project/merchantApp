@@ -15,7 +15,7 @@
 		padding-right: 50px;
 		@include font-dpr(14px);
 		color: #868686;
-		@include baceBorderB();
+		@include borderB-dpr();
 	}
 	.herBox > span{
 		height: 100%;

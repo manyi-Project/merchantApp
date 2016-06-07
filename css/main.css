@@ -34,7 +34,14 @@
     .activity .bannerBox img {
       width: 100%; }
   .activity .list li:first-child {
-    border-right: 1px solid #e3e3e3; }
+    border-right: 1px solid #e3e3e3;
+    /*no*/ }
+    [data-dpr="2"] .activity .list li:first-child {
+      border-right: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .activity .list li:first-child {
+      border-right: 3px solid #e3e3e3;
+      /*no*/ }
   .activity .list li {
     width: 50%;
     height: 80px;
@@ -374,7 +381,14 @@
       .coupon .tapOut li a {
         display: inline-block;
         width: 100%;
-        border-right: 1px solid #e3e3e3; }
+        border-right: 1px solid #e3e3e3;
+        /*no*/ }
+        [data-dpr="2"] .coupon .tapOut li a {
+          border-right: 2px solid #e3e3e3;
+          /*no*/ }
+        [data-dpr="3"] .coupon .tapOut li a {
+          border-right: 3px solid #e3e3e3;
+          /*no*/ }
     .coupon .tapOut .active {
       color: #ffa867;
       border-bottom: 1px solid #ffa867;
@@ -688,7 +702,14 @@
     padding: 22px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #e3e3e3;
+    /*no*/
     position: relative; }
+    [data-dpr="2"] .hotelDetails .payBil {
+      border-bottom: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails .payBil {
+      border-bottom: 3px solid #e3e3e3;
+      /*no*/ }
     .hotelDetails .payBil h3 {
       font-size: 14px;
       /*no*/
@@ -740,10 +761,17 @@
     height: 125px;
     padding: 20px 20px;
     border-bottom: 1px solid #e3e3e3;
+    /*no*/
     background-color: #FFFFFF;
     font-size: 11px;
     /*no*/
     color: #686868; }
+    [data-dpr="2"] .hotelDetails .dress {
+      border-bottom: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails .dress {
+      border-bottom: 3px solid #e3e3e3;
+      /*no*/ }
     [data-dpr="2"] .hotelDetails .dress {
       font-size: 22px;
       /*no*/ }
@@ -1075,12 +1103,19 @@
     font-size: 14px;
     /*no*/
     color: #333;
-    border-bottom: 1px solid #e3e3e3; }
+    border-bottom: 1px solid #e3e3e3;
+    /*no*/ }
     [data-dpr="2"] .hotelDetails2 .groupNotes {
       font-size: 28px;
       /*no*/ }
     [data-dpr="3"] .hotelDetails2 .groupNotes {
       font-size: 42px;
+      /*no*/ }
+    [data-dpr="2"] .hotelDetails2 .groupNotes {
+      border-bottom: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .hotelDetails2 .groupNotes {
+      border-bottom: 3px solid #e3e3e3;
       /*no*/ }
   .hotelDetails2 .groupCont {
     padding-top: 26px;
@@ -1324,7 +1359,8 @@
   .pageHome .title {
     height: 79px;
     padding: 0 22px;
-    border-bottom: 1px solid #e3e3e3; }
+    border: 1px solid #e3e3e3;
+    /*no*/ }
     .pageHome .title .name {
       font-size: 14px;
       /*no*/
@@ -1498,9 +1534,16 @@
     background-size: contain; }
   .message .messCont {
     border-bottom: 1px solid #e3e3e3;
+    /*no*/
     width: 610px;
     height: 109px;
     padding-right: 20px; }
+    [data-dpr="2"] .message .messCont {
+      border-bottom: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .message .messCont {
+      border-bottom: 3px solid #e3e3e3;
+      /*no*/ }
     .message .messCont p {
       color: #999;
       font-size: 12px;
@@ -1571,7 +1614,14 @@
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
-    border-bottom: 1px solid #e3e3e3; }
+    border-bottom: 1px solid #e3e3e3;
+    /*no*/ }
+    [data-dpr="2"] .moreBenefits .benefitsBox {
+      border-bottom: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .moreBenefits .benefitsBox {
+      border-bottom: 3px solid #e3e3e3;
+      /*no*/ }
     .moreBenefits .benefitsBox .now {
       width: 114px;
       height: 40px;
@@ -2091,7 +2141,14 @@
     margin-top: 10px;
     padding: 26px 20px;
     background-color: #FFFFFF;
-    border-bottom: 1px solid #e3e3e3; }
+    border-bottom: 1px solid #e3e3e3;
+    /*no*/ }
+    [data-dpr="2"] .payBill .total {
+      border-bottom: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .payBill .total {
+      border-bottom: 3px solid #e3e3e3;
+      /*no*/ }
   .payBill .totalInner {
     height: 82px;
     line-height: 82px;
@@ -2111,7 +2168,14 @@
     padding: 0 46px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #e3e3e3;
+    /*no*/
     position: relative; }
+    [data-dpr="2"] .payBill .coupons {
+      border-bottom: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .payBill .coupons {
+      border-bottom: 3px solid #e3e3e3;
+      /*no*/ }
   .payBill .couponLeft {
     height: 77px;
     line-height: 77px;
@@ -2177,12 +2241,19 @@
     font-size: 14px;
     /*no*/
     color: #868686;
-    border-bottom: 1px solid #e3e3e3; }
+    border-bottom: 1px solid #e3e3e3;
+    /*no*/ }
     [data-dpr="2"] .placeOrder .herBox {
       font-size: 28px;
       /*no*/ }
     [data-dpr="3"] .placeOrder .herBox {
       font-size: 42px;
+      /*no*/ }
+    [data-dpr="2"] .placeOrder .herBox {
+      border-bottom: 2px solid #e3e3e3;
+      /*no*/ }
+    [data-dpr="3"] .placeOrder .herBox {
+      border-bottom: 3px solid #e3e3e3;
       /*no*/ }
   .placeOrder .herBox > span {
     height: 100%;
@@ -3271,8 +3342,15 @@
 
 .logisticsInformation .logistics_list {
   height: 100%;
-  border-left: 1px solid #5e6b85;
+  border-left: 1px solid #e3e3e3;
+  /*no*/
   padding-top: 54px; }
+  [data-dpr="2"] .logisticsInformation .logistics_list {
+    border-left: 2px solid #e3e3e3;
+    /*no*/ }
+  [data-dpr="3"] .logisticsInformation .logistics_list {
+    border-left: 3px solid #e3e3e3;
+    /*no*/ }
 
 .logisticsInformation .logistics_list li {
   background: url("../images/tuoyuan.png") 0 0 no-repeat;

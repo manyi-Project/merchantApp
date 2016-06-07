@@ -6,7 +6,7 @@
 		margin-top: 10px;
 		padding: 26px 20px;
 		background-color: #FFFFFF;
-		@include baceBorderB();
+		@include borderB-dpr();
 	}
 	.totalInner{
 		@include lineHeightEQHeight(82px);
@@ -27,7 +27,7 @@
 		display: block;
 		padding: 0 46px;
 		background-color: #FFFFFF;
-		@include baceBorderB();
+		@include borderB-dpr();
 		position: relative;
 	}
 	.couponLeft{
