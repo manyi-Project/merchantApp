@@ -68,7 +68,6 @@ gulp.task('browser-sync', function() {
 		server: {
 			baseDir: "./"//定义从那个位置启动服务器
 		},
-		port: 8080
 	});
 });
 gulp.task('watch', function () {

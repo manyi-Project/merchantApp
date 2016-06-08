@@ -4284,6 +4284,9 @@ body.ie8 .tips {
   margin: 1.638889rem auto 0;
   background: url("../images/readIcon.png") 0 0 no-repeat;
   background-size: contain;
+  -webkit-box-shadow: 0 0 0.138889rem #f5a54d;
+  -moz-box-shadow: 0 0 0.138889rem #f5a54d;
+  box-shadow: 0 0 10px #f5a54d;
 }
 
 .share .font {

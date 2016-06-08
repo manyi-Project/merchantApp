@@ -3405,7 +3405,11 @@
     height: 132px;
     margin: 118px auto 0;
     background: url("../images/readIcon.png") 0 0 no-repeat;
-    background-size: contain; }
+    background-size: contain;
+    -webkit-box-shadow: 0 0 10px #f5a54d;
+    -moz-box-shadow: 0 0 10px #f5a54d;
+    box-shadow: 0 0 10px #f5a54d;
+    /*no*/ }
   .share .font {
     width: 435px;
     height: 105px;
