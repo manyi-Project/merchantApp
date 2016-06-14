@@ -2,6 +2,13 @@
  * Created by Administrator on 2016/4/26 0026.
  */
 $(function(){
+<<<<<<< HEAD
+=======
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination : '.swiper-pagination',
+        paginationClickable:true
+    });
+>>>>>>> 1f0a3b6a8747af5916fa58ab7d3521223c152e92
     function GetRTime(){
         var EndTime= new Date('2016/05/16 11:00:00');
         var NowTime = new Date();

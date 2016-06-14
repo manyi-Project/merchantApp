@@ -553,7 +553,11 @@
   .deliciousFoodList .foodOutBox {
     background-color: #FFFFFF;
     padding-left: 20px;
+<<<<<<< HEAD
     margin-top: 10px; }
+=======
+    margin-bottom: 10px; }
+>>>>>>> 1f0a3b6a8747af5916fa58ab7d3521223c152e92
   .deliciousFoodList .foodInnerBox {
     padding: 18px 0;
     border-bottom: 1px solid #e3e3e3; }
@@ -1323,7 +1327,11 @@
       .pageHome .localClass .classList ul {
         width: 720px;
         margin-top: 20px;
+<<<<<<< HEAD
         padding: 0 70px;
+=======
+        padding: 0 100px;
+>>>>>>> 1f0a3b6a8747af5916fa58ab7d3521223c152e92
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-box;
@@ -2167,7 +2175,11 @@
       padding-left: 27px; }
     .payBill .totalInner input {
       width: 75%;
+<<<<<<< HEAD
       height: 100%;
+=======
+      height: 28px;
+>>>>>>> 1f0a3b6a8747af5916fa58ab7d3521223c152e92
       background-color: #efefef; }
   .payBill .coupons {
     display: block;
