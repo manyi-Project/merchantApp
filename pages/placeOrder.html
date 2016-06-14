@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/main.merge.css"/>
+	<link rel="stylesheet" href="../css/swiper-3.2.7.min.css"/>
+	<script src="../js/minJs/flexible.debug.js"></script>
+	<script src="../js/minJs/jquery-1.11.3.min.js"></script>
+	<title>提交订单</title>
+</head>
+<body style="background-color: #fff;">
+	<div class="placeOrder">
+		<div class="boxOne">
+			<div class="boxOut">
+				<div class="herBox clearself">
+					<span class="fl">单人自助餐</span>
+					<span class="fr"><span id="unitPrice">110</span>元</span>
+				</div>
+			</div>
+			<div class="boxOut">
+				<div class="herBox clearself">
+					<span class="fl">数量</span>
+				<span class="fr">
+					<span class="addAndSub">
+						<input class="sub fl" type="button" value="-"/>
+						<input class="val fl" type="text" disabled value="1"/>
+						<input class="add fl" type="button" value="+"/>
+					</span>
+				</span>
+				</div>
+			</div>
+			<div class="boxOut">
+				<div class="herBox clearself">
+					<span class="fl">小计</span>
+					<span class="fr"><span id="subtotal"></span>元</span>
+				</div>
+			</div>
+		</div>
+		<div class="boxOne">
+			<div class="boxOut">
+				<a href="useCoupon.html">
+					<div class="herBox clearself">
+						<span class="fl"><span  id="coupon">20</span>元优惠券</span>
+					</div>
+				</a>
+			</div>
+			<div class="boxOut">
+				<div class="herBox clearself">
+					<span class="fl">订单合计</span>
+					<span class="fr"><span  id="total"></span>元</span>
+				</div>
+			</div>
+		</div>
+		<div class="boxOne">
+			<div class="boxOut">
+				<div class="herBox clearself">
+					<span class="fl">手机号</span>
+					<span class="fr">13822227890</span>
+				</div>
+			</div>
+		</div>
+		<a href="javascript:;" class="submitOrder">提交订单</a>
+	</div>
+</body>
+<script>
+	$(function(){
+		(function(){
+			var $_val = $(".val");
+			$(".sub").on("click",function(){
+				$(this).addClass("active").siblings(".add").removeClass("active");
+				if ($_val.val()<=1){return false}
+				var $val = $_val.val()-1;
+				$_val.val($val);
+				calculator();
+			});
+			$(".add").on("click",function(){
+				$(this).addClass("active").siblings(".sub").removeClass("active");
+				var $val = Number($_val.val());
+				$_val.val($val+1);
+				calculator();
+			});
+		})();
+
+		 function calculator(){
+			var $unitPrice = $("#unitPrice").html();
+			var $coupon = $("#coupon").html();
+			var $val=$(".val").val();
+			$("#subtotal").html($val*$unitPrice);
+			var $subtotal =$("#subtotal").html();
+			$("#total").html($subtotal-$coupon);
+			var $total = $("#total").html()
+			$("#total").html($total);
+		}
+		calculator();
+
+	})
+</script>
+</html>

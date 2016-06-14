@@ -1,0 +1,111 @@
+@import "base";
+.hotelDetails2{
+	padding-bottom: 142px;
+	.groupBuy{
+		padding: 26px 22px 0;
+		margin-bottom: 10px;
+		background-color: #FFFFFF;
+		overflow: hidden;
+		position: relative;
+		h3{
+			@include font-dpr(14px);
+			color: #333;
+			margin-bottom: 26px;
+		}
+		p{
+			@include font-dpr(11px);
+			color: #686868;
+			margin-bottom: 26px;
+		}
+	}
+	.eatTime{
+		@include font-dpr(11px);
+		color: #333;
+		font-weight: bolder;
+		margin-left: 38px;
+	}
+	.unitPrice{
+		right: 40px;
+	}
+	.numberOfPeople{
+		@include font-dpr(11px);
+		color: #686868;
+	}
+	.pirce{
+		@include font-dpr(14px);
+		color:#fc1212;
+		margin-left: 43px;
+		font-weight: bolder;
+	}
+	.groupNotesOut{
+		padding-left: 20px;
+		background-color: #FFFFFF;
+	}
+	.groupNotes{
+		@include lineHeightEQHeight(79px);
+		@include font-dpr(14px);
+		color: #333;
+		@include borderB-dpr();
+	}
+	.groupCont{
+		padding-top: 26px;
+		padding-bottom: 8px;
+		@include font-dpr(11px);
+		overflow: hidden;
+		li{
+			margin-bottom: 18px;
+		}
+		h3{
+			color: #ff8400;
+			font-weight: bolder;
+			line-height: 100%;
+			margin-bottom: 16px;
+		}
+		p{
+			color: #686868;
+			line-height: 100%;
+		}
+		p:before{
+			content: '';
+			display: inline-block;
+			@include square(8px);
+			border-radius: 50%;
+			background-color: #868686;
+			margin: 0 7px 4px;
+		}
+	}
+	.panicBuy{
+		width: 720px;
+		height: 141px;
+		margin: 0 auto;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		@include borderT-dpr();
+		background-color: #FFFFFF;
+		.pirce,.unit{
+			color: #fc1212;
+			@include font-dpr(14px);
+		}
+		.pirce{
+			@include font-dpr(25px);
+			font-weight: bolder;
+		}
+		.originalPrice{
+			@include font-dpr(11px);
+			color: #686868;
+			margin-left: 22px;
+		}
+	}
+	.panBuy{
+		width: 188px;
+		@include lineHeightEQHeight(66px);
+		text-align: center;
+		@include bdr-radius();
+		background-color: #ff8400;
+		color: #FFFFFF;
+		@include font-dpr(11px);
+		right: 45px;
+	}
+}
