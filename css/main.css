@@ -324,6 +324,21 @@
     font-size: 30px;
     /*no*/ }
 
+.join_shop {
+  width: 60px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #ff8400;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
 /*
  *兼容ie8的透明度写法
 */
@@ -1615,7 +1630,8 @@
   width: 720px;
   margin: 20px auto 0;
   background-color: #FFFFFF;
-  padding-left: 20px; }
+  padding-left: 20px;
+  position: relative; }
   .moreBenefits .benefitsBox {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1681,6 +1697,34 @@
         /*no*/ }
     .moreBenefits .benefitsFont p {
       margin: 12px auto; }
+  .moreBenefits .sureOrcancle {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .moreBenefits .sureOrcancleInner {
+    min-width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
+    .moreBenefits .sureOrcancleInner h3 {
+      text-align: center; }
+  .moreBenefits .surebox {
+    margin-top: 50px; }
+    .moreBenefits .surebox .sure, .moreBenefits .surebox .cancel {
+      padding: 10px 20px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px; }
+    .moreBenefits .surebox .sure {
+      background-color: #ff8400; }
+    .moreBenefits .surebox .cancel {
+      background-color: #e3e3e3; }
 
 /*
  *兼容ie8的透明度写法
@@ -2620,37 +2664,10 @@
     font-size: 42px;
     /*no*/ }
 
-.all_checkbox {
-  width: 720px;
-  padding: 10px 0 10px 20px;
-  background-color: #f8f6f3;
-  position: fixed;
-  top: 156px;
-  z-index: 100;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%); }
-
-.input_checkbox {
-  width: 20px;
-  height: 20px;
-  background-color: #e0e0e0;
-  float: left;
-  outline: 0; }
-
-.checkbox_font {
-  height: 20px;
-  line-height: 20px;
-  float: left;
-  margin-left: 12px; }
-
 .stayPay .main {
   width: 720px;
   margin: 0 auto;
-  padding-top: 196px; }
+  padding-top: 170px; }
 
 .stayPay .shoppingList_box_outer {
   position: relative;
@@ -2838,20 +2855,6 @@
   [data-dpr="3"] .stayShipped .Subtitle {
     font-size: 30px;
     /*no*/ }
-
-.stayShipped .arrow {
-  width: 15px;
-  height: 22px;
-  background-image: url("../images/left-arrow.png");
-  background-size: cover;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%); }
 
 .stayShipped .item_number {
   padding: 20px 0 24px 0; }

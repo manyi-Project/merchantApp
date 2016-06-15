@@ -44,13 +44,34 @@
 			</div>
 			<div class="now verCenter">立即领取</div>
 		</div>
+		<div class="sureOrcancle">
+			<div class="sureOrcancleInner verLRCenter">
+				<h3>dafkalsfjkaslkdf</h3>
+				<div class="surebox clearself">
+					<div class="sure fr">确定</div>
+					<div class="cancel fl">取消</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 <script>
 	$(function(){
+		var $that;
 		$(".now").on("click",function(){
-			$(this).addClass("clickActive").html("已领取");
-		})
+			$that = $(this);
+			if ($that.hasClass("clickActive")){
+				return;
+			}
+			$(".sureOrcancle").slideDown();
+		});
+		$(".cancel").on("click",function(){
+			$(".sureOrcancle").slideUp();
+		});
+		$(".sure").on("click",function(){
+			$(".sureOrcancle").slideUp();
+			$that.addClass("clickActive").html("已领取").off();
+		});
 	})
 </script>
 </html>

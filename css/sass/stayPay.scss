@@ -16,35 +16,10 @@
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
-.all_checkbox{
-	width: 720px;
-	padding: 10px 0 10px 20px;
-	background-color: #f8f6f3;
-	position: fixed;
-	top: 156px;
-	z-index: 100;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
-}
-.input_checkbox{
-	@include square(20px);
-	background-color: #e0e0e0;
-	float: left;
-	outline: 0;
-}
-.checkbox_font{
-	@include lineHeightEQHeight(20px);
-	float:left;
-	margin-left: 12px;
-}
 .stayPay{
 	.main{
 		@include LRcenter(720);
-		padding-top: 196px;
+		padding-top: 170px;
 	}
 	.shoppingList_box_outer{
 		position: relative;
