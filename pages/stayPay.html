@@ -56,6 +56,7 @@
 					</div>
 				</li>
 			</ul>
+			<span class="animate">删除</span>
 		</div>
 		<div class="shoppingList_box_outer">
 			<ul class="shoppingList_box">
@@ -91,6 +92,7 @@
 					</div>
 				</li>
 			</ul>
+			<span class="animate">删除</span>
 		</div>
 		<div class="shoppingList_box_outer">
 			<ul class="shoppingList_box">
@@ -126,6 +128,7 @@
 					</div>
 				</li>
 			</ul>
+			<span class="animate">删除</span>
 		</div>
 		<div class="shoppingList_box_outer">
 			<ul class="shoppingList_box">
@@ -161,6 +164,7 @@
 					</div>
 				</li>
 			</ul>
+			<span class="animate">删除</span>
 		</div>
 	</div>
 </div>
@@ -169,26 +173,5 @@
 	<p class="smallfont">可以去看看有哪些想买的</p>
 </div>
 </body>
-<script>
-	$(function () {
-		$(".checkbox_box").click(function(){
-			$(".checkbox_box").each(function(){
-				if($(".checkbox_box:checked").length == $(".checkbox_box").length){
-					$("#input_checkbox").prop("checked",true)
-				}else{
-					$("#input_checkbox").prop("checked",false)
-				}
-			})
-		});
-		$("#input_checkbox").click(function () {
-			var that = $(this)[0];
-			if (that.checked){
-				$(".checkbox_box").prop("checked",true);
-			}else{
-				$(".checkbox_box").prop("checked",false);
-			}
-
-		})
-	})
-</script>
+<script src="../js/src/del-animate.js"></script>
 </html>

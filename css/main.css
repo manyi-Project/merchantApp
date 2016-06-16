@@ -325,16 +325,17 @@
     /*no*/ }
 
 .join_shop {
-  width: 60px;
-  height: 30px;
+  width: 80px;
+  height: 40px;
   display: block;
   position: absolute;
   top: 30px;
   right: 0;
   background-color: #ff8400;
-  line-height: 30px;
+  line-height: 40px;
   text-align: center;
   color: #fff;
+  font-size: 12px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
@@ -2667,11 +2668,13 @@
 .stayPay .main {
   width: 720px;
   margin: 0 auto;
-  padding-top: 170px; }
+  padding-top: 170px;
+  overflow: hidden; }
 
 .stayPay .shoppingList_box_outer {
   position: relative;
-  margin-bottom: 17px; }
+  margin-bottom: 17px;
+  background-color: #ffffff; }
 
 .stayPay .checkbox_box {
   position: absolute;
@@ -2680,7 +2683,9 @@
 
 .stayPay .shoppingList_box {
   padding: 0 50px;
-  background-color: #ffffff; }
+  width: 720px;
+  -webkit-transition: margin-left .3s;
+  transition: margin-left .3s; }
   .stayPay .shoppingList_box li {
     border-bottom: 1px solid #e3e3e3;
     /*no*/ }
@@ -2766,6 +2771,21 @@
 
 .stayPay .item_font1 {
   margin-bottom: 15px; }
+
+.stayPay .animate {
+  -webkit-transition: width .3s;
+  transition: width .3s;
+  color: #fff;
+  height: 80px;
+  width: 0;
+  display: block;
+  background-color: red;
+  font-size: 25px;
+  text-align: center;
+  line-height: 80px;
+  position: absolute;
+  right: 10px;
+  top: 35px; }
 
 /*
  *兼容ie8的透明度写法

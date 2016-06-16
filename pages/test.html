@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=640, user-scalable=no">
+    <title></title>
+    <script src="../js/minJs/jquery-1.11.3.min.js"></script>
+    <style>
+        html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+        ul{}
+        ul li{list-style: none;float:left;width:640px;height:150px;border: solid 1px #000;margin-left: -0px;position: relative}
+        ul li span{color: #fff;height: 80px;width: 0; display: block;background-color: red;font-size: 25px;text-align: center;line-height: 80px;position: absolute;right:10px;top: 35px;}
+        .animate{transition: width .3s;-webkit-transition: all .3s}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>aaaaaaaajhkjhkljhaaa<span class="animate">删除</span></li>
+        <li>bbbbbbbbjhkjhkljhbbb<span class="animate">删除</span></li>
+        <li>ccccccccjhkjhkljhccc<span class="animate">删除</span></li>
+        <li>ddddddddjhkjhkljhd<span class="animate">删除</span></li>
+        <li>eeeeeeeejhkjhkljheeeee<span class="animate">删除</span></li>
+    </ul>
+
+
+    <script>
+        $(function(){
+            var list=$("ul li");
+            list.on("touchstart",function(e){
+                e.preventDefault();
+                startX=e.originalEvent.targetTouches [0].pageX;
+            });
+            list.on("touchmove",function(e){
+                e.preventDefault();
+                endX=e.originalEvent.targetTouches[0].pageX;
+            });
+            list.on("touchend",function(e){
+                e.preventDefault();
+                var _this=$('span',this);
+                var listIndex=_this.index();
+                //左滑
+                if(startX>endX){
+                    _this.css("width","100px");
+                }
+                //右滑
+                if(startX<endX){
+                    list.find('span').css("width","0px");
+                }
+            });
+
+            $("ul li span").on("touchend",function(){
+                $(this).parent().remove();
+            })
+        })
+    </script>
+</body>
+</html>

@@ -20,10 +20,12 @@
 	.main{
 		@include LRcenter(720);
 		padding-top: 170px;
+		overflow: hidden;
 	}
 	.shoppingList_box_outer{
 		position: relative;
 		margin-bottom: 17px;
+		background-color: #ffffff;
 	}
 	.checkbox_box{
 		position: absolute;
@@ -32,7 +34,9 @@
 	}
 	.shoppingList_box{
 		padding: 0 50px;
-		background-color: #ffffff;
+		width: 720px;
+		-webkit-transition: margin-left .3s;
+		transition: margin-left .3s;
 		li{
 			@include borderB-dpr();
 		}
@@ -92,5 +96,20 @@
 	}
 	.item_font1{
 		margin-bottom: 15px;
+	}
+	.animate{
+		-webkit-transition: width .3s;
+		transition: width .3s;
+		color: #fff;
+		height: 80px;
+		width: 0;
+		display: block;
+		background-color: red;
+		font-size: 25px;
+		text-align: center;
+		line-height: 80px;
+		position: absolute;
+		right:10px;
+		top: 35px;
 	}
 }

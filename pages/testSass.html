@@ -1,41 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-	<meta charset="UTF-8">
-	<title></title>
-	<script src="http://api.map.baidu.com/api?v=1.3" type="text/javascript"></script>
+<head>
+	<meta charset="utf-8">
+	<title>demo..</title>
+	<script type="text/javascript" src="../js/minJs/jquery-1.11.3.min.js"></script>
+	<style type="text/css">
+		.demo{width:800px; margin:0px auto 0px auto}
+		.geo{margin-top:10px}
+		.demo p{line-height:40px; font-size:30px}
+		.demo p span,#baidu_geo,#google_geo{font-weight:bold}
+	</style>
 </head>
 <body>
-<div  id="aaa" style="border:#ccc solid 1px;width:697px;height:500px"></div>
-<script type="text/javascript">
-	if(navigator.geolocation)
-	{
-		navigator.geolocation.getCurrentPosition(function (p) {
-					var latitude = p.coords.latitude//纬度
-					var longitude = p.coords.longitude;
-					createmap(latitude, longitude);
+<div id="main">
+	<div class="demo">
+		<p>地理坐标：<span id="latlon"></span></p>
+		<div class="geo">
+			<p>百度地图定位位置：</p>
+			<p id="baidu_geo"></p>
+		</div>
+	</div>
+</div>
+<script>
+	function getLocation(){
+		if (navigator.geolocation){
+			navigator.geolocation.getCurrentPosition(showPosition,showError);
+		}else{
+			alert("浏览器不支持地理定位。");
+		}
+	}
+	function showPosition(position){
+		$("#latlon").html("纬度:"+position.coords.latitude +',经度:'+ position.coords.longitude);
+		var latlon = position.coords.latitude+','+position.coords.longitude;
+		//baidu
+		var url = "http://api.map.baidu.com/geocoder/v/?ak=Cbdaebdbbbabceb&callback=renderReverse&location="+latlon+"&output=json&pois=";
+		$.ajax({
+			type: "GET",
+			dataType: "jsonp",
+			url: url,
+			beforeSend: function(){
+				$("#baidu_geo").html('正在定位...');
+			},
+			success: function (json) {
 
-				}, function (e) {//错误信息
-					var aa = e.code + "\n" + e.message;
-					alert("错误"+aa);
+				if(json.status==0){
+					$("#baidu_geo").html(json.result.formatted_address);
 				}
-		);
+			},
+			error: function (XMLHttpRequest, textStatus, errorThrown) {
+				$("#baidu_geo").html(latlon+"地址位置获取失败");
+			}
+		});
 	}
-	function createmap(a,b)
-	{
-		var map = new BMap.Map("aaa");
-		var point = new BMap.Point(b, a);
-		map.centerAndZoom(point, 20);//设置地图的中心点和坐标
-		Window.map = map;//将map变量存储在全局
-		//判断城市
-		var gc = new BMap.Geocoder();
-		gc.getLocation(point, function(rs){
-			var addComp = rs.addressComponents;
-			alert(addComp.province)
-		})
+	function showError(error){
+		switch(error.code) {
+			case error.PERMISSION_DENIED:
+				alert("定位失败,用户拒绝请求地理定位");
+				break;
+			case error.POSITION_UNAVAILABLE:
+				alert("定位失败,位置信息是不可用");
+				break;
+			case error.TIMEOUT:
+				alert("定位失败,请求获取用户位置超时");
+				break;
+			case error.UNKNOWN_ERROR:
+				alert("定位失败,定位系统失效");
+				break;
+		}
 	}
-
-
+	getLocation();
 </script>
 </body>
 </html>

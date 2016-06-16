@@ -404,16 +404,17 @@
 }
 
 .join_shop {
-  width: 0.833333rem;
-  height: 0.416667rem;
+  width: 1.111111rem;
+  height: 0.555556rem;
   display: block;
   position: absolute;
   top: 0.416667rem;
   right: 0;
   background-color: #ff8400;
-  line-height: 0.416667rem;
+  line-height: 0.555556rem;
   text-align: center;
   color: #fff;
+  font-size: 0.166667rem;
   -webkit-border-radius: 0.069444rem;
   -moz-border-radius: 0.069444rem;
   border-radius: 0.069444rem;
@@ -3412,11 +3413,13 @@
   width: 10rem;
   margin: 0 auto;
   padding-top: 2.361111rem;
+  overflow: hidden;
 }
 
 .stayPay .shoppingList_box_outer {
   position: relative;
   margin-bottom: 0.236111rem;
+  background-color: #ffffff;
 }
 
 .stayPay .checkbox_box {
@@ -3427,7 +3430,9 @@
 
 .stayPay .shoppingList_box {
   padding: 0 0.694444rem;
-  background-color: #ffffff;
+  width: 10rem;
+  -webkit-transition: margin-left .3s;
+  transition: margin-left .3s;
 }
 
 .stayPay .shoppingList_box li {
@@ -3532,6 +3537,22 @@
 
 .stayPay .item_font1 {
   margin-bottom: 0.208333rem;
+}
+
+.stayPay .animate {
+  -webkit-transition: width .3s;
+  transition: width .3s;
+  color: #fff;
+  height: 1.111111rem;
+  width: 0;
+  display: block;
+  background-color: red;
+  font-size: 0.347222rem;
+  text-align: center;
+  line-height: 1.111111rem;
+  position: absolute;
+  right: 0.138889rem;
+  top: 0.486111rem;
 }
 
 /*
